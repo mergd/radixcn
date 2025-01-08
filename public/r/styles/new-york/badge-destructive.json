@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "examples/badge-destructive.tsx",
-      "content": "import { Badge } from \"@/registry/new-york/ui/badge\"\n\nexport default function BadgeDestructive() {\n  return <Badge variant=\"destructive\">Destructive</Badge>\n}\n",
+      "content": "import { Badge } from \"@/registry/new-york/ui/badge\";\n\nexport default function BadgeDestructive() {\n  return <Badge variant=\"destructive\">Destructive</Badge>;\n}\n",
       "type": "registry:example",
       "target": ""
     }
