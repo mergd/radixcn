@@ -1,44 +1,55 @@
 "use client";
 
 import * as React from "react";
-import * as RadioGroupPrimitive from "@radix-ui/react-radio-group";
-import { Circle } from "lucide-react";
+import { RadioGroup as RadixRadioGroup } from "@radix-ui/themes";
+import type { ComponentProps } from "react";
 
 import { cn } from "@/lib/utils";
 
+// Extend RadixRadioGroup props to maintain compatibility with existing usage
+interface RadioGroupProps
+  extends Omit<ComponentProps<typeof RadixRadioGroup.Root>, "size"> {
+  className?: string;
+  size?: "1" | "2" | "3"; // Map to Radix Theme sizes
+}
+
 const RadioGroup = React.forwardRef<
-  React.ElementRef<typeof RadioGroupPrimitive.Root>,
-  React.ComponentPropsWithoutRef<typeof RadioGroupPrimitive.Root>
->(({ className, ...props }, ref) => {
+  React.ElementRef<typeof RadixRadioGroup.Root>,
+  RadioGroupProps
+>(({ className, size = "2", ...props }, ref) => {
   return (
-    <RadioGroupPrimitive.Root
-      className={cn("grid gap-2", className)}
-      {...props}
+    <RadixRadioGroup.Root
       ref={ref}
+      className={cn("grid gap-2", className)}
+      size={size}
+      {...props}
     />
   );
 });
-RadioGroup.displayName = RadioGroupPrimitive.Root.displayName;
+RadioGroup.displayName = "RadioGroup";
 
 const RadioGroupItem = React.forwardRef<
-  React.ElementRef<typeof RadioGroupPrimitive.Item>,
-  React.ComponentPropsWithoutRef<typeof RadioGroupPrimitive.Item>
->(({ className, ...props }, ref) => {
+  React.ElementRef<typeof RadixRadioGroup.Item>,
+  React.ComponentPropsWithoutRef<typeof RadixRadioGroup.Item>
+>(({ className, children, ...props }, ref) => {
   return (
-    <RadioGroupPrimitive.Item
+    <RadixRadioGroup.Item
       ref={ref}
       className={cn(
-        "aspect-square h-4 w-4 rounded-full border border-primary text-primary shadow focus:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50",
-        className,
+        "cursor-pointer disabled:cursor-not-allowed disabled:opacity-50",
+        className
       )}
       {...props}
     >
-      <RadioGroupPrimitive.Indicator className="flex items-center justify-center">
-        <Circle className="h-3.5 w-3.5 fill-primary" />
-      </RadioGroupPrimitive.Indicator>
-    </RadioGroupPrimitive.Item>
+      {children}
+    </RadixRadioGroup.Item>
   );
 });
-RadioGroupItem.displayName = RadioGroupPrimitive.Item.displayName;
+RadioGroupItem.displayName = "RadioGroupItem";
 
 export { RadioGroup, RadioGroupItem };
+
+/**
+ * @deprecated Use RadioGroup from @radix-ui/themes instead. This component is kept for backwards compatibility.
+ */
+export type { RadioGroupProps };

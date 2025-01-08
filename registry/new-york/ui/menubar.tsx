@@ -3,14 +3,15 @@
 import * as React from "react";
 import * as MenubarPrimitive from "@radix-ui/react-menubar";
 import { Check, ChevronRight, Circle } from "lucide-react";
+import { Theme } from "@radix-ui/themes";
 
 import { cn } from "@/lib/utils";
 
-const MenubarMenu = MenubarPrimitive.Menu;
+const MenubarMenu: typeof MenubarPrimitive.Menu = MenubarPrimitive.Menu;
 
-const MenubarGroup = MenubarPrimitive.Group;
+const MenubarGroup: typeof MenubarPrimitive.Group = MenubarPrimitive.Group;
 
-const MenubarPortal = MenubarPrimitive.Portal;
+const MenubarPortal: typeof MenubarPrimitive.Portal = MenubarPrimitive.Portal;
 
 const MenubarSub = MenubarPrimitive.Sub;
 
@@ -20,14 +21,13 @@ const Menubar = React.forwardRef<
   React.ElementRef<typeof MenubarPrimitive.Root>,
   React.ComponentPropsWithoutRef<typeof MenubarPrimitive.Root>
 >(({ className, ...props }, ref) => (
-  <MenubarPrimitive.Root
-    ref={ref}
-    className={cn(
-      "flex h-9 items-center space-x-1 rounded-md border bg-background p-1 shadow-sm",
-      className,
-    )}
-    {...props}
-  />
+  <Theme appearance="light" accentColor="gray" radius="medium">
+    <MenubarPrimitive.Root
+      ref={ref}
+      className="flex items-center space-x-1 rounded-md border bg-background p-1"
+      {...props}
+    />
+  </Theme>
 ));
 Menubar.displayName = MenubarPrimitive.Root.displayName;
 
@@ -37,10 +37,7 @@ const MenubarTrigger = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <MenubarPrimitive.Trigger
     ref={ref}
-    className={cn(
-      "flex cursor-default select-none items-center rounded-sm px-3 py-1 text-sm font-medium outline-none focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground",
-      className,
-    )}
+    className="rt-reset rt-MenubarTrigger"
     {...props}
   />
 ));
@@ -115,11 +112,8 @@ const MenubarItem = React.forwardRef<
 >(({ className, inset, ...props }, ref) => (
   <MenubarPrimitive.Item
     ref={ref}
-    className={cn(
-      "relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
-      inset && "pl-8",
-      className,
-    )}
+    className="rt-reset rt-MenubarItem"
+    data-inset={inset}
     {...props}
   />
 ));
