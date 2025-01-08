@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { usePathname } from "next/navigation"
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-import { cn } from "@/lib/utils"
-import { ScrollArea, ScrollBar } from "@/registry/new-york/ui/scroll-area"
+import { cn } from "@/lib/utils";
+import { ScrollArea, ScrollBar } from "@/registry/new-york/ui/scroll-area";
 
 const examples = [
   {
@@ -49,12 +49,12 @@ const examples = [
     code: "https://github.com/shadcn/ui/tree/main/apps/www/app/(app)/examples/authentication",
     hidden: false,
   },
-]
+];
 
 interface ExamplesNavProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 export function ExamplesNav({ className, ...props }: ExamplesNavProps) {
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   return (
     <div className="relative">
@@ -72,21 +72,20 @@ export function ExamplesNav({ className, ...props }: ExamplesNavProps) {
             />
           ))}
         </div>
-        <ScrollBar orientation="horizontal" className="invisible" />
       </ScrollArea>
     </div>
-  )
+  );
 }
 
 function ExampleLink({
   example,
   isActive,
 }: {
-  example: (typeof examples)[number]
-  isActive: boolean
+  example: (typeof examples)[number];
+  isActive: boolean;
 }) {
   if (example.hidden) {
-    return null
+    return null;
   }
 
   return (
@@ -98,5 +97,5 @@ function ExampleLink({
     >
       {example.name}
     </Link>
-  )
+  );
 }

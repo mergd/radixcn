@@ -47,7 +47,6 @@ export default function ScrollAreaHorizontalDemo() {
           </figure>
         ))}
       </div>
-      <ScrollBar orientation="horizontal" />
     </ScrollArea>
   );
 }

@@ -270,7 +270,6 @@ function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                     <SidebarMenuButton
                       tooltip={{
                         children: item.title,
-                        hidden: false,
                       }}
                       onClick={() => {
                         setActiveItem(item);

@@ -31,7 +31,7 @@ export default function DrawerDialogDemo() {
   if (isDesktop) {
     return (
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogTrigger asChild>
+        <DialogTrigger>
           <Button variant="outline">Edit Profile</Button>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">

@@ -1,27 +1,35 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { LucideIcon } from "lucide-react"
+import Link from "next/link";
+import { LucideIcon } from "lucide-react";
 
-import { cn } from "@/lib/utils"
-import { buttonVariants } from "@/registry/default/ui/button"
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/registry/new-york/ui/button";
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/registry/new-york/ui/tooltip"
+} from "@/registry/new-york/ui/tooltip";
 
 interface NavProps {
-  isCollapsed: boolean
+  isCollapsed: boolean;
   links: {
-    title: string
-    label?: string
-    icon: LucideIcon
-    variant: "default" | "ghost"
-  }[]
+    title: string;
+    label?: string;
+    icon: LucideIcon;
+    variant: "default" | "ghost";
+  }[];
 }
 
 export function Nav({ links, isCollapsed }: NavProps) {
+  const triggerChild = (link: NavProps["links"][number]) => (
+    <>
+      {link.title}
+      {link.label && (
+        <span className="ml-auto text-muted-foreground">{link.label}</span>
+      )}
+    </>
+  );
   return (
     <div
       data-collapsed={isCollapsed}
@@ -30,29 +38,24 @@ export function Nav({ links, isCollapsed }: NavProps) {
       <nav className="grid gap-1 px-2 group-[[data-collapsed=true]]:justify-center group-[[data-collapsed=true]]:px-2">
         {links.map((link, index) =>
           isCollapsed ? (
-            <Tooltip key={index} delayDuration={0}>
-              <TooltipTrigger asChild>
-                <Link
-                  href="#"
-                  className={cn(
-                    buttonVariants({ variant: link.variant, size: "icon" }),
-                    "h-9 w-9",
-                    link.variant === "default" &&
-                      "dark:bg-muted dark:text-muted-foreground dark:hover:bg-muted dark:hover:text-white"
-                  )}
-                >
-                  <link.icon className="h-4 w-4" />
-                  <span className="sr-only">{link.title}</span>
-                </Link>
-              </TooltipTrigger>
-              <TooltipContent side="right" className="flex items-center gap-4">
-                {link.title}
-                {link.label && (
-                  <span className="ml-auto text-muted-foreground">
-                    {link.label}
-                  </span>
+            <Tooltip
+              className="flex items-center gap-4"
+              key={index}
+              content={triggerChild(link)}
+              delayDuration={0}
+            >
+              <Link
+                href="#"
+                className={cn(
+                  buttonVariants({ variant: link.variant, size: "icon" }),
+                  "h-9 w-9",
+                  link.variant === "default" &&
+                    "dark:bg-muted dark:text-muted-foreground dark:hover:bg-muted dark:hover:text-white"
                 )}
-              </TooltipContent>
+              >
+                <link.icon className="h-4 w-4" />
+                <span className="sr-only">{link.title}</span>
+              </Link>
             </Tooltip>
           ) : (
             <Link
@@ -83,5 +86,5 @@ export function Nav({ links, isCollapsed }: NavProps) {
         )}
       </nav>
     </div>
-  )
+  );
 }

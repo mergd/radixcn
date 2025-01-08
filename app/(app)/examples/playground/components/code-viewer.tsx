@@ -1,4 +1,4 @@
-import { Button } from "@/registry/new-york/ui/button"
+import { Button } from "@/registry/new-york/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -6,12 +6,12 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/registry/new-york/ui/dialog"
+} from "@/registry/new-york/ui/dialog";
 
 export function CodeViewer() {
   return (
     <Dialog>
-      <DialogTrigger asChild>
+      <DialogTrigger>
         <Button variant="secondary">View code</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[625px]">
@@ -85,5 +85,5 @@ export function CodeViewer() {
         </div>
       </DialogContent>
     </Dialog>
-  )
+  );
 }

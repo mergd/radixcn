@@ -721,17 +721,6 @@ export const examples: Registry = [
     ],
   },
   {
-    name: "input-file",
-    type: "registry:example",
-    registryDependencies: ["input"],
-    files: [
-      {
-        path: "examples/input-file.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
     name: "input-form",
     type: "registry:example",
     registryDependencies: ["input", "button", "form"],

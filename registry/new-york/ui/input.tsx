@@ -13,7 +13,7 @@ const Input = React.forwardRef<
       ref={ref}
       className={cn(
         "w-full transition-colors file:border-0 file:items-py-1 file:bg-transparent file:text-sm file:font-medium",
-        className
+        className,
       )}
       size={size}
       {...props}

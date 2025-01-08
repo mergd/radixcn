@@ -2949,21 +2949,6 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
-    "input-file": {
-      name: "input-file",
-      description: "",
-      type: "registry:example",
-      registryDependencies: ["input"],
-      files: [{
-        path: "registry/new-york/examples/input-file.tsx",
-        type: "registry:example",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/examples/input-file.tsx")),
-      source: "",
-      meta: undefined,
-    },
     "input-form": {
       name: "input-form",
       description: "",

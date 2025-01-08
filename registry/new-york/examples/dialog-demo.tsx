@@ -14,7 +14,7 @@ import { Label } from "@/registry/new-york/ui/label";
 export default function DialogDemo() {
   return (
     <Dialog>
-      <DialogTrigger asChild>
+      <DialogTrigger>
         <Button variant="outline">Edit Profile</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">

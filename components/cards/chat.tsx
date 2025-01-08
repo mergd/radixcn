@@ -1,21 +1,21 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import { Check, Plus, Send } from "lucide-react"
+import { Check, Plus, Send } from "lucide-react";
+import * as React from "react";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/registry/new-york/ui/avatar"
-import { Button } from "@/registry/new-york/ui/button"
+} from "@/registry/new-york/ui/avatar";
+import { Button } from "@/registry/new-york/ui/button";
 import {
   Card,
   CardContent,
   CardFooter,
   CardHeader,
-} from "@/registry/new-york/ui/card"
+} from "@/registry/new-york/ui/card";
 import {
   Command,
   CommandEmpty,
@@ -23,7 +23,7 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-} from "@/registry/new-york/ui/command"
+} from "@/registry/new-york/ui/command";
 import {
   Dialog,
   DialogContent,
@@ -31,14 +31,9 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "@/registry/new-york/ui/dialog"
-import { Input } from "@/registry/new-york/ui/input"
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/registry/new-york/ui/tooltip"
+} from "@/registry/new-york/ui/dialog";
+import { Input } from "@/registry/new-york/ui/input";
+import { Tooltip } from "@/registry/new-york/ui/tooltip";
 
 const users = [
   {
@@ -66,13 +61,13 @@ const users = [
     email: "will@email.com",
     avatar: "/avatars/04.png",
   },
-] as const
+] as const;
 
-type User = (typeof users)[number]
+type User = (typeof users)[number];
 
 export function CardsChat() {
-  const [open, setOpen] = React.useState(false)
-  const [selectedUsers, setSelectedUsers] = React.useState<User[]>([])
+  const [open, setOpen] = React.useState(false);
+  const [selectedUsers, setSelectedUsers] = React.useState<User[]>([]);
 
   const [messages, setMessages] = React.useState([
     {
@@ -91,9 +86,9 @@ export function CardsChat() {
       role: "user",
       content: "I can't log in.",
     },
-  ])
-  const [input, setInput] = React.useState("")
-  const inputLength = input.trim().length
+  ]);
+  const [input, setInput] = React.useState("");
+  const inputLength = input.trim().length;
 
   return (
     <>
@@ -109,22 +104,17 @@ export function CardsChat() {
               <p className="text-sm text-muted-foreground">m@example.com</p>
             </div>
           </div>
-          <TooltipProvider delayDuration={0}>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Button
-                  size="icon"
-                  variant="outline"
-                  className="ml-auto rounded-full"
-                  onClick={() => setOpen(true)}
-                >
-                  <Plus />
-                  <span className="sr-only">New message</span>
-                </Button>
-              </TooltipTrigger>
-              <TooltipContent sideOffset={10}>New message</TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
+          <Tooltip content="New message" delayDuration={0}>
+            <Button
+              size="icon"
+              variant="outline"
+              className="ml-auto rounded-full"
+              onClick={() => setOpen(true)}
+            >
+              <Plus />
+              <span className="sr-only">New message</span>
+            </Button>
+          </Tooltip>
         </CardHeader>
         <CardContent>
           <div className="space-y-4">
@@ -146,16 +136,16 @@ export function CardsChat() {
         <CardFooter>
           <form
             onSubmit={(event) => {
-              event.preventDefault()
-              if (inputLength === 0) return
+              event.preventDefault();
+              if (inputLength === 0) return;
               setMessages([
                 ...messages,
                 {
                   role: "user",
                   content: input,
                 },
-              ])
-              setInput("")
+              ]);
+              setInput("");
             }}
             className="flex w-full items-center space-x-2"
           >
@@ -198,14 +188,14 @@ export function CardsChat() {
                           selectedUsers.filter(
                             (selectedUser) => selectedUser !== user
                           )
-                        )
+                        );
                       }
 
                       return setSelectedUsers(
                         [...users].filter((u) =>
                           [...selectedUsers, user].includes(u)
                         )
-                      )
+                      );
                     }}
                   >
                     <Avatar>
@@ -249,7 +239,7 @@ export function CardsChat() {
             <Button
               disabled={selectedUsers.length < 2}
               onClick={() => {
-                setOpen(false)
+                setOpen(false);
               }}
             >
               Continue
@@ -258,5 +248,5 @@ export function CardsChat() {
         </DialogContent>
       </Dialog>
     </>
-  )
+  );
 }

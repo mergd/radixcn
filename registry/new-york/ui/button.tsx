@@ -77,7 +77,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       children,
       ...props
     },
-    ref
+    ref,
   ) => {
     return (
       <RadixButton
@@ -85,7 +85,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
           "cursor-pointer",
           variant === "link" && "underline-offset-4 hover:underline",
           size === "icon" && "p-1 size-auto",
-          className
+          className,
         )}
         ref={ref}
         variant={variantMap[variant] ?? "solid"}
@@ -99,7 +99,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         </div>
       </RadixButton>
     );
-  }
+  },
 );
 Button.displayName = "Button";
 

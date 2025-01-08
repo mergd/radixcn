@@ -17,7 +17,7 @@ import { Label } from "@/registry/new-york/ui/label";
 export default function DialogCloseButton() {
   return (
     <Dialog>
-      <DialogTrigger asChild>
+      <DialogTrigger>
         <Button variant="outline">Share</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-md">
