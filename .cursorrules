@@ -5,3 +5,4 @@ I am refactoring shadcn/ui to Radix theme components (@radix-ui/themes), with an
 - Handle sizes with `"1" | "2" | "3"` if needed
 - Make variants extensible
 - Use `Omit` for clean types
+- Add `@deprecated` comments for any components that are deprecated

@@ -1,3 +1,4 @@
+import "@radix-ui/themes/styles.css";
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 
@@ -10,6 +11,7 @@ import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { ThemeSwitcher } from "@/components/theme-switcher";
 import { Toaster as NewYorkSonner } from "@/registry/new-york/ui/sonner";
 import { Toaster as NewYorkToaster } from "@/registry/new-york/ui/toaster";
+import { Theme as RadixTheme } from "@radix-ui/themes";
 
 export const metadata: Metadata = {
   title: {
@@ -95,24 +97,26 @@ export default function RootLayout({ children }: RootLayoutProps) {
             fontMono.variable
           )}
         >
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-            enableColorScheme
-          >
-            <div vaul-drawer-wrapper="">
-              <div className="relative flex min-h-svh flex-col bg-background">
-                {children}
+          <RadixTheme scaling="95%" radius="small">
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange
+              enableColorScheme
+            >
+              <div vaul-drawer-wrapper="">
+                <div className="relative flex min-h-svh flex-col bg-background">
+                  {children}
+                </div>
               </div>
-            </div>
-            <TailwindIndicator />
-            <ThemeSwitcher />
-            <Analytics />
-            <NewYorkToaster />
-            <NewYorkSonner />
-          </ThemeProvider>
+              <TailwindIndicator />
+              <ThemeSwitcher />
+              <Analytics />
+              <NewYorkToaster />
+              <NewYorkSonner />
+            </ThemeProvider>
+          </RadixTheme>
         </body>
       </html>
     </>
