@@ -1,13 +1,13 @@
-import { ChevronDown, Circle, Plus, Star } from "lucide-react"
+import { ChevronDown, Circle, Plus, Star } from "lucide-react";
 
-import { Button } from "@/registry/new-york/ui/button"
+import { Button } from "@/registry/new-york/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/registry/new-york/ui/card"
+} from "@/registry/new-york/ui/card";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -16,15 +16,15 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/registry/new-york/ui/dropdown-menu"
-import { Separator } from "@/registry/new-york/ui/separator"
+} from "@/registry/new-york/ui/dropdown-menu";
+import { Separator } from "@/registry/new-york/ui/separator";
 
 export function DemoGithub() {
   return (
     <Card>
       <CardHeader className="grid grid-cols-[1fr_110px] items-start gap-4 space-y-0">
         <div className="space-y-1">
-          <CardTitle>shadcn/ui</CardTitle>
+          <CardTitle>radixcn/ui</CardTitle>
           <CardDescription>
             Beautifully designed components that you can copy and paste into
             your apps. Accessible. Customizable. Open Source.
@@ -77,5 +77,5 @@ export function DemoGithub() {
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }

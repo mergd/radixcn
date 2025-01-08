@@ -61,9 +61,9 @@ import { Switch } from "@/registry/new-york/ui/switch";
 // This is sample data
 const data = {
   user: {
-    name: "shadcn",
+    name: "radixcn",
     email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
+    avatar: "/avatars/radixcn.jpg",
   },
   navMain: [
     {
@@ -277,8 +277,8 @@ function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                         setMails(
                           mail.slice(
                             0,
-                            Math.max(5, Math.floor(Math.random() * 10) + 1),
-                          ),
+                            Math.max(5, Math.floor(Math.random() * 10) + 1)
+                          )
                         );
                         setOpen(true);
                       }}

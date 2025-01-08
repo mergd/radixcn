@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { AspectRatio } from "@/registry/new-york/ui/aspect-ratio"
+import { AspectRatio } from "@/registry/new-york/ui/aspect-ratio";
 
 export function PromoVideo() {
   return (
@@ -10,10 +10,10 @@ export function PromoVideo() {
     >
       <video autoPlay muted playsInline>
         <source
-          src="https://ui-shadcn.s3.amazonaws.com/ui-promo-hd.mp4"
+          src="https://ui-radixcn.s3.amazonaws.com/ui-promo-hd.mp4"
           type="video/mp4"
         />
       </video>
     </AspectRatio>
-  )
+  );
 }
