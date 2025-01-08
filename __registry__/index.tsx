@@ -170,21 +170,6 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
-    "chart": {
-      name: "chart",
-      description: "",
-      type: "registry:ui",
-      registryDependencies: ["card"],
-      files: [{
-        path: "registry/new-york/ui/chart.tsx",
-        type: "registry:ui",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/ui/chart.tsx")),
-      source: "",
-      meta: undefined,
-    },
     "checkbox": {
       name: "checkbox",
       description: "",
@@ -4116,96 +4101,6 @@ export const Index: Record<string, any> = {
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/new-york/examples/mode-toggle.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "chart-bar-demo": {
-      name: "chart-bar-demo",
-      description: "",
-      type: "registry:example",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/examples/chart-bar-demo.tsx",
-        type: "registry:example",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/examples/chart-bar-demo.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "chart-bar-demo-grid": {
-      name: "chart-bar-demo-grid",
-      description: "",
-      type: "registry:example",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/examples/chart-bar-demo-grid.tsx",
-        type: "registry:example",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/examples/chart-bar-demo-grid.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "chart-bar-demo-axis": {
-      name: "chart-bar-demo-axis",
-      description: "",
-      type: "registry:example",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/examples/chart-bar-demo-axis.tsx",
-        type: "registry:example",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/examples/chart-bar-demo-axis.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "chart-bar-demo-tooltip": {
-      name: "chart-bar-demo-tooltip",
-      description: "",
-      type: "registry:example",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/examples/chart-bar-demo-tooltip.tsx",
-        type: "registry:example",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/examples/chart-bar-demo-tooltip.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "chart-bar-demo-legend": {
-      name: "chart-bar-demo-legend",
-      description: "",
-      type: "registry:example",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/examples/chart-bar-demo-legend.tsx",
-        type: "registry:example",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/examples/chart-bar-demo-legend.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "chart-tooltip-demo": {
-      name: "chart-tooltip-demo",
-      description: "",
-      type: "registry:example",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/examples/chart-tooltip-demo.tsx",
-        type: "registry:example",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/examples/chart-tooltip-demo.tsx")),
       source: "",
       meta: undefined,
     },

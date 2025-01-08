@@ -1,8 +1,5 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import Image from "next/image"
-import Link from "next/link"
 import {
   Check,
   ChevronRight,
@@ -14,26 +11,28 @@ import {
   Smartphone,
   Tablet,
   Terminal,
-} from "lucide-react"
-import { ImperativePanelHandle } from "react-resizable-panels"
-import { z } from "zod"
+} from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import * as React from "react";
+import { ImperativePanelHandle } from "react-resizable-panels";
+import { z } from "zod";
 
-import { trackEvent } from "@/lib/events"
-import { FileTree, createFileTreeForRegistryItemFiles } from "@/lib/registry"
-import { useCopyToClipboard } from "@/hooks/use-copy-to-clipboard"
-import { V0Button } from "@/components/v0-button"
-import { Button } from "@/registry/new-york/ui/button"
+import { useCopyToClipboard } from "@/hooks/use-copy-to-clipboard";
+import { trackEvent } from "@/lib/events";
+import { FileTree, createFileTreeForRegistryItemFiles } from "@/lib/registry";
+import { Button } from "@/registry/new-york/ui/button";
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/registry/new-york/ui/collapsible"
+} from "@/registry/new-york/ui/collapsible";
 import {
   ResizableHandle,
   ResizablePanel,
   ResizablePanelGroup,
-} from "@/registry/new-york/ui/resizable"
-import { Separator } from "@/registry/new-york/ui/separator"
+} from "@/registry/new-york/ui/resizable";
+import { Separator } from "@/registry/new-york/ui/separator";
 import {
   Sidebar,
   SidebarGroup,
@@ -44,40 +43,42 @@ import {
   SidebarMenuItem,
   SidebarMenuSub,
   SidebarProvider,
-} from "@/registry/new-york/ui/sidebar"
-import { Tabs, TabsList, TabsTrigger } from "@/registry/new-york/ui/tabs"
+} from "@/registry/new-york/ui/sidebar";
+import { Tabs, TabsList, TabsTrigger } from "@/registry/new-york/ui/tabs";
 import {
   ToggleGroup,
   ToggleGroupItem,
-} from "@/registry/new-york/ui/toggle-group"
-import { Style } from "@/registry/registry-styles"
-import { registryItemFileSchema, registryItemSchema } from "@/registry/schema"
+} from "@/registry/new-york/ui/toggle-group";
+import { Style } from "@/registry/registry-styles";
+import { registryItemFileSchema, registryItemSchema } from "@/registry/schema";
 
 type BlockViewerContext = {
-  item: z.infer<typeof registryItemSchema>
-  view: "code" | "preview"
-  setView: (view: "code" | "preview") => void
-  style?: Style["name"]
-  setStyle: (style: Style["name"]) => void
-  activeFile: string | null
-  setActiveFile: (file: string) => void
-  resizablePanelRef: React.RefObject<ImperativePanelHandle> | null
-  tree: ReturnType<typeof createFileTreeForRegistryItemFiles> | null
+  item: z.infer<typeof registryItemSchema>;
+  view: "code" | "preview";
+  setView: (view: "code" | "preview") => void;
+  style?: Style["name"];
+  setStyle: (style: Style["name"]) => void;
+  activeFile: string | null;
+  setActiveFile: (file: string) => void;
+  resizablePanelRef: React.RefObject<ImperativePanelHandle> | null;
+  tree: ReturnType<typeof createFileTreeForRegistryItemFiles> | null;
   highlightedFiles:
     | (z.infer<typeof registryItemFileSchema> & {
-        highlightedContent: string
+        highlightedContent: string;
       })[]
-    | null
-}
+    | null;
+};
 
-const BlockViewerContext = React.createContext<BlockViewerContext | null>(null)
+const BlockViewerContext = React.createContext<BlockViewerContext | null>(null);
 
 function useBlockViewer() {
-  const context = React.useContext(BlockViewerContext)
+  const context = React.useContext(BlockViewerContext);
   if (!context) {
-    throw new Error("useBlockViewer must be used within a BlockViewerProvider.")
+    throw new Error(
+      "useBlockViewer must be used within a BlockViewerProvider."
+    );
   }
-  return context
+  return context;
 }
 
 function BlockViewerProvider({
@@ -86,15 +87,15 @@ function BlockViewerProvider({
   highlightedFiles,
   children,
 }: Pick<BlockViewerContext, "item" | "tree" | "highlightedFiles"> & {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-  const [view, setView] = React.useState<BlockViewerContext["view"]>("preview")
+  const [view, setView] = React.useState<BlockViewerContext["view"]>("preview");
   const [style, setStyle] =
-    React.useState<BlockViewerContext["style"]>("new-york")
+    React.useState<BlockViewerContext["style"]>("new-york");
   const [activeFile, setActiveFile] = React.useState<
     BlockViewerContext["activeFile"]
-  >(highlightedFiles?.[0].target ?? null)
-  const resizablePanelRef = React.useRef<ImperativePanelHandle>(null)
+  >(highlightedFiles?.[0].target ?? null);
+  const resizablePanelRef = React.useRef<ImperativePanelHandle>(null);
 
   return (
     <BlockViewerContext.Provider
@@ -124,12 +125,12 @@ function BlockViewerProvider({
         {children}
       </div>
     </BlockViewerContext.Provider>
-  )
+  );
 }
 
 function BlockViewerToolbar() {
-  const { setView, item, resizablePanelRef, style } = useBlockViewer()
-  const { copyToClipboard, isCopied } = useCopyToClipboard()
+  const { setView, item, resizablePanelRef, style } = useBlockViewer();
+  const { copyToClipboard, isCopied } = useCopyToClipboard();
 
   return (
     <div className="flex w-full items-center gap-2 md:pr-[14px]">
@@ -167,7 +168,7 @@ function BlockViewerToolbar() {
             defaultValue="100"
             onValueChange={(value) => {
               if (resizablePanelRef?.current) {
-                resizablePanelRef.current.resize(parseInt(value))
+                resizablePanelRef.current.resize(parseInt(value));
               }
             }}
           >
@@ -214,7 +215,7 @@ function BlockViewerToolbar() {
             className="hidden h-[22px] w-auto gap-1 rounded-sm px-2 md:flex lg:w-auto"
             size="sm"
             onClick={() => {
-              copyToClipboard(`npx shadcn@latest add ${item.name}`)
+              copyToClipboard(`npx shadcn@latest add ${item.name}`);
             }}
           >
             {isCopied ? <Check /> : <Terminal />}
@@ -222,18 +223,13 @@ function BlockViewerToolbar() {
           </Button>
         </div>
         <Separator orientation="vertical" className="mx-1 hidden h-4 xl:flex" />
-        <V0Button
-          className="hidden shadow-none sm:flex"
-          id={`v0-button-${item.name}`}
-          name={`${item.name}`}
-        />
       </div>
     </div>
-  )
+  );
 }
 
 function BlockViewerView() {
-  const { item, style, resizablePanelRef } = useBlockViewer()
+  const { item, style, resizablePanelRef } = useBlockViewer();
 
   return (
     <div className="group-data-[view=code]/block-view-wrapper:hidden md:h-[--height]">
@@ -272,18 +268,18 @@ function BlockViewerView() {
         </ResizablePanelGroup>
       </div>
     </div>
-  )
+  );
 }
 
 function BlockViewerCode() {
-  const { activeFile, highlightedFiles } = useBlockViewer()
+  const { activeFile, highlightedFiles } = useBlockViewer();
 
   const file = React.useMemo(() => {
-    return highlightedFiles?.find((file) => file.target === activeFile)
-  }, [highlightedFiles, activeFile])
+    return highlightedFiles?.find((file) => file.target === activeFile);
+  }, [highlightedFiles, activeFile]);
 
   if (!file) {
-    return null
+    return null;
   }
 
   return (
@@ -307,14 +303,14 @@ function BlockViewerCode() {
         />
       </div>
     </div>
-  )
+  );
 }
 
 export function BlockViewerFileTree() {
-  const { tree } = useBlockViewer()
+  const { tree } = useBlockViewer();
 
   if (!tree) {
-    return null
+    return null;
   }
 
   return (
@@ -337,11 +333,11 @@ export function BlockViewerFileTree() {
         </SidebarGroup>
       </Sidebar>
     </SidebarProvider>
-  )
+  );
 }
 
 function Tree({ item, index }: { item: FileTree; index: number }) {
-  const { activeFile, setActiveFile } = useBlockViewer()
+  const { activeFile, setActiveFile } = useBlockViewer();
 
   if (!item.children) {
     return (
@@ -362,7 +358,7 @@ function Tree({ item, index }: { item: FileTree; index: number }) {
           {item.name}
         </SidebarMenuButton>
       </SidebarMenuItem>
-    )
+    );
   }
 
   return (
@@ -394,41 +390,41 @@ function Tree({ item, index }: { item: FileTree; index: number }) {
         </CollapsibleContent>
       </Collapsible>
     </SidebarMenuItem>
-  )
+  );
 }
 
 function BlockCopyCodeButton() {
-  const { activeFile, item } = useBlockViewer()
-  const { copyToClipboard, isCopied } = useCopyToClipboard()
+  const { activeFile, item } = useBlockViewer();
+  const { copyToClipboard, isCopied } = useCopyToClipboard();
 
   const file = React.useMemo(() => {
-    return item.files?.find((file) => file.target === activeFile)
-  }, [activeFile, item.files])
+    return item.files?.find((file) => file.target === activeFile);
+  }, [activeFile, item.files]);
 
-  const content = file?.content
+  const content = file?.content;
 
   if (!content) {
-    return null
+    return null;
   }
 
   return (
     <Button
       onClick={() => {
-        copyToClipboard(content)
+        copyToClipboard(content);
         trackEvent({
           name: "copy_block_code",
           properties: {
             name: item.name,
             file: file.path,
           },
-        })
+        });
       }}
       className="h-7 w-7 shrink-0 rounded-lg p-0 hover:bg-zinc-700 hover:text-white focus:bg-zinc-700 focus:text-white focus-visible:bg-zinc-700 focus-visible:text-white active:bg-zinc-700 active:text-white data-[active=true]:bg-zinc-700 data-[active=true]:text-white [&>svg]:size-3"
       variant="ghost"
     >
       {isCopied ? <Check /> : <Clipboard />}
     </Button>
-  )
+  );
 }
 
 function BlockViewer({
@@ -448,7 +444,7 @@ function BlockViewer({
       <BlockViewerView />
       <BlockViewerCode />
     </BlockViewerProvider>
-  )
+  );
 }
 
-export { BlockViewer }
+export { BlockViewer };

@@ -1,15 +1,15 @@
 "use client";
 
 import * as React from "react";
-import { Tooltip as RadixTooltip } from "@radix-ui/themes";
+import {
+  Tooltip as RadixTooltip,
+  TooltipProps as RadixTooltipProps,
+} from "@radix-ui/themes";
 
 import { cn } from "@/lib/utils";
 
-interface TooltipProps {
+interface TooltipProps extends RadixTooltipProps {
   children: React.ReactNode;
-  content?: React.ReactNode;
-  delayDuration?: number;
-  disableHoverableContent?: boolean;
 }
 
 const Tooltip = React.forwardRef<HTMLDivElement, TooltipProps>(
@@ -17,7 +17,7 @@ const Tooltip = React.forwardRef<HTMLDivElement, TooltipProps>(
     <RadixTooltip ref={ref} content={content} {...props}>
       {children}
     </RadixTooltip>
-  ),
+  )
 );
 Tooltip.displayName = "Tooltip";
 

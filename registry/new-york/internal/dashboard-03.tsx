@@ -37,11 +37,7 @@ import {
   SelectValue,
 } from "@/registry/new-york/ui/select";
 import { Textarea } from "@/registry/new-york/ui/textarea";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/registry/new-york/ui/tooltip";
+import { Tooltip, TooltipTrigger } from "@/registry/new-york/ui/tooltip";
 
 export const description =
   "An AI playground with a sidebar navigation and a main content area. The playground has a header with a settings drawer and a share button. The sidebar has navigation links and a user menu. The main content area shows a form to configure the model and messages.";
@@ -60,112 +56,77 @@ export default function Dashboard() {
           </Button>
         </div>
         <nav className="grid gap-1 p-2">
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="rounded-lg bg-muted"
-                aria-label="Playground"
-              >
-                <SquareTerminal className="size-5" />
-              </Button>
-            </TooltipTrigger>
-            <TooltipContent side="right" sideOffset={5}>
-              Playground
-            </TooltipContent>
+          <Tooltip content="Playground" side="right">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="rounded-lg bg-muted"
+              aria-label="Playground"
+            >
+              <SquareTerminal className="size-5" />
+            </Button>
           </Tooltip>
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="rounded-lg"
-                aria-label="Models"
-              >
-                <Bot className="size-5" />
-              </Button>
-            </TooltipTrigger>
-            <TooltipContent side="right" sideOffset={5}>
-              Models
-            </TooltipContent>
+          <Tooltip content="Models" side="right">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="rounded-lg"
+              aria-label="Models"
+            >
+              <Bot className="size-5" />
+            </Button>
           </Tooltip>
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="rounded-lg"
-                aria-label="API"
-              >
-                <Code2 className="size-5" />
-              </Button>
-            </TooltipTrigger>
-            <TooltipContent side="right" sideOffset={5}>
-              API
-            </TooltipContent>
+          <Tooltip content="API" side="right">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="rounded-lg"
+              aria-label="API"
+            >
+              <Code2 className="size-5" />
+            </Button>
           </Tooltip>
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="rounded-lg"
-                aria-label="Documentation"
-              >
-                <Book className="size-5" />
-              </Button>
-            </TooltipTrigger>
-            <TooltipContent side="right" sideOffset={5}>
-              Documentation
-            </TooltipContent>
+          <Tooltip content="Documentation" side="right">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="rounded-lg"
+              aria-label="Documentation"
+            >
+              <Book className="size-5" />
+            </Button>
           </Tooltip>
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="rounded-lg"
-                aria-label="Settings"
-              >
-                <Settings2 className="size-5" />
-              </Button>
-            </TooltipTrigger>
-            <TooltipContent side="right" sideOffset={5}>
-              Settings
-            </TooltipContent>
+          <Tooltip content="Settings" side="right">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="rounded-lg"
+              aria-label="Settings"
+            >
+              <Settings2 className="size-5" />
+            </Button>
           </Tooltip>
         </nav>
         <nav className="mt-auto grid gap-1 p-2">
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="mt-auto rounded-lg"
-                aria-label="Help"
-              >
-                <LifeBuoy className="size-5" />
-              </Button>
-            </TooltipTrigger>
-            <TooltipContent side="right" sideOffset={5}>
-              Help
-            </TooltipContent>
+          <Tooltip content="Help" side="right">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="mt-auto rounded-lg"
+              aria-label="Help"
+            >
+              <LifeBuoy className="size-5" />
+            </Button>
           </Tooltip>
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="mt-auto rounded-lg"
-                aria-label="Account"
-              >
-                <SquareUser className="size-5" />
-              </Button>
-            </TooltipTrigger>
-            <TooltipContent side="right" sideOffset={5}>
-              Account
-            </TooltipContent>
+          <Tooltip content="Account" side="right">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="mt-auto rounded-lg"
+              aria-label="Account"
+            >
+              <SquareUser className="size-5" />
+            </Button>
           </Tooltip>
         </nav>
       </aside>
@@ -432,23 +393,17 @@ export default function Dashboard() {
                 className="min-h-12 resize-none border-0 p-3 shadow-none focus-visible:ring-0"
               />
               <div className="flex items-center p-3 pt-0">
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Button variant="ghost" size="icon">
-                      <Paperclip className="size-4" />
-                      <span className="sr-only">Attach file</span>
-                    </Button>
-                  </TooltipTrigger>
-                  <TooltipContent side="top">Attach File</TooltipContent>
+                <Tooltip content="Attach File" side="top">
+                  <Button variant="ghost" size="icon">
+                    <Paperclip className="size-4" />
+                    <span className="sr-only">Attach file</span>
+                  </Button>
                 </Tooltip>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Button variant="ghost" size="icon">
-                      <Mic className="size-4" />
-                      <span className="sr-only">Use Microphone</span>
-                    </Button>
-                  </TooltipTrigger>
-                  <TooltipContent side="top">Use Microphone</TooltipContent>
+                <Tooltip content="Use Microphone" side="top">
+                  <Button variant="ghost" size="icon">
+                    <Mic className="size-4" />
+                    <span className="sr-only">Use Microphone</span>
+                  </Button>
                 </Tooltip>
                 <Button type="submit" size="sm" className="ml-auto gap-1.5">
                   Send Message

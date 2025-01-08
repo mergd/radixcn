@@ -13,10 +13,7 @@ import {
   Trash2,
 } from "lucide-react";
 
-import {
-  DropdownMenuContent,
-  DropdownMenuItem,
-} from "@/registry/new-york/ui/dropdown-menu";
+import { Mail } from "@/app/(app)/examples/mail/data";
 import {
   Avatar,
   AvatarFallback,
@@ -26,6 +23,8 @@ import { Button } from "@/registry/new-york/ui/button";
 import { Calendar } from "@/registry/new-york/ui/calendar";
 import {
   DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/registry/new-york/ui/dropdown-menu";
 import { Label } from "@/registry/new-york/ui/label";
@@ -37,12 +36,7 @@ import {
 import { Separator } from "@/registry/new-york/ui/separator";
 import { Switch } from "@/registry/new-york/ui/switch";
 import { Textarea } from "@/registry/new-york/ui/textarea";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/registry/new-york/ui/tooltip";
-import { Mail } from "@/app/(app)/examples/mail/data";
+import { Tooltip } from "@/registry/new-york/ui/tooltip";
 
 interface MailDisplayProps {
   mail: Mail | null;

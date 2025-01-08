@@ -24,10 +24,6 @@ export const docsConfig: DocsConfig = {
       href: "/blocks",
     },
     {
-      title: "Charts",
-      href: "/charts",
-    },
-    {
       title: "Themes",
       href: "/themes",
     },
@@ -84,11 +80,6 @@ export const docsConfig: DocsConfig = {
         {
           title: "Typography",
           href: "/docs/components/typography",
-          items: [],
-        },
-        {
-          title: "Open in v0",
-          href: "/docs/v0",
           items: [],
         },
         {
