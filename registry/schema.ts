@@ -1,4 +1,4 @@
-import { z } from "zod"
+import { z } from "zod";
 
 export const registryItemTypeSchema = z.enum([
   "registry:lib",
@@ -13,14 +13,14 @@ export const registryItemTypeSchema = z.enum([
   "registry:example",
   "registry:style",
   "registry:internal",
-])
+]);
 
 export const registryItemFileSchema = z.object({
   path: z.string(),
   content: z.string().optional(),
   type: registryItemTypeSchema,
   target: z.string().optional(),
-})
+});
 
 export const registryItemTailwindSchema = z.object({
   config: z.object({
@@ -28,12 +28,12 @@ export const registryItemTailwindSchema = z.object({
     theme: z.record(z.string(), z.any()).optional(),
     plugins: z.array(z.string()).optional(),
   }),
-})
+});
 
 export const registryItemCssVarsSchema = z.object({
   light: z.record(z.string(), z.string()).optional(),
   dark: z.record(z.string(), z.string()).optional(),
-})
+});
 
 export const registryItemSchema = z.object({
   name: z.string(),
@@ -48,11 +48,11 @@ export const registryItemSchema = z.object({
   meta: z.record(z.string(), z.any()).optional(),
   docs: z.string().optional(),
   categories: z.array(z.string()).optional(),
-})
+});
 
-export const registrySchema = z.array(registryItemSchema)
+export const registrySchema = z.array(registryItemSchema);
 
-export type Registry = z.infer<typeof registrySchema>
+export type Registry = z.infer<typeof registrySchema>;
 
 export const blockSchema = registryItemSchema.extend({
   type: z.literal("registry:block"),
@@ -66,4 +66,4 @@ export const blockSchema = registryItemSchema.extend({
     .optional(),
   code: z.string(),
   highlightedCode: z.string(),
-})
+});

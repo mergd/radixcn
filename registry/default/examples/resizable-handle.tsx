@@ -2,9 +2,9 @@ import {
   ResizableHandle,
   ResizablePanel,
   ResizablePanelGroup,
-} from "@/registry/default/ui/resizable"
+} from "@/registry/default/ui/resizable";
 
-export default function ResizableDemo() {
+export default function ResizableHandleDemo() {
   return (
     <ResizablePanelGroup
       direction="horizontal"
@@ -22,5 +22,5 @@ export default function ResizableDemo() {
         </div>
       </ResizablePanel>
     </ResizablePanelGroup>
-  )
+  );
 }

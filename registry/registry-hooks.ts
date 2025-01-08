@@ -1,4 +1,4 @@
-import { Registry } from "@/registry/schema"
+import { Registry } from "@/registry/schema";
 
 export const hooks: Registry = [
   {
@@ -21,4 +21,4 @@ export const hooks: Registry = [
       },
     ],
   },
-]
+];

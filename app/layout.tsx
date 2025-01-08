@@ -1,16 +1,15 @@
-import "@/styles/globals.css"
-import { Metadata, Viewport } from "next"
+import "@/styles/globals.css";
+import { Metadata, Viewport } from "next";
 
-import { META_THEME_COLORS, siteConfig } from "@/config/site"
-import { fontMono, fontSans } from "@/lib/fonts"
-import { cn } from "@/lib/utils"
-import { Analytics } from "@/components/analytics"
-import { ThemeProvider } from "@/components/providers"
-import { TailwindIndicator } from "@/components/tailwind-indicator"
-import { ThemeSwitcher } from "@/components/theme-switcher"
-import { Toaster as DefaultToaster } from "@/registry/default/ui/toaster"
-import { Toaster as NewYorkSonner } from "@/registry/new-york/ui/sonner"
-import { Toaster as NewYorkToaster } from "@/registry/new-york/ui/toaster"
+import { META_THEME_COLORS, siteConfig } from "@/config/site";
+import { fontMono, fontSans } from "@/lib/fonts";
+import { cn } from "@/lib/utils";
+import { Analytics } from "@/components/analytics";
+import { ThemeProvider } from "@/components/providers";
+import { TailwindIndicator } from "@/components/tailwind-indicator";
+import { ThemeSwitcher } from "@/components/theme-switcher";
+import { Toaster as NewYorkSonner } from "@/registry/new-york/ui/sonner";
+import { Toaster as NewYorkToaster } from "@/registry/new-york/ui/toaster";
 
 export const metadata: Metadata = {
   title: {
@@ -62,14 +61,14 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   manifest: `${siteConfig.url}/site.webmanifest`,
-}
+};
 
 export const viewport: Viewport = {
   themeColor: META_THEME_COLORS.light,
-}
+};
 
 interface RootLayoutProps {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
@@ -112,11 +111,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <ThemeSwitcher />
             <Analytics />
             <NewYorkToaster />
-            <DefaultToaster />
             <NewYorkSonner />
           </ThemeProvider>
         </body>
       </html>
     </>
-  )
+  );
 }
