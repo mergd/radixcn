@@ -1,14 +1,10 @@
 "use client";
 
-import * as React from "react";
-import Image from "next/image";
 import { Index } from "@/__registry__";
-
-import { cn } from "@/lib/utils";
-import { useConfig } from "@/hooks/use-config";
 import { CopyButton } from "@/components/copy-button";
-import { Icons } from "@/components/icons";
 import { ThemeWrapper } from "@/components/theme-wrapper";
+import { useConfig } from "@/hooks/use-config";
+import { cn } from "@/lib/utils";
 import {
   Tabs,
   TabsContent,
@@ -16,6 +12,9 @@ import {
   TabsTrigger,
 } from "@/registry/new-york/ui/tabs";
 import { styles } from "@/registry/registry-styles";
+import { Spinner } from "@radix-ui/themes";
+import Image from "next/image";
+import * as React from "react";
 
 interface ComponentPreviewProps extends React.HTMLAttributes<HTMLDivElement> {
   name: string;
@@ -149,8 +148,8 @@ export function ComponentPreview({
             >
               <React.Suspense
                 fallback={
-                  <div className="flex w-full items-center justify-center text-sm text-muted-foreground">
-                    <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
+                  <div className="flex w-full gap-2 items-center justify-center text-sm text-muted-foreground">
+                    <Spinner />
                     Loading...
                   </div>
                 }

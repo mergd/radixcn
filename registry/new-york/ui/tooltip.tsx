@@ -17,7 +17,7 @@ const Tooltip = React.forwardRef<HTMLDivElement, TooltipProps>(
     <RadixTooltip ref={ref} content={content} {...props}>
       {children}
     </RadixTooltip>
-  )
+  ),
 );
 Tooltip.displayName = "Tooltip";
 

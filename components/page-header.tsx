@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 function PageHeader({
   className,
@@ -13,7 +13,7 @@ function PageHeader({
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 function PageHeaderHeading({
@@ -28,7 +28,7 @@ function PageHeaderHeading({
       )}
       {...props}
     />
-  )
+  );
 }
 
 function PageHeaderDescription({
@@ -43,7 +43,7 @@ function PageHeaderDescription({
       )}
       {...props}
     />
-  )
+  );
 }
 
 function PageActions({
@@ -53,12 +53,12 @@ function PageActions({
   return (
     <div
       className={cn(
-        "flex w-full items-center justify-start gap-2 pt-2",
+        "flex w-full items-center justify-start gap-3 pt-2",
         className
       )}
       {...props}
     />
-  )
+  );
 }
 
-export { PageActions, PageHeader, PageHeaderDescription, PageHeaderHeading }
+export { PageActions, PageHeader, PageHeaderDescription, PageHeaderHeading };

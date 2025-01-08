@@ -3,7 +3,7 @@
 import * as React from "react";
 import { Button as RadixButton } from "@radix-ui/themes";
 import { cva } from "class-variance-authority";
-
+import { Spinner } from "@radix-ui/themes";
 import { cn } from "@/lib/utils";
 
 type ButtonVariant =
@@ -62,29 +62,44 @@ interface ButtonProps
   extends Omit<React.ComponentProps<typeof RadixButton>, "size" | "variant"> {
   variant?: ButtonVariant;
   size?: ButtonSize;
+  // Show  spinner alongside children
+  isSpinning?: boolean;
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
-    { variant = "default", size = "default", color, className, ...props },
-    ref,
+    {
+      variant = "default",
+      size = "default",
+      color,
+      className,
+      isSpinning,
+      children,
+      ...props
+    },
+    ref
   ) => {
     return (
       <RadixButton
         className={cn(
           "cursor-pointer",
           variant === "link" && "underline-offset-4 hover:underline",
-          size === "icon" && "p-0",
-          className,
+          size === "icon" && "p-1 size-auto",
+          className
         )}
         ref={ref}
         variant={variantMap[variant] ?? "solid"}
         size={sizeMap[size as ButtonSize]}
         color={variant === "destructive" ? "red" : color}
         {...props}
-      />
+      >
+        <div className="flex items-center gap-2">
+          {isSpinning && <Spinner />}
+          {children}
+        </div>
+      </RadixButton>
     );
-  },
+  }
 );
 Button.displayName = "Button";
 

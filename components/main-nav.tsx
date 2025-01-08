@@ -32,8 +32,7 @@ export function MainNav() {
           href="/docs/components"
           className={cn(
             "transition-colors hover:text-foreground/80",
-            pathname?.startsWith("/docs/components") &&
-              !pathname?.startsWith("/docs/component/chart")
+            pathname?.startsWith("/docs/components")
               ? "text-foreground"
               : "text-foreground/80"
           )}

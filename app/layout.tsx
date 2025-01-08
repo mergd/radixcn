@@ -97,7 +97,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             fontMono.variable
           )}
         >
-          <RadixTheme scaling="95%" radius="small">
+          <RadixTheme radius="small">
             <ThemeProvider
               attribute="class"
               defaultTheme="system"

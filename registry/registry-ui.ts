@@ -145,18 +145,6 @@ export const ui: Registry = [
     dependencies: ["embla-carousel-react"],
   },
   {
-    name: "chart",
-    type: "registry:ui",
-    files: [
-      {
-        path: "ui/chart.tsx",
-        type: "registry:ui",
-      },
-    ],
-    registryDependencies: ["card"],
-    dependencies: ["recharts", "lucide-react"],
-  },
-  {
     name: "checkbox",
     type: "registry:ui",
     dependencies: ["@radix-ui/react-checkbox"],
