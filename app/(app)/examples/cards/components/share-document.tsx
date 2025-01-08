@@ -1,27 +1,27 @@
-"use client"
+"use client";
 
 import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/registry/new-york/ui/avatar"
-import { Button } from "@/registry/new-york/ui/button"
+} from "@/registry/new-york/ui/avatar";
+import { Button } from "@/registry/new-york/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/registry/new-york/ui/card"
-import { Input } from "@/registry/new-york/ui/input"
+} from "@/registry/new-york/ui/card";
+import { Input } from "@/registry/new-york/ui/input";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/registry/new-york/ui/select"
-import { Separator } from "@/registry/new-york/ui/separator"
+} from "@/registry/new-york/ui/select";
+import { Separator } from "@/registry/new-york/ui/separator";
 
 export function DemoShareDocument() {
   return (
@@ -57,9 +57,10 @@ export function DemoShareDocument() {
                 </div>
               </div>
               <Select defaultValue="edit">
-                <SelectTrigger className="ml-auto w-[110px]">
-                  <SelectValue placeholder="Select" />
-                </SelectTrigger>
+                <SelectTrigger
+                  className="ml-auto w-[110px]"
+                  placeholder="Select"
+                ></SelectTrigger>
                 <SelectContent>
                   <SelectItem value="edit">Can edit</SelectItem>
                   <SelectItem value="view">Can view</SelectItem>
@@ -80,9 +81,10 @@ export function DemoShareDocument() {
                 </div>
               </div>
               <Select defaultValue="view">
-                <SelectTrigger className="ml-auto w-[110px]">
-                  <SelectValue placeholder="Select" />
-                </SelectTrigger>
+                <SelectTrigger
+                  className="ml-auto w-[110px]"
+                  placeholder="Select"
+                ></SelectTrigger>
                 <SelectContent>
                   <SelectItem value="edit">Can edit</SelectItem>
                   <SelectItem value="view">Can view</SelectItem>
@@ -103,9 +105,10 @@ export function DemoShareDocument() {
                 </div>
               </div>
               <Select defaultValue="view">
-                <SelectTrigger className="ml-auto w-[110px]">
-                  <SelectValue placeholder="Select" />
-                </SelectTrigger>
+                <SelectTrigger
+                  className="ml-auto w-[110px]"
+                  placeholder="Select"
+                ></SelectTrigger>
                 <SelectContent>
                   <SelectItem value="edit">Can edit</SelectItem>
                   <SelectItem value="view">Can view</SelectItem>
@@ -116,5 +119,5 @@ export function DemoShareDocument() {
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }

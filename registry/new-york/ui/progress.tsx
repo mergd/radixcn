@@ -1,28 +1,22 @@
 "use client";
 
 import * as React from "react";
-import * as ProgressPrimitive from "@radix-ui/react-progress";
-
+import { Progress as RadixProgress } from "@radix-ui/themes";
 import { cn } from "@/lib/utils";
 
 const Progress = React.forwardRef<
-  React.ElementRef<typeof ProgressPrimitive.Root>,
-  React.ComponentPropsWithoutRef<typeof ProgressPrimitive.Root>
+  React.ElementRef<typeof RadixProgress>,
+  Omit<React.ComponentPropsWithoutRef<typeof RadixProgress>, "value"> & {
+    value?: number | null;
+  }
 >(({ className, value, ...props }, ref) => (
-  <ProgressPrimitive.Root
+  <RadixProgress
     ref={ref}
-    className={cn(
-      "relative h-2 w-full overflow-hidden rounded-full bg-primary/20",
-      className,
-    )}
+    className={cn("w-full", className)}
+    value={value || 0}
     {...props}
-  >
-    <ProgressPrimitive.Indicator
-      className="h-full w-full flex-1 bg-primary transition-all"
-      style={{ transform: `translateX(-${100 - (value || 0)}%)` }}
-    />
-  </ProgressPrimitive.Root>
+  />
 ));
-Progress.displayName = ProgressPrimitive.Root.displayName;
+Progress.displayName = "Progress";
 
 export { Progress };

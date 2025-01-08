@@ -13,9 +13,10 @@ import {
 export function SelectDemo() {
   return (
     <Select>
-      <SelectTrigger className="w-[180px]">
-        <SelectValue placeholder="Select a fruit" />
-      </SelectTrigger>
+      <SelectTrigger
+        className="w-[180px]"
+        placeholder="Select a fruit"
+      ></SelectTrigger>
       <SelectContent>
         <SelectGroup>
           <SelectLabel>Fruits</SelectLabel>

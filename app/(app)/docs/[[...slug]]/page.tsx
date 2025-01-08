@@ -13,7 +13,7 @@ import { absoluteUrl, cn } from "@/lib/utils";
 import { Mdx } from "@/components/mdx-components";
 import { DocsPager } from "@/components/pager";
 import { DashboardTableOfContents } from "@/components/toc";
-import { badgeVariants } from "@/registry/new-york/ui/badge";
+import { Badge } from "@/registry/new-york/ui/badge";
 
 interface DocPageProps {
   params: {
@@ -106,14 +106,11 @@ export default async function DocPage({ params }: DocPageProps) {
         {doc.links ? (
           <div className="flex items-center space-x-2 pt-4">
             {doc.links?.doc && (
-              <Link
-                href={doc.links.doc}
-                target="_blank"
-                rel="noreferrer"
-                className={cn(badgeVariants({ variant: "secondary" }), "gap-1")}
-              >
-                Docs
-                <ExternalLink className="h-3 w-3" />
+              <Link href={doc.links.doc} target="_blank" rel="noreferrer">
+                <Badge variant="secondary" className={cn("gap-1")}>
+                  Docs
+                  <ExternalLink className="h-3 w-3" />
+                </Badge>
               </Link>
             )}
             {doc.links?.api && (
@@ -121,10 +118,12 @@ export default async function DocPage({ params }: DocPageProps) {
                 href={doc.links.api}
                 target="_blank"
                 rel="noreferrer"
-                className={cn(badgeVariants({ variant: "secondary" }), "gap-1")}
+                className={cn("gap-1")}
               >
-                API Reference
-                <ExternalLink className="h-3 w-3" />
+                <Badge variant="secondary" className={cn("gap-1")}>
+                  API Reference
+                  <ExternalLink className="h-3 w-3" />
+                </Badge>
               </Link>
             )}
           </div>

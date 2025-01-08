@@ -1,5 +1,5 @@
-import { Icons } from "@/components/icons"
-import { Button } from "@/registry/new-york/ui/button"
+import { Icons } from "@/components/icons";
+import { Button } from "@/registry/new-york/ui/button";
 import {
   Card,
   CardContent,
@@ -7,17 +7,17 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/registry/new-york/ui/card"
-import { Input } from "@/registry/new-york/ui/input"
-import { Label } from "@/registry/new-york/ui/label"
-import { RadioGroup, RadioGroupItem } from "@/registry/new-york/ui/radio-group"
+} from "@/registry/new-york/ui/card";
+import { Input } from "@/registry/new-york/ui/input";
+import { Label } from "@/registry/new-york/ui/label";
+import { RadioGroup, RadioGroupItem } from "@/registry/new-york/ui/radio-group";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/registry/new-york/ui/select"
+} from "@/registry/new-york/ui/select";
 
 export function DemoPaymentMethod() {
   return (
@@ -89,9 +89,7 @@ export function DemoPaymentMethod() {
           <div className="grid gap-2">
             <Label htmlFor="month">Expires</Label>
             <Select>
-              <SelectTrigger id="month">
-                <SelectValue placeholder="Month" />
-              </SelectTrigger>
+              <SelectTrigger id="month" placeholder="Month"></SelectTrigger>
               <SelectContent>
                 <SelectItem value="1">January</SelectItem>
                 <SelectItem value="2">February</SelectItem>
@@ -111,9 +109,7 @@ export function DemoPaymentMethod() {
           <div className="grid gap-2">
             <Label htmlFor="year">Year</Label>
             <Select>
-              <SelectTrigger id="year">
-                <SelectValue placeholder="Year" />
-              </SelectTrigger>
+              <SelectTrigger id="year" placeholder="Year"></SelectTrigger>
               <SelectContent>
                 {Array.from({ length: 10 }, (_, i) => (
                   <SelectItem key={i} value={`${new Date().getFullYear() + i}`}>
@@ -133,5 +129,5 @@ export function DemoPaymentMethod() {
         <Button className="w-full">Continue</Button>
       </CardFooter>
     </Card>
-  )
+  );
 }

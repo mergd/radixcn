@@ -59,9 +59,7 @@ export default function SelectForm() {
               <FormLabel>Email</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select a verified email to display" />
-                  </SelectTrigger>
+                  <SelectTrigger placeholder="Select a verified email to display" />
                 </FormControl>
                 <SelectContent>
                   <SelectItem value="m@example.com">m@example.com</SelectItem>

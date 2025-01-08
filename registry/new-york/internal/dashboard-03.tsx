@@ -157,10 +157,9 @@ export default function Dashboard() {
                     <Select>
                       <SelectTrigger
                         id="model"
+                        placeholder="Select a model"
                         className="items-start [&_[data-description]]:hidden"
-                      >
-                        <SelectValue placeholder="Select a model" />
-                      </SelectTrigger>
+                      ></SelectTrigger>
                       <SelectContent>
                         <SelectItem value="genesis">
                           <div className="flex items-start gap-3 text-muted-foreground">
@@ -234,9 +233,7 @@ export default function Dashboard() {
                   <div className="grid gap-3">
                     <Label htmlFor="role">Role</Label>
                     <Select defaultValue="system">
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select a role" />
-                      </SelectTrigger>
+                      <SelectTrigger placeholder="Select a role" />
                       <SelectContent>
                         <SelectItem value="system">System</SelectItem>
                         <SelectItem value="user">User</SelectItem>
@@ -277,9 +274,8 @@ export default function Dashboard() {
                     <SelectTrigger
                       id="model"
                       className="items-start [&_[data-description]]:hidden"
-                    >
-                      <SelectValue placeholder="Select a model" />
-                    </SelectTrigger>
+                      placeholder="Select a model"
+                    ></SelectTrigger>
                     <SelectContent>
                       <SelectItem value="genesis">
                         <div className="flex items-start gap-3 text-muted-foreground">
@@ -354,9 +350,7 @@ export default function Dashboard() {
                 <div className="grid gap-3">
                   <Label htmlFor="role">Role</Label>
                   <Select defaultValue="system">
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select a role" />
-                    </SelectTrigger>
+                    <SelectTrigger placeholder="Select a role"></SelectTrigger>
                     <SelectContent>
                       <SelectItem value="system">System</SelectItem>
                       <SelectItem value="user">User</SelectItem>

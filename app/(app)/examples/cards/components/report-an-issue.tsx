@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { Button } from "@/registry/new-york/ui/button"
+import { Button } from "@/registry/new-york/ui/button";
 import {
   Card,
   CardContent,
@@ -8,17 +8,17 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/registry/new-york/ui/card"
-import { Input } from "@/registry/new-york/ui/input"
-import { Label } from "@/registry/new-york/ui/label"
+} from "@/registry/new-york/ui/card";
+import { Input } from "@/registry/new-york/ui/input";
+import { Label } from "@/registry/new-york/ui/label";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/registry/new-york/ui/select"
-import { Textarea } from "@/registry/new-york/ui/textarea"
+} from "@/registry/new-york/ui/select";
+import { Textarea } from "@/registry/new-york/ui/textarea";
 
 export function DemoReportAnIssue() {
   return (
@@ -34,9 +34,7 @@ export function DemoReportAnIssue() {
           <div className="grid gap-2">
             <Label htmlFor="area">Area</Label>
             <Select defaultValue="billing">
-              <SelectTrigger id="area">
-                <SelectValue placeholder="Select" />
-              </SelectTrigger>
+              <SelectTrigger id="area" placeholder="Select"></SelectTrigger>
               <SelectContent>
                 <SelectItem value="team">Team</SelectItem>
                 <SelectItem value="billing">Billing</SelectItem>
@@ -52,9 +50,8 @@ export function DemoReportAnIssue() {
               <SelectTrigger
                 id="security-level"
                 className="line-clamp-1 w-[160px] truncate"
-              >
-                <SelectValue placeholder="Select level" />
-              </SelectTrigger>
+                placeholder="Select level"
+              ></SelectTrigger>
               <SelectContent>
                 <SelectItem value="1">Severity 1 (Highest)</SelectItem>
                 <SelectItem value="2">Severity 2</SelectItem>
@@ -81,5 +78,5 @@ export function DemoReportAnIssue() {
         <Button>Submit</Button>
       </CardFooter>
     </Card>
-  )
+  );
 }

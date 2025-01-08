@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import * as React from "react"
+import * as React from "react";
 
-import { Button } from "@/registry/new-york/ui/button"
+import { Button } from "@/registry/new-york/ui/button";
 import {
   Card,
   CardContent,
@@ -10,20 +10,20 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/registry/new-york/ui/card"
-import { Input } from "@/registry/new-york/ui/input"
-import { Label } from "@/registry/new-york/ui/label"
+} from "@/registry/new-york/ui/card";
+import { Input } from "@/registry/new-york/ui/input";
+import { Label } from "@/registry/new-york/ui/label";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/registry/new-york/ui/select"
-import { Textarea } from "@/registry/new-york/ui/textarea"
+} from "@/registry/new-york/ui/select";
+import { Textarea } from "@/registry/new-york/ui/textarea";
 
 export function CardsReportIssue() {
-  const id = React.useId()
+  const id = React.useId();
 
   return (
     <Card>
@@ -38,9 +38,11 @@ export function CardsReportIssue() {
           <div className="grid gap-2">
             <Label htmlFor={`area-${id}`}>Area</Label>
             <Select defaultValue="billing">
-              <SelectTrigger id={`area-${id}`} aria-label="Area">
-                <SelectValue placeholder="Select" />
-              </SelectTrigger>
+              <SelectTrigger
+                id={`area-${id}`}
+                aria-label="Area"
+                placeholder="Select"
+              ></SelectTrigger>
               <SelectContent>
                 <SelectItem value="team">Team</SelectItem>
                 <SelectItem value="billing">Billing</SelectItem>
@@ -57,9 +59,8 @@ export function CardsReportIssue() {
                 id={`security-level-${id}`}
                 className="line-clamp-1 w-full truncate"
                 aria-label="Security Level"
-              >
-                <SelectValue placeholder="Select level" />
-              </SelectTrigger>
+                placeholder="Select level"
+              ></SelectTrigger>
               <SelectContent>
                 <SelectItem value="1">Severity 1 (Highest)</SelectItem>
                 <SelectItem value="2">Severity 2</SelectItem>
@@ -88,5 +89,5 @@ export function CardsReportIssue() {
         <Button size="sm">Submit</Button>
       </CardFooter>
     </Card>
-  )
+  );
 }

@@ -30,7 +30,7 @@ export default function DatePickerWithPresets() {
           variant={"outline"}
           className={cn(
             "w-[240px] justify-start text-left font-normal",
-            !date && "text-muted-foreground",
+            !date && "text-muted-foreground"
           )}
         >
           <CalendarIcon />
@@ -46,9 +46,7 @@ export default function DatePickerWithPresets() {
             setDate(addDays(new Date(), parseInt(value)))
           }
         >
-          <SelectTrigger>
-            <SelectValue placeholder="Select" />
-          </SelectTrigger>
+          <SelectTrigger placeholder="Select" />
           <SelectContent position="popper">
             <SelectItem value="0">Today</SelectItem>
             <SelectItem value="1">Tomorrow</SelectItem>

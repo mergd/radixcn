@@ -36,9 +36,7 @@ export default function CardWithForm() {
             <div className="flex flex-col space-y-1.5">
               <Label htmlFor="framework">Framework</Label>
               <Select>
-                <SelectTrigger id="framework">
-                  <SelectValue placeholder="Select" />
-                </SelectTrigger>
+                <SelectTrigger id="framework" placeholder="Select" />
                 <SelectContent position="popper">
                   <SelectItem value="next">Next.js</SelectItem>
                   <SelectItem value="sveltekit">SvelteKit</SelectItem>
