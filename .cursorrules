@@ -6,3 +6,4 @@ I am refactoring radixcn/ui to Radix theme components (@radix-ui/themes), with a
 - Make variants extensible
 - Use `Omit` for clean types
 - Add `@deprecated` comments for any components that are deprecated
+- Prefer Radix Icons over Lucide Icons

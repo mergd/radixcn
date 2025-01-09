@@ -6,7 +6,7 @@ import { cva } from "class-variance-authority";
 import { Spinner } from "@radix-ui/themes";
 import { cn } from "@/lib/utils";
 
-type ButtonVariant =
+export type ButtonVariant =
   | "default"
   | "destructive"
   | "outline"
@@ -14,7 +14,7 @@ type ButtonVariant =
   | "ghost"
   | "link"
   | string;
-type ButtonSize = "default" | "sm" | "lg" | "icon";
+export type ButtonSize = "default" | "sm" | "lg" | "icon";
 
 /**
  * @deprecated

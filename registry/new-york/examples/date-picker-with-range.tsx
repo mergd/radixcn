@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { addDays, format } from "date-fns";
-import { CalendarIcon } from "lucide-react";
+import { CalendarIcon } from "@radix-ui/react-icons";
 import { DateRange } from "react-day-picker";
 
 import { cn } from "@/lib/utils";
@@ -31,7 +31,7 @@ export default function DatePickerWithRange({
             variant={"outline"}
             className={cn(
               "w-[300px] justify-start text-left font-normal",
-              !date && "text-muted-foreground",
+              !date && "text-muted-foreground"
             )}
           >
             <CalendarIcon />

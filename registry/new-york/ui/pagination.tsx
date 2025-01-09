@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight, MoreHorizontal } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/registry/new-york/ui/button";
-import type { ButtonProps } from "@/registry/new-york/ui/button";
+import type { ButtonProps, ButtonSize } from "@/registry/new-york/ui/button";
 
 const Pagination = ({ className, ...props }: React.ComponentProps<"nav">) => (
   <nav
@@ -35,20 +35,23 @@ const PaginationItem = React.forwardRef<
 ));
 PaginationItem.displayName = "PaginationItem";
 
-type PaginationLinkProps = Omit<ButtonProps, "variant"> & {
+type PaginationLinkProps = ButtonProps & {
   isActive?: boolean;
+  href?: string;
 };
 
 const PaginationLink = React.forwardRef<HTMLButtonElement, PaginationLinkProps>(
-  ({ className, isActive, size = "icon", ...props }, ref) => (
+  ({ isActive, size = "2", variant = "ghost", href, ...props }, ref) => (
     <Button
       ref={ref}
       aria-current={isActive ? "page" : undefined}
-      variant={isActive ? "outline" : "ghost"}
-      size={size}
-      className={className}
+      variant={isActive ? "soft" : variant}
+      size={size as ButtonSize}
+      {...(href ? { asChild: true } : {})}
       {...props}
-    />
+    >
+      {href ? <a href={href}>{props.children}</a> : props.children}
+    </Button>
   )
 );
 PaginationLink.displayName = "PaginationLink";
@@ -60,11 +63,13 @@ const PaginationPrevious = ({
   <PaginationLink
     aria-label="Go to previous page"
     size="default"
-    className={cn("gap-1 pl-2.5", className)}
+    className={cn("pl-2.5", className)}
     {...props}
   >
-    <ChevronLeft className="h-4 w-4" />
-    <span>Previous</span>
+    <div className="flex flex-row items-center gap-1">
+      <ChevronLeft className="h-4 w-4" />
+      <span>Previous</span>
+    </div>
   </PaginationLink>
 );
 PaginationPrevious.displayName = "PaginationPrevious";

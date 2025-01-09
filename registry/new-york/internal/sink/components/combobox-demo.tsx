@@ -2,6 +2,8 @@
 
 import * as React from "react";
 import { Check, ChevronsUpDown } from "lucide-react";
+import { CaretSortIcon } from "@radix-ui/react-icons";
+import { CheckIcon } from "@radix-ui/react-icons";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/registry/new-york/ui/button";
@@ -53,12 +55,14 @@ export function ComboboxDemo() {
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="w-[200px] justify-between"
+          className="w-[200px] px-0"
         >
-          {value
-            ? frameworks.find((framework) => framework.value === value)?.label
-            : "Select framework..."}
-          <ChevronsUpDown className="opacity-50" />
+          <div className="flex w-full items-center justify-between">
+            {value
+              ? frameworks.find((framework) => framework.value === value)?.label
+              : "Select framework..."}
+            <CaretSortIcon className="size-4 shrink-0 opacity-50 ml-2" />
+          </div>
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-[200px] p-0">
@@ -77,10 +81,10 @@ export function ComboboxDemo() {
                   }}
                 >
                   {framework.label}
-                  <Check
+                  <CheckIcon
                     className={cn(
-                      "ml-auto",
-                      value === framework.value ? "opacity-100" : "opacity-0",
+                      "ml-auto size-4",
+                      value === framework.value ? "opacity-100" : "opacity-0"
                     )}
                   />
                 </CommandItem>
