@@ -1,42 +1,38 @@
-import * as React from "react";
-import { cva, type VariantProps } from "class-variance-authority";
-
 import { cn } from "@/lib/utils";
+import { Callout } from "@radix-ui/themes";
+import * as React from "react";
 
-const alertVariants = cva(
-  "relative w-full rounded-lg border px-4 py-3 text-sm [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-foreground [&>svg~*]:pl-7",
-  {
-    variants: {
-      variant: {
-        default: "bg-background text-foreground",
-        destructive:
-          "border-destructive/50 text-destructive dark:border-destructive [&>svg]:text-destructive",
-      },
-    },
-    defaultVariants: {
-      variant: "default",
-    },
-  },
-);
+type AlertProps = Omit<
+  React.ComponentPropsWithoutRef<typeof Callout.Root>,
+  "size"
+> & {
+  variant?: "default" | "destructive";
+};
 
 const Alert = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement> & VariantProps<typeof alertVariants>
->(({ className, variant, ...props }, ref) => (
-  <div
+  React.ElementRef<typeof Callout.Root>,
+  AlertProps
+>(({ className, variant = "default", children, ...props }, ref) => (
+  <Callout.Root
     ref={ref}
-    role="alert"
-    className={cn(alertVariants({ variant }), className)}
+    className={cn(
+      "w-full [&_div]:text-sm",
+      variant === "destructive" && "data-[color=red]",
+      className
+    )}
+    color={variant === "destructive" ? "red" : "gray"}
     {...props}
-  />
+  >
+    {children}
+  </Callout.Root>
 ));
 Alert.displayName = "Alert";
 
 const AlertTitle = React.forwardRef<
-  HTMLParagraphElement,
-  React.HTMLAttributes<HTMLHeadingElement>
+  React.ElementRef<"div">,
+  React.ComponentPropsWithoutRef<"div">
 >(({ className, ...props }, ref) => (
-  <h5
+  <div
     ref={ref}
     className={cn("mb-1 font-medium leading-none tracking-tight", className)}
     {...props}
@@ -45,15 +41,15 @@ const AlertTitle = React.forwardRef<
 AlertTitle.displayName = "AlertTitle";
 
 const AlertDescription = React.forwardRef<
-  HTMLParagraphElement,
-  React.HTMLAttributes<HTMLParagraphElement>
+  React.ElementRef<typeof Callout.Text>,
+  React.ComponentPropsWithoutRef<typeof Callout.Text>
 >(({ className, ...props }, ref) => (
-  <div
+  <Callout.Text
     ref={ref}
-    className={cn("text-sm [&_p]:leading-relaxed", className)}
+    className={cn("[&_p]:leading-relaxed", className)}
     {...props}
   />
 ));
 AlertDescription.displayName = "AlertDescription";
 
-export { Alert, AlertTitle, AlertDescription };
+export { Alert, AlertDescription, AlertTitle };
