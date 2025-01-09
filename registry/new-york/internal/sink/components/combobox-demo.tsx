@@ -84,7 +84,7 @@ export function ComboboxDemo() {
                   <CheckIcon
                     className={cn(
                       "ml-auto size-4",
-                      value === framework.value ? "opacity-100" : "opacity-0"
+                      value === framework.value ? "opacity-100" : "opacity-0",
                     )}
                   />
                 </CommandItem>

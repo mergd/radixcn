@@ -52,7 +52,7 @@ const PaginationLink = React.forwardRef<HTMLButtonElement, PaginationLinkProps>(
     >
       {href ? <a href={href}>{props.children}</a> : props.children}
     </Button>
-  )
+  ),
 );
 PaginationLink.displayName = "PaginationLink";
 
