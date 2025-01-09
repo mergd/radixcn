@@ -34,7 +34,7 @@ export default function DialogCloseButton() {
             </Label>
             <Input
               id="link"
-              defaultValue="https://ui.radixcn.com/docs/installation"
+              defaultValue="https://ui.fldr.zip/docs/installation"
               readOnly
             />
           </div>

@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "radixcn/ui",
-  url: "https://ui.radixcn.com",
-  ogImage: "https://ui.radixcn.com/og.jpg",
+  url: "https://ui.fldr.zip",
+  ogImage: "https://ui.fldr.zip/og.jpg",
   description:
     "Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.",
   links: {
