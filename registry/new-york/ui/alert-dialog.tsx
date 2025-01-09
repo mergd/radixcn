@@ -1,10 +1,11 @@
 "use client";
 
-import * as React from "react";
 import * as AlertDialogPrimitive from "@radix-ui/react-alert-dialog";
+import * as React from "react";
+import { Button } from "@radix-ui/themes";
+import type { ButtonProps } from "@radix-ui/themes";
 
 import { cn } from "@/lib/utils";
-import { buttonVariants } from "@/registry/new-york/ui/button";
 
 const AlertDialog = AlertDialogPrimitive.Root;
 
@@ -100,42 +101,39 @@ AlertDialogDescription.displayName =
 
 const AlertDialogAction = React.forwardRef<
   React.ElementRef<typeof AlertDialogPrimitive.Action>,
-  React.ComponentPropsWithoutRef<typeof AlertDialogPrimitive.Action>
+  Omit<ButtonProps, "ref">
 >(({ className, ...props }, ref) => (
-  <AlertDialogPrimitive.Action
-    ref={ref}
-    className={cn(buttonVariants(), className)}
-    {...props}
-  />
+  <AlertDialogPrimitive.Action asChild>
+    <Button ref={ref} className={className} {...props} />
+  </AlertDialogPrimitive.Action>
 ));
 AlertDialogAction.displayName = AlertDialogPrimitive.Action.displayName;
 
 const AlertDialogCancel = React.forwardRef<
   React.ElementRef<typeof AlertDialogPrimitive.Cancel>,
-  React.ComponentPropsWithoutRef<typeof AlertDialogPrimitive.Cancel>
+  Omit<ButtonProps, "ref">
 >(({ className, ...props }, ref) => (
-  <AlertDialogPrimitive.Cancel
-    ref={ref}
-    className={cn(
-      buttonVariants({ variant: "outline" }),
-      "mt-2 sm:mt-0",
-      className
-    )}
-    {...props}
-  />
+  <AlertDialogPrimitive.Cancel asChild>
+    <Button
+      ref={ref}
+      variant="outline"
+      className={cn("mt-2 sm:mt-0", className)}
+      {...props}
+    />
+  </AlertDialogPrimitive.Cancel>
 ));
 AlertDialogCancel.displayName = AlertDialogPrimitive.Cancel.displayName;
 
 export {
   AlertDialog,
-  AlertDialogPortal,
-  AlertDialogOverlay,
-  AlertDialogTrigger,
-  AlertDialogContent,
-  AlertDialogHeader,
-  AlertDialogFooter,
-  AlertDialogTitle,
-  AlertDialogDescription,
   AlertDialogAction,
   AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogOverlay,
+  AlertDialogPortal,
+  AlertDialogTitle,
+  AlertDialogTrigger,
 };

@@ -1,7 +1,10 @@
 {
   "name": "drawer-dialog",
   "type": "registry:example",
-  "registryDependencies": ["drawer", "dialog"],
+  "registryDependencies": [
+    "drawer",
+    "dialog"
+  ],
   "files": [
     {
       "path": "examples/drawer-dialog.tsx",

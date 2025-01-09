@@ -37,7 +37,7 @@ const RadioGroupItem = React.forwardRef<
       ref={ref}
       className={cn(
         "cursor-pointer disabled:cursor-not-allowed disabled:opacity-50",
-        className
+        className,
       )}
       {...props}
     >

@@ -1,7 +1,11 @@
 {
   "name": "input-form",
   "type": "registry:example",
-  "registryDependencies": ["input", "button", "form"],
+  "registryDependencies": [
+    "input",
+    "button",
+    "form"
+  ],
   "files": [
     {
       "path": "examples/input-form.tsx",

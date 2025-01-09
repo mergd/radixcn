@@ -1,7 +1,9 @@
 {
   "name": "navigation-menu-demo",
   "type": "registry:example",
-  "registryDependencies": ["navigation-menu"],
+  "registryDependencies": [
+    "navigation-menu"
+  ],
   "files": [
     {
       "path": "examples/navigation-menu-demo.tsx",

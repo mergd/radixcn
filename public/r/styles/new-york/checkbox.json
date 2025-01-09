@@ -1,7 +1,9 @@
 {
   "name": "checkbox",
   "type": "registry:ui",
-  "dependencies": ["@radix-ui/react-checkbox", "@radix-ui/themes"],
+  "dependencies": [
+    "@radix-ui/react-checkbox"
+  ],
   "files": [
     {
       "path": "ui/checkbox.tsx",

@@ -30,7 +30,7 @@ const DropdownMenuSubTrigger = React.forwardRef<
     className={cn(
       "rt-reset rt-DropdownMenuSubTrigger",
       inset && "pl-8",
-      className
+      className,
     )}
     {...props}
   >

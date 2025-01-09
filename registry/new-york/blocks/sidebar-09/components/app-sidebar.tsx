@@ -196,8 +196,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                         setMails(
                           mail.slice(
                             0,
-                            Math.max(5, Math.floor(Math.random() * 10) + 1)
-                          )
+                            Math.max(5, Math.floor(Math.random() * 10) + 1),
+                          ),
                         );
                         setOpen(true);
                       }}

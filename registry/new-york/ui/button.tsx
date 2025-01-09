@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Button as RadixButton } from "@radix-ui/themes";
+import { Button as RadixButton, IconButton } from "@radix-ui/themes";
 import { cva } from "class-variance-authority";
 import { Spinner } from "@radix-ui/themes";
 import { cn } from "@/lib/utils";
@@ -16,6 +16,9 @@ type ButtonVariant =
   | string;
 type ButtonSize = "default" | "sm" | "lg" | "icon";
 
+/**
+ * @deprecated
+ */
 const buttonVariants = cva("", {
   variants: {
     variant: {
@@ -62,8 +65,8 @@ interface ButtonProps
   extends Omit<React.ComponentProps<typeof RadixButton>, "size" | "variant"> {
   variant?: ButtonVariant;
   size?: ButtonSize;
-  // Show  spinner alongside children
   isSpinning?: boolean;
+  "aria-label"?: string;
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
@@ -74,23 +77,41 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       color,
       className,
       isSpinning,
+      loading,
       children,
+      "aria-label": ariaLabel,
       ...props
     },
-    ref,
+    ref
   ) => {
+    if (size === "icon") {
+      return (
+        <IconButton
+          className={cn("size-auto", className)}
+          ref={ref}
+          loading={loading ?? isSpinning}
+          variant={variantMap[variant] ?? "solid"}
+          color={variant === "destructive" ? "red" : color}
+          aria-label={ariaLabel}
+          {...props}
+        >
+          {children}
+        </IconButton>
+      );
+    }
+
     return (
       <RadixButton
         className={cn(
           "cursor-pointer",
           variant === "link" && "underline-offset-4 hover:underline",
-          size === "icon" && "p-1 size-auto",
-          className,
+          className
         )}
         ref={ref}
         variant={variantMap[variant] ?? "solid"}
         size={sizeMap[size as ButtonSize]}
         color={variant === "destructive" ? "red" : color}
+        loading={loading}
         {...props}
       >
         <div className="flex items-center gap-2">
@@ -99,7 +120,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         </div>
       </RadixButton>
     );
-  },
+  }
 );
 Button.displayName = "Button";
 

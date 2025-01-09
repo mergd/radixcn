@@ -1,7 +1,10 @@
 {
   "name": "dialog-close-button",
   "type": "registry:example",
-  "registryDependencies": ["dialog", "button"],
+  "registryDependencies": [
+    "dialog",
+    "button"
+  ],
   "files": [
     {
       "path": "examples/dialog-close-button.tsx",

@@ -2,7 +2,8 @@ import * as React from "react";
 import { ChevronLeft, ChevronRight, MoreHorizontal } from "lucide-react";
 
 import { cn } from "@/lib/utils";
-import { ButtonProps, buttonVariants } from "@/registry/new-york/ui/button";
+import { Button } from "@/registry/new-york/ui/button";
+import type { ButtonProps } from "@/registry/new-york/ui/button";
 
 const Pagination = ({ className, ...props }: React.ComponentProps<"nav">) => (
   <nav
@@ -34,28 +35,21 @@ const PaginationItem = React.forwardRef<
 ));
 PaginationItem.displayName = "PaginationItem";
 
-type PaginationLinkProps = {
+type PaginationLinkProps = Omit<ButtonProps, "variant"> & {
   isActive?: boolean;
-} & Pick<ButtonProps, "size"> &
-  React.ComponentProps<"a">;
+};
 
-const PaginationLink = ({
-  className,
-  isActive,
-  size = "icon",
-  ...props
-}: PaginationLinkProps) => (
-  <a
-    aria-current={isActive ? "page" : undefined}
-    className={cn(
-      buttonVariants({
-        variant: isActive ? "outline" : "ghost",
-        size,
-      }),
-      className,
-    )}
-    {...props}
-  />
+const PaginationLink = React.forwardRef<HTMLButtonElement, PaginationLinkProps>(
+  ({ className, isActive, size = "icon", ...props }, ref) => (
+    <Button
+      ref={ref}
+      aria-current={isActive ? "page" : undefined}
+      variant={isActive ? "outline" : "ghost"}
+      size={size}
+      className={className}
+      {...props}
+    />
+  )
 );
 PaginationLink.displayName = "PaginationLink";
 
