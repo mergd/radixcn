@@ -1,6 +1,9 @@
 {
   "name": "badge",
   "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/themes"
+  ],
   "files": [
     {
       "path": "ui/badge.tsx",

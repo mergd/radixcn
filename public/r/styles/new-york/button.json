@@ -2,7 +2,8 @@
   "name": "button",
   "type": "registry:ui",
   "dependencies": [
-    "@radix-ui/react-slot"
+    "@radix-ui/react-slot",
+    "@radix-ui/themes"
   ],
   "files": [
     {

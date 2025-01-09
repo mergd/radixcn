@@ -1,4 +1,4 @@
-I am refactoring radixcn/ui to Radix theme components (@radix-ui/themes), with an eye on API compatibility.
+I am refactoring shadcn/ui to Radix theme components (@radix-ui/themes), with an eye on API compatibility.
 - Cut down on the amount of tailwind.
 - Keep variant API compatibility
 - Map to Radix's built-in variants

@@ -1,5 +1,10 @@
 # Radixcn
 
+add theme installation instructions
+
+
+
+
 
 Todo:
 pagination broken
@@ -13,3 +18,4 @@ components to refactor:
 
 components to add:
 checkbox group
+

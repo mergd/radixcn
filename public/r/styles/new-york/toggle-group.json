@@ -2,7 +2,8 @@
   "name": "toggle-group",
   "type": "registry:ui",
   "dependencies": [
-    "@radix-ui/react-toggle-group"
+    "@radix-ui/react-toggle-group",
+    "@radix-ui/themes"
   ],
   "registryDependencies": [
     "toggle"

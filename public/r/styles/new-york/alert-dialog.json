@@ -2,7 +2,8 @@
   "name": "alert-dialog",
   "type": "registry:ui",
   "dependencies": [
-    "@radix-ui/react-alert-dialog"
+    "@radix-ui/react-alert-dialog",
+    "@radix-ui/themes"
   ],
   "registryDependencies": [
     "button"

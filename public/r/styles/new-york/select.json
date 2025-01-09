@@ -2,7 +2,8 @@
   "name": "select",
   "type": "registry:ui",
   "dependencies": [
-    "@radix-ui/react-select"
+    "@radix-ui/react-select",
+    "@radix-ui/themes"
   ],
   "files": [
     {

@@ -1,6 +1,9 @@
 {
   "name": "input",
   "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/themes"
+  ],
   "files": [
     {
       "path": "ui/input.tsx",

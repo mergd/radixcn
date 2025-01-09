@@ -2,7 +2,8 @@
   "name": "dialog",
   "type": "registry:ui",
   "dependencies": [
-    "@radix-ui/react-dialog"
+    "@radix-ui/react-dialog",
+    "@radix-ui/themes"
   ],
   "files": [
     {

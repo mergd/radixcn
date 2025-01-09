@@ -29,11 +29,11 @@ export const metadata: Metadata = {
   ],
   authors: [
     {
-      name: "radixcn",
-      url: "https://radixcn.com",
+      name: "mergd",
+      url: "https://fldr.zip",
     },
   ],
-  creator: "radixcn",
+  creator: "mergd",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
-    creator: "@radixcn",
+    creator: "@mergd",
   },
   icons: {
     icon: "/favicon.ico",

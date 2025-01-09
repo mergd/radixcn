@@ -47,7 +47,7 @@ export const ui: Registry = [
   {
     name: "alert-dialog",
     type: "registry:ui",
-    dependencies: ["@radix-ui/react-alert-dialog"],
+    dependencies: ["@radix-ui/react-alert-dialog", "@radix-ui/themes"],
     registryDependencies: ["button"],
     files: [
       {
@@ -81,6 +81,7 @@ export const ui: Registry = [
   {
     name: "badge",
     type: "registry:ui",
+    dependencies: ["@radix-ui/themes"],
     files: [
       {
         path: "ui/badge.tsx",
@@ -102,7 +103,7 @@ export const ui: Registry = [
   {
     name: "button",
     type: "registry:ui",
-    dependencies: ["@radix-ui/react-slot"],
+    dependencies: ["@radix-ui/react-slot", "@radix-ui/themes"],
     files: [
       {
         path: "ui/button.tsx",
@@ -147,7 +148,7 @@ export const ui: Registry = [
   {
     name: "checkbox",
     type: "registry:ui",
-    dependencies: ["@radix-ui/react-checkbox"],
+    dependencies: ["@radix-ui/react-checkbox", "@radix-ui/themes"],
     files: [
       {
         path: "ui/checkbox.tsx",
@@ -192,7 +193,7 @@ export const ui: Registry = [
   {
     name: "dialog",
     type: "registry:ui",
-    dependencies: ["@radix-ui/react-dialog"],
+    dependencies: ["@radix-ui/react-dialog", "@radix-ui/themes"],
     files: [
       {
         path: "ui/dialog.tsx",
@@ -254,6 +255,7 @@ export const ui: Registry = [
   {
     name: "input",
     type: "registry:ui",
+    dependencies: ["@radix-ui/themes"],
     files: [
       {
         path: "ui/input.tsx",
@@ -330,7 +332,7 @@ export const ui: Registry = [
   {
     name: "progress",
     type: "registry:ui",
-    dependencies: ["@radix-ui/react-progress"],
+    dependencies: ["@radix-ui/react-progress", "@radix-ui/themes"],
     files: [
       {
         path: "ui/progress.tsx",
@@ -341,7 +343,7 @@ export const ui: Registry = [
   {
     name: "radio-group",
     type: "registry:ui",
-    dependencies: ["@radix-ui/react-radio-group"],
+    dependencies: ["@radix-ui/react-radio-group", "@radix-ui/themes"],
     files: [
       {
         path: "ui/radio-group.tsx",
@@ -363,7 +365,7 @@ export const ui: Registry = [
   {
     name: "scroll-area",
     type: "registry:ui",
-    dependencies: ["@radix-ui/react-scroll-area"],
+    dependencies: ["@radix-ui/react-scroll-area", "@radix-ui/themes"],
     files: [
       {
         path: "ui/scroll-area.tsx",
@@ -374,7 +376,7 @@ export const ui: Registry = [
   {
     name: "select",
     type: "registry:ui",
-    dependencies: ["@radix-ui/react-select"],
+    dependencies: ["@radix-ui/react-select", "@radix-ui/themes"],
     files: [
       {
         path: "ui/select.tsx",
@@ -483,7 +485,7 @@ export const ui: Registry = [
   {
     name: "slider",
     type: "registry:ui",
-    dependencies: ["@radix-ui/react-slider"],
+    dependencies: ["@radix-ui/react-slider", "@radix-ui/themes"],
     files: [
       {
         path: "ui/slider.tsx",
@@ -505,7 +507,7 @@ export const ui: Registry = [
   {
     name: "switch",
     type: "registry:ui",
-    dependencies: ["@radix-ui/react-switch"],
+    dependencies: ["@radix-ui/react-switch", "@radix-ui/themes"],
     files: [
       {
         path: "ui/switch.tsx",
@@ -526,7 +528,7 @@ export const ui: Registry = [
   {
     name: "tabs",
     type: "registry:ui",
-    dependencies: ["@radix-ui/react-tabs"],
+    dependencies: ["@radix-ui/react-tabs", "@radix-ui/themes"],
     files: [
       {
         path: "ui/tabs.tsx",
@@ -537,6 +539,7 @@ export const ui: Registry = [
   {
     name: "textarea",
     type: "registry:ui",
+    dependencies: ["@radix-ui/themes"],
     files: [
       {
         path: "ui/textarea.tsx",
@@ -566,7 +569,7 @@ export const ui: Registry = [
   {
     name: "toggle",
     type: "registry:ui",
-    dependencies: ["@radix-ui/react-toggle"],
+    dependencies: ["@radix-ui/react-toggle", "@radix-ui/themes"],
     files: [
       {
         path: "ui/toggle.tsx",
@@ -577,7 +580,7 @@ export const ui: Registry = [
   {
     name: "toggle-group",
     type: "registry:ui",
-    dependencies: ["@radix-ui/react-toggle-group"],
+    dependencies: ["@radix-ui/react-toggle-group", "@radix-ui/themes"],
     registryDependencies: ["toggle"],
     files: [
       {
@@ -589,7 +592,7 @@ export const ui: Registry = [
   {
     name: "tooltip",
     type: "registry:ui",
-    dependencies: ["@radix-ui/react-tooltip"],
+    dependencies: ["@radix-ui/react-tooltip", "@radix-ui/themes"],
     files: [
       {
         path: "ui/tooltip.tsx",

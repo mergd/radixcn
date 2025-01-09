@@ -56,7 +56,8 @@
     "name": "alert-dialog",
     "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-alert-dialog"
+      "@radix-ui/react-alert-dialog",
+      "@radix-ui/themes"
     ],
     "registryDependencies": [
       "button"
@@ -97,6 +98,9 @@
   {
     "name": "badge",
     "type": "registry:ui",
+    "dependencies": [
+      "@radix-ui/themes"
+    ],
     "files": [
       {
         "path": "ui/badge.tsx",
@@ -121,7 +125,8 @@
     "name": "button",
     "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot"
+      "@radix-ui/react-slot",
+      "@radix-ui/themes"
     ],
     "files": [
       {
@@ -177,7 +182,8 @@
     "name": "checkbox",
     "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-checkbox"
+      "@radix-ui/react-checkbox",
+      "@radix-ui/themes"
     ],
     "files": [
       {
@@ -232,7 +238,8 @@
     "name": "dialog",
     "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-dialog"
+      "@radix-ui/react-dialog",
+      "@radix-ui/themes"
     ],
     "files": [
       {
@@ -305,6 +312,9 @@
   {
     "name": "input",
     "type": "registry:ui",
+    "dependencies": [
+      "@radix-ui/themes"
+    ],
     "files": [
       {
         "path": "ui/input.tsx",
@@ -394,7 +404,8 @@
     "name": "progress",
     "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-progress"
+      "@radix-ui/react-progress",
+      "@radix-ui/themes"
     ],
     "files": [
       {
@@ -407,7 +418,8 @@
     "name": "radio-group",
     "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-radio-group"
+      "@radix-ui/react-radio-group",
+      "@radix-ui/themes"
     ],
     "files": [
       {
@@ -433,7 +445,8 @@
     "name": "scroll-area",
     "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-scroll-area"
+      "@radix-ui/react-scroll-area",
+      "@radix-ui/themes"
     ],
     "files": [
       {
@@ -446,7 +459,8 @@
     "name": "select",
     "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-select"
+      "@radix-ui/react-select",
+      "@radix-ui/themes"
     ],
     "files": [
       {
@@ -561,7 +575,8 @@
     "name": "slider",
     "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slider"
+      "@radix-ui/react-slider",
+      "@radix-ui/themes"
     ],
     "files": [
       {
@@ -588,7 +603,8 @@
     "name": "switch",
     "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-switch"
+      "@radix-ui/react-switch",
+      "@radix-ui/themes"
     ],
     "files": [
       {
@@ -611,7 +627,8 @@
     "name": "tabs",
     "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-tabs"
+      "@radix-ui/react-tabs",
+      "@radix-ui/themes"
     ],
     "files": [
       {
@@ -623,6 +640,9 @@
   {
     "name": "textarea",
     "type": "registry:ui",
+    "dependencies": [
+      "@radix-ui/themes"
+    ],
     "files": [
       {
         "path": "ui/textarea.tsx",
@@ -655,7 +675,8 @@
     "name": "toggle",
     "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-toggle"
+      "@radix-ui/react-toggle",
+      "@radix-ui/themes"
     ],
     "files": [
       {
@@ -668,7 +689,8 @@
     "name": "toggle-group",
     "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-toggle-group"
+      "@radix-ui/react-toggle-group",
+      "@radix-ui/themes"
     ],
     "registryDependencies": [
       "toggle"
@@ -684,7 +706,8 @@
     "name": "tooltip",
     "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-tooltip"
+      "@radix-ui/react-tooltip",
+      "@radix-ui/themes"
     ],
     "files": [
       {

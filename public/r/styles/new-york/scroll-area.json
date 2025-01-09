@@ -2,7 +2,8 @@
   "name": "scroll-area",
   "type": "registry:ui",
   "dependencies": [
-    "@radix-ui/react-scroll-area"
+    "@radix-ui/react-scroll-area",
+    "@radix-ui/themes"
   ],
   "files": [
     {
