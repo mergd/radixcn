@@ -16,7 +16,10 @@ const SelectTrigger = React.forwardRef<
 >(({ className, size = "2", children, ...props }, ref) => (
   <RadixSelect.Trigger
     ref={ref}
-    className={cn("cursor-pointer w-full shrink-0", className)}
+    className={cn(
+      "cursor-pointer w-full shrink-0 inline-flex items-center",
+      className,
+    )}
     {...props}
   >
     {children}

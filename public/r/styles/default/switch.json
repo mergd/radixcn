@@ -1,0 +1,16 @@
+{
+  "name": "switch",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/react-switch",
+    "@radix-ui/themes"
+  ],
+  "files": [
+    {
+      "path": "ui/switch.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport { Switch as RadixSwitch } from \"@radix-ui/themes\";\nimport { cn } from \"@/lib/utils\";\n\nconst Switch = React.forwardRef<\n  React.ElementRef<typeof RadixSwitch>,\n  Omit<React.ComponentPropsWithoutRef<typeof RadixSwitch>, \"size\"> & {\n    size?: \"1\" | \"2\" | \"3\";\n  }\n>(({ className, size = \"2\", ...props }, ref) => (\n  <RadixSwitch\n    ref={ref}\n    className={cn(\"shrink-0\", className)}\n    size={size}\n    {...props}\n  />\n));\nSwitch.displayName = \"Switch\";\n\nexport { Switch };\n",
+      "type": "registry:ui",
+      "target": ""
+    }
+  ]
+}

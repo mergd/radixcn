@@ -1,0 +1,19 @@
+{
+  "name": "alert-dialog",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/react-alert-dialog",
+    "@radix-ui/themes"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "ui/alert-dialog.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport { AlertDialog as RadixAlertDialog } from \"@radix-ui/themes\";\nimport { cn } from \"@/lib/utils\";\nimport { Button } from \"@/registry/new-york/ui/button\";\nconst AlertDialog = RadixAlertDialog.Root;\nconst AlertDialogTrigger = RadixAlertDialog.Trigger;\nconst AlertDialogContent = RadixAlertDialog.Content;\n\nconst AlertDialogHeader = ({\n  className,\n  ...props\n}: React.HTMLAttributes<HTMLDivElement>) => (\n  <div className={cn(\"flex flex-col gap-2\", className)} {...props} />\n);\nAlertDialogHeader.displayName = \"AlertDialogHeader\";\n\nconst AlertDialogFooter = ({\n  className,\n  ...props\n}: React.HTMLAttributes<HTMLDivElement>) => (\n  <div className={cn(\"flex justify-end gap-2\", className)} {...props} />\n);\nAlertDialogFooter.displayName = \"AlertDialogFooter\";\n\nconst AlertDialogAction = ({\n  children,\n  variant = \"destructive\",\n  ...props\n}: React.ComponentProps<typeof RadixAlertDialog.Action> & {\n  variant?: React.ComponentProps<typeof Button>[\"variant\"];\n  color?: React.ComponentProps<typeof Button>[\"color\"];\n}) => (\n  <RadixAlertDialog.Action>\n    <Button variant={variant} {...props}>\n      {children}\n    </Button>\n  </RadixAlertDialog.Action>\n);\n\nconst AlertDialogCancel = ({\n  children,\n  variant = \"soft\",\n  color = \"gray\",\n  ...props\n}: React.ComponentProps<typeof RadixAlertDialog.Cancel> & {\n  variant?: React.ComponentProps<typeof Button>[\"variant\"];\n  color?: React.ComponentProps<typeof Button>[\"color\"];\n}) => (\n  <RadixAlertDialog.Cancel>\n    <Button variant={variant} color={color} {...props}>\n      {children}\n    </Button>\n  </RadixAlertDialog.Cancel>\n);\n\nconst AlertDialogTitle = RadixAlertDialog.Title;\nconst AlertDialogDescription = RadixAlertDialog.Description;\n\nexport {\n  AlertDialog,\n  AlertDialogAction,\n  AlertDialogCancel,\n  AlertDialogContent,\n  AlertDialogDescription,\n  AlertDialogFooter,\n  AlertDialogHeader,\n  AlertDialogTitle,\n  AlertDialogTrigger,\n};\n\n/**\n * @deprecated Use AlertDialogContent instead - Portal and Overlay are handled automatically\n */\nexport const AlertDialogPortal = RadixAlertDialog.Content;\n\n/**\n * @deprecated Use AlertDialogContent instead - Overlay is handled automatically\n */\nexport const AlertDialogOverlay = RadixAlertDialog.Content;\n",
+      "type": "registry:ui",
+      "target": ""
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "checkbox",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/react-checkbox",
+    "@radix-ui/themes"
+  ],
+  "files": [
+    {
+      "path": "ui/checkbox.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport { Checkbox as RadixCheckbox } from \"@radix-ui/themes\";\nimport type { CheckboxProps as RadixCheckboxProps } from \"@radix-ui/themes\";\nimport { cn } from \"@/lib/utils\";\n\ntype CheckboxProps = Omit<RadixCheckboxProps, \"size\"> & {\n  size?: \"1\" | \"2\" | \"3\";\n};\n\nconst Checkbox = React.forwardRef<\n  React.ElementRef<typeof RadixCheckbox>,\n  CheckboxProps\n>(({ className, size = \"2\", ...props }, ref) => (\n  <RadixCheckbox\n    ref={ref}\n    className={cn(\"cursor-pointer\", className)}\n    size={size}\n    {...props}\n  />\n));\n\nCheckbox.displayName = \"Checkbox\";\n\nexport { Checkbox };\nexport type { CheckboxProps };\n",
+      "type": "registry:ui",
+      "target": ""
+    }
+  ]
+}

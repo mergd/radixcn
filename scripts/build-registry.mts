@@ -244,6 +244,20 @@ async function buildStyles(registry: Registry) {
       await fs.mkdir(targetPath, { recursive: true });
     }
 
+    // If this is the "default" style, copy from new-york
+    if (style.name === "default") {
+      const newYorkPath = path.join(REGISTRY_PATH, "styles", "new-york");
+      if (existsSync(newYorkPath)) {
+        const files = await fs.readdir(newYorkPath);
+        for (const file of files) {
+          const sourcePath = path.join(newYorkPath, file);
+          const destPath = path.join(targetPath, file);
+          await fs.copyFile(sourcePath, destPath);
+        }
+        continue; // Skip the rest of the loop for default style
+      }
+    }
+
     for (const item of registry) {
       if (!REGISTRY_INDEX_WHITELIST.includes(item.type)) {
         continue;

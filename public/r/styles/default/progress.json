@@ -1,0 +1,16 @@
+{
+  "name": "progress",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/react-progress",
+    "@radix-ui/themes"
+  ],
+  "files": [
+    {
+      "path": "ui/progress.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport { Progress as RadixProgress } from \"@radix-ui/themes\";\nimport { cn } from \"@/lib/utils\";\n\nconst Progress = React.forwardRef<\n  React.ElementRef<typeof RadixProgress>,\n  Omit<React.ComponentPropsWithoutRef<typeof RadixProgress>, \"value\"> & {\n    value?: number | null;\n  }\n>(({ className, value, ...props }, ref) => (\n  <RadixProgress\n    ref={ref}\n    className={cn(\"w-full\", className)}\n    value={value || 0}\n    {...props}\n  />\n));\nProgress.displayName = \"Progress\";\n\nexport { Progress };\n",
+      "type": "registry:ui",
+      "target": ""
+    }
+  ]
+}

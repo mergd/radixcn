@@ -1,0 +1,15 @@
+{
+  "name": "textarea",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/themes"
+  ],
+  "files": [
+    {
+      "path": "ui/textarea.tsx",
+      "content": "import * as React from \"react\";\nimport { TextArea as RadixTextArea } from \"@radix-ui/themes\";\nimport { cn } from \"@/lib/utils\";\n\nconst Textarea = React.forwardRef<\n  HTMLTextAreaElement,\n  Omit<React.ComponentPropsWithoutRef<typeof RadixTextArea>, \"size\"> & {\n    size?: \"1\" | \"2\" | \"3\";\n  }\n>(({ className, size = \"2\", ...props }, ref) => {\n  return (\n    <RadixTextArea\n      ref={ref}\n      className={cn(\"w-full min-h-[60px]\", className)}\n      size={size}\n      {...props}\n    />\n  );\n});\nTextarea.displayName = \"Textarea\";\n\nexport { Textarea };\n",
+      "type": "registry:ui",
+      "target": ""
+    }
+  ]
+}

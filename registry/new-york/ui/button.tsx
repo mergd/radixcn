@@ -1,9 +1,9 @@
 "use client";
 
 import * as React from "react";
-import { Button as RadixButton, IconButton } from "@radix-ui/themes";
+import { IconButton, Button as RadixButton, Spinner } from "@radix-ui/themes";
 import { cva } from "class-variance-authority";
-import { Spinner } from "@radix-ui/themes";
+
 import { cn } from "@/lib/utils";
 
 export type ButtonVariant =
@@ -87,9 +87,10 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     if (size === "icon") {
       return (
         <IconButton
-          className={cn("size-auto", className)}
+          className={cn("size-auto cursor-pointer p-1", className)}
           ref={ref}
           loading={loading ?? isSpinning}
+          disabled={isSpinning}
           variant={variantMap[variant] ?? "solid"}
           color={variant === "destructive" ? "red" : color}
           aria-label={ariaLabel}
@@ -100,14 +101,27 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       );
     }
 
+    if (variant === "link") {
+      return (
+        <button
+          className={cn(
+            "cursor-pointer",
+            variant === "link" && "underline-offset-4 hover:underline",
+            className,
+          )}
+          ref={ref}
+          {...props}
+        >
+          {children}
+        </button>
+      );
+    }
+
     return (
       <RadixButton
-        className={cn(
-          "cursor-pointer",
-          variant === "link" && "underline-offset-4 hover:underline",
-          className,
-        )}
+        className={cn("cursor-pointer", className)}
         ref={ref}
+        disabled={isSpinning}
         variant={variantMap[variant] ?? "solid"}
         size={sizeMap[size as ButtonSize]}
         color={variant === "destructive" ? "red" : color}

@@ -1,0 +1,15 @@
+{
+  "name": "badge",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/themes"
+  ],
+  "files": [
+    {
+      "path": "ui/badge.tsx",
+      "content": "import * as React from \"react\";\nimport { Badge as RadixBadge } from \"@radix-ui/themes\";\nimport { cva } from \"class-variance-authority\";\n\ntype BadgeVariant =\n  | \"default\"\n  | \"secondary\"\n  | \"destructive\"\n  | \"outline\"\n  | string;\ntype RadixBadgeVariant = \"solid\" | \"soft\" | \"surface\" | \"outline\";\n\nconst badgeVariants = cva(\"\", {\n  variants: {\n    variant: {\n      default: \"\",\n      secondary: \"\",\n      destructive: \"\",\n      outline: \"\",\n    } as Record<BadgeVariant, string>,\n  },\n  defaultVariants: {\n    variant: \"default\",\n  },\n});\n\nconst variantMap: Record<string, RadixBadgeVariant> = {\n  default: \"solid\",\n  secondary: \"soft\",\n  destructive: \"solid\",\n  outline: \"outline\",\n};\n\ninterface BadgeProps\n  extends Omit<React.ComponentProps<typeof RadixBadge>, \"variant\"> {\n  variant?: BadgeVariant;\n}\n\nfunction Badge({ variant = \"default\", ...props }: BadgeProps) {\n  return (\n    <RadixBadge\n      variant={variantMap[variant] ?? \"solid\"}\n      color={variant === \"destructive\" ? \"red\" : undefined}\n      {...props}\n    />\n  );\n}\n\nexport { Badge, badgeVariants };\nexport type { BadgeProps };\n",
+      "type": "registry:ui",
+      "target": ""
+    }
+  ]
+}
