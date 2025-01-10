@@ -7,12 +7,14 @@ add theme installation instructions
 
 
 Todo:
-pagination broken
+- [ ] pagination is broken
+- [ ] button icons broken somewhat, wip on button api
 
-add data list
-add radio group docs, misc
+Docs:
 
-
+- [ ] segmented control
+- [ ] data list
+- [ ] radio card
 
 components to refactor:
 

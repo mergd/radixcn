@@ -46,6 +46,10 @@ import {
 } from "@/registry/new-york/ui/sidebar";
 import { Tabs, TabsList, TabsTrigger } from "@/registry/new-york/ui/tabs";
 import {
+  SegmentedControl,
+  SegmentedControlItem,
+} from "@/registry/new-york/ui/segmented-control";
+import {
   ToggleGroup,
   ToggleGroupItem,
 } from "@/registry/new-york/ui/toggle-group";
@@ -134,26 +138,18 @@ function BlockViewerToolbar() {
 
   return (
     <div className="flex w-full items-center gap-2 md:pr-[14px]">
-      <Tabs
+      <SegmentedControl
         defaultValue="preview"
         onValueChange={(value) => setView(value as "preview" | "code")}
         className="hidden lg:flex"
       >
-        <TabsList className="h-7 items-center rounded-md p-0 px-[calc(theme(spacing.1)_-_2px)] py-[theme(spacing.1)]">
-          <TabsTrigger
-            value="preview"
-            className="h-[1.45rem] rounded-sm px-2 text-xs"
-          >
-            Preview
-          </TabsTrigger>
-          <TabsTrigger
-            value="code"
-            className="h-[1.45rem] rounded-sm px-2 text-xs"
-          >
-            Code
-          </TabsTrigger>
-        </TabsList>
-      </Tabs>
+        <SegmentedControlItem className="text-sm" value="preview">
+          Preview
+        </SegmentedControlItem>
+        <SegmentedControlItem className="text-sm" value="code">
+          Code
+        </SegmentedControlItem>
+      </SegmentedControl>
       <Separator orientation="vertical" className="mx-2 hidden h-4 lg:flex" />
       <a
         href={`#${item.name}`}
