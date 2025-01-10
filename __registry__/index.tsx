@@ -4089,19 +4089,20 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
-  },  "default": {
+  },
+  "default": {
     "accordion": {
       name: "accordion",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/accordion.tsx",
+        path: "registry/new-york/ui/accordion.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/accordion.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/accordion.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4111,12 +4112,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/alert.tsx",
+        path: "registry/new-york/ui/alert.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/alert.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/alert.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4126,12 +4127,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: ["button"],
       files: [{
-        path: "registry/default/ui/alert-dialog.tsx",
+        path: "registry/new-york/ui/alert-dialog.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/alert-dialog.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/alert-dialog.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4141,12 +4142,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/aspect-ratio.tsx",
+        path: "registry/new-york/ui/aspect-ratio.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/aspect-ratio.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/aspect-ratio.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4156,12 +4157,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/avatar.tsx",
+        path: "registry/new-york/ui/avatar.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/avatar.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/avatar.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4171,12 +4172,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/badge.tsx",
+        path: "registry/new-york/ui/badge.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/badge.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/badge.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4186,12 +4187,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/breadcrumb.tsx",
+        path: "registry/new-york/ui/breadcrumb.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/breadcrumb.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/breadcrumb.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4201,12 +4202,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/button.tsx",
+        path: "registry/new-york/ui/button.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/button.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/button.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4216,12 +4217,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: ["button"],
       files: [{
-        path: "registry/default/ui/calendar.tsx",
+        path: "registry/new-york/ui/calendar.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/calendar.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/calendar.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4231,12 +4232,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/card.tsx",
+        path: "registry/new-york/ui/card.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/card.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/card.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4246,12 +4247,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: ["button"],
       files: [{
-        path: "registry/default/ui/carousel.tsx",
+        path: "registry/new-york/ui/carousel.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/carousel.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/carousel.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4261,12 +4262,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/checkbox.tsx",
+        path: "registry/new-york/ui/checkbox.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/checkbox.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/checkbox.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4276,12 +4277,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/collapsible.tsx",
+        path: "registry/new-york/ui/collapsible.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/collapsible.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/collapsible.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4291,12 +4292,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: ["dialog"],
       files: [{
-        path: "registry/default/ui/command.tsx",
+        path: "registry/new-york/ui/command.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/command.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/command.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4306,12 +4307,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/context-menu.tsx",
+        path: "registry/new-york/ui/context-menu.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/context-menu.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/context-menu.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4321,12 +4322,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/dialog.tsx",
+        path: "registry/new-york/ui/dialog.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/dialog.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/dialog.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4336,12 +4337,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/drawer.tsx",
+        path: "registry/new-york/ui/drawer.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/drawer.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/drawer.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4351,12 +4352,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/dropdown-menu.tsx",
+        path: "registry/new-york/ui/dropdown-menu.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/dropdown-menu.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/dropdown-menu.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4366,12 +4367,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: ["button","label"],
       files: [{
-        path: "registry/default/ui/form.tsx",
+        path: "registry/new-york/ui/form.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/form.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/form.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4381,12 +4382,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/hover-card.tsx",
+        path: "registry/new-york/ui/hover-card.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/hover-card.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/hover-card.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4396,12 +4397,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/input.tsx",
+        path: "registry/new-york/ui/input.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/input.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/input.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4411,12 +4412,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/input-otp.tsx",
+        path: "registry/new-york/ui/input-otp.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/input-otp.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/input-otp.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4426,12 +4427,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/label.tsx",
+        path: "registry/new-york/ui/label.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/label.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/label.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4441,12 +4442,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/menubar.tsx",
+        path: "registry/new-york/ui/menubar.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/menubar.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/menubar.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4456,12 +4457,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/navigation-menu.tsx",
+        path: "registry/new-york/ui/navigation-menu.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/navigation-menu.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/navigation-menu.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4471,12 +4472,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: ["button"],
       files: [{
-        path: "registry/default/ui/pagination.tsx",
+        path: "registry/new-york/ui/pagination.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/pagination.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/pagination.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4486,12 +4487,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/popover.tsx",
+        path: "registry/new-york/ui/popover.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/popover.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/popover.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4501,12 +4502,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/progress.tsx",
+        path: "registry/new-york/ui/progress.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/progress.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/progress.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4516,12 +4517,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/radio-group.tsx",
+        path: "registry/new-york/ui/radio-group.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/radio-group.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/radio-group.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4531,12 +4532,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/resizable.tsx",
+        path: "registry/new-york/ui/resizable.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/resizable.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/resizable.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4546,12 +4547,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/scroll-area.tsx",
+        path: "registry/new-york/ui/scroll-area.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/scroll-area.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/scroll-area.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4561,12 +4562,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/select.tsx",
+        path: "registry/new-york/ui/select.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/select.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/select.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4576,12 +4577,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/separator.tsx",
+        path: "registry/new-york/ui/separator.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/separator.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/separator.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4591,12 +4592,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/sheet.tsx",
+        path: "registry/new-york/ui/sheet.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/sheet.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/sheet.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4606,12 +4607,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: ["button","separator","sheet","tooltip","input","use-mobile","skeleton"],
       files: [{
-        path: "registry/default/ui/sidebar.tsx",
+        path: "registry/new-york/ui/sidebar.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/sidebar.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/sidebar.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4621,12 +4622,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/skeleton.tsx",
+        path: "registry/new-york/ui/skeleton.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/skeleton.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/skeleton.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4636,12 +4637,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/slider.tsx",
+        path: "registry/new-york/ui/slider.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/slider.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/slider.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4651,12 +4652,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/sonner.tsx",
+        path: "registry/new-york/ui/sonner.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/sonner.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/sonner.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4666,12 +4667,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/switch.tsx",
+        path: "registry/new-york/ui/switch.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/switch.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/switch.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4681,12 +4682,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/table.tsx",
+        path: "registry/new-york/ui/table.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/table.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/table.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4696,12 +4697,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/tabs.tsx",
+        path: "registry/new-york/ui/tabs.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/tabs.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/tabs.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4711,12 +4712,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/textarea.tsx",
+        path: "registry/new-york/ui/textarea.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/textarea.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/textarea.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4726,20 +4727,20 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/toast.tsx",
+        path: "registry/new-york/ui/toast.tsx",
         type: "registry:ui",
         target: ""
       },{
-        path: "registry/default/hooks/use-toast.ts",
+        path: "registry/new-york/hooks/use-toast.ts",
         type: "registry:hook",
         target: ""
       },{
-        path: "registry/default/ui/toaster.tsx",
+        path: "registry/new-york/ui/toaster.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/toast.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/toast.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4749,12 +4750,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/toggle.tsx",
+        path: "registry/new-york/ui/toggle.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/toggle.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/toggle.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4764,12 +4765,12 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: ["toggle"],
       files: [{
-        path: "registry/default/ui/toggle-group.tsx",
+        path: "registry/new-york/ui/toggle-group.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/toggle-group.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/toggle-group.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4779,12 +4780,528 @@ export const Index: Record<string, any> = {
       type: "registry:ui",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/ui/tooltip.tsx",
+        path: "registry/new-york/ui/tooltip.tsx",
         type: "registry:ui",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/ui/tooltip.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/ui/tooltip.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "sidebar-01": {
+      name: "sidebar-01",
+      description: "A simple sidebar with navigation grouped by section.",
+      type: "registry:block",
+      registryDependencies: ["sidebar","breadcrumb","separator","label","dropdown-menu"],
+      files: [{
+        path: "registry/new-york/blocks/sidebar-01/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york/blocks/sidebar-01/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-01/components/search-form.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-01/components/version-switcher.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/sidebar-01/page.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "sidebar-02": {
+      name: "sidebar-02",
+      description: "A sidebar with collapsible sections.",
+      type: "registry:block",
+      registryDependencies: ["sidebar","breadcrumb","separator","label","dropdown-menu"],
+      files: [{
+        path: "registry/new-york/blocks/sidebar-02/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york/blocks/sidebar-02/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-02/components/search-form.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-02/components/version-switcher.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/sidebar-02/page.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "sidebar-03": {
+      name: "sidebar-03",
+      description: "A sidebar with submenus.",
+      type: "registry:block",
+      registryDependencies: ["sidebar","breadcrumb"],
+      files: [{
+        path: "registry/new-york/blocks/sidebar-03/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york/blocks/sidebar-03/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/sidebar-03/page.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "sidebar-04": {
+      name: "sidebar-04",
+      description: "A floating sidebar with submenus.",
+      type: "registry:block",
+      registryDependencies: ["sidebar","breadcrumb","separator"],
+      files: [{
+        path: "registry/new-york/blocks/sidebar-04/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york/blocks/sidebar-04/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/sidebar-04/page.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "sidebar-05": {
+      name: "sidebar-05",
+      description: "A sidebar with collapsible submenus.",
+      type: "registry:block",
+      registryDependencies: ["sidebar","breadcrumb","separator","label","collapsible"],
+      files: [{
+        path: "registry/new-york/blocks/sidebar-05/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york/blocks/sidebar-05/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-05/components/search-form.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/sidebar-05/page.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "sidebar-06": {
+      name: "sidebar-06",
+      description: "A sidebar with submenus as dropdowns.",
+      type: "registry:block",
+      registryDependencies: ["sidebar","breadcrumb","separator","card","dropdown-menu"],
+      files: [{
+        path: "registry/new-york/blocks/sidebar-06/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york/blocks/sidebar-06/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-06/components/nav-main.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-06/components/sidebar-opt-in-form.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/sidebar-06/page.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "sidebar-07": {
+      name: "sidebar-07",
+      description: "A sidebar that collapses to icons.",
+      type: "registry:block",
+      registryDependencies: ["sidebar","breadcrumb","separator","collapsible","dropdown-menu","avatar"],
+      files: [{
+        path: "registry/new-york/blocks/sidebar-07/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york/blocks/sidebar-07/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-07/components/nav-main.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-07/components/nav-projects.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-07/components/nav-user.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-07/components/team-switcher.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/sidebar-07/page.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "sidebar-08": {
+      name: "sidebar-08",
+      description: "An inset sidebar with secondary navigation.",
+      type: "registry:block",
+      registryDependencies: ["sidebar","breadcrumb","separator","collapsible","dropdown-menu","avatar"],
+      files: [{
+        path: "registry/new-york/blocks/sidebar-08/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york/blocks/sidebar-08/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-08/components/nav-main.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-08/components/nav-projects.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-08/components/nav-secondary.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-08/components/nav-user.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/sidebar-08/page.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "sidebar-09": {
+      name: "sidebar-09",
+      description: "Collapsible nested sidebars.",
+      type: "registry:block",
+      registryDependencies: ["sidebar","breadcrumb","separator","collapsible","dropdown-menu","avatar","switch"],
+      files: [{
+        path: "registry/new-york/blocks/sidebar-09/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york/blocks/sidebar-09/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-09/components/nav-user.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/sidebar-09/page.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "sidebar-10": {
+      name: "sidebar-10",
+      description: "A sidebar in a popover.",
+      type: "registry:block",
+      registryDependencies: ["sidebar","breadcrumb","separator","popover","collapsible","dropdown-menu"],
+      files: [{
+        path: "registry/new-york/blocks/sidebar-10/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york/blocks/sidebar-10/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-10/components/nav-actions.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-10/components/nav-favorites.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-10/components/nav-main.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-10/components/nav-secondary.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-10/components/nav-workspaces.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-10/components/team-switcher.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/sidebar-10/page.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "sidebar-11": {
+      name: "sidebar-11",
+      description: "A sidebar with a collapsible file tree.",
+      type: "registry:block",
+      registryDependencies: ["sidebar","breadcrumb","separator","collapsible"],
+      files: [{
+        path: "registry/new-york/blocks/sidebar-11/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york/blocks/sidebar-11/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/sidebar-11/page.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "sidebar-12": {
+      name: "sidebar-12",
+      description: "A sidebar with a calendar.",
+      type: "registry:block",
+      registryDependencies: ["sidebar","breadcrumb","separator","collapsible","calendar","dropdown-menu","avatar"],
+      files: [{
+        path: "registry/new-york/blocks/sidebar-12/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york/blocks/sidebar-12/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-12/components/calendars.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-12/components/date-picker.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-12/components/nav-user.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/sidebar-12/page.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "sidebar-13": {
+      name: "sidebar-13",
+      description: "A sidebar in a dialog.",
+      type: "registry:block",
+      registryDependencies: ["sidebar","breadcrumb","button","dialog"],
+      files: [{
+        path: "registry/new-york/blocks/sidebar-13/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york/blocks/sidebar-13/components/settings-dialog.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/sidebar-13/page.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "sidebar-14": {
+      name: "sidebar-14",
+      description: "A sidebar on the right.",
+      type: "registry:block",
+      registryDependencies: ["sidebar","breadcrumb"],
+      files: [{
+        path: "registry/new-york/blocks/sidebar-14/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york/blocks/sidebar-14/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/sidebar-14/page.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "sidebar-15": {
+      name: "sidebar-15",
+      description: "A left and right sidebar.",
+      type: "registry:block",
+      registryDependencies: ["sidebar","breadcrumb","separator","popover","collapsible","dropdown-menu","calendar","avatar"],
+      files: [{
+        path: "registry/new-york/blocks/sidebar-15/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york/blocks/sidebar-15/components/calendars.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-15/components/date-picker.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-15/components/nav-favorites.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-15/components/nav-main.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-15/components/nav-secondary.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-15/components/nav-user.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-15/components/nav-workspaces.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-15/components/sidebar-left.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-15/components/sidebar-right.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/sidebar-15/components/team-switcher.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/sidebar-15/page.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "login-01": {
+      name: "login-01",
+      description: "A simple login form.",
+      type: "registry:block",
+      registryDependencies: ["button","card","input","label"],
+      files: [{
+        path: "registry/new-york/blocks/login-01/page.tsx",
+        type: "registry:page",
+        target: "app/login/page.tsx"
+      },{
+        path: "registry/new-york/blocks/login-01/components/login-form.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["authentication","login"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/login-01/page.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "login-02": {
+      name: "login-02",
+      description: "A two column login page with a cover image.",
+      type: "registry:block",
+      registryDependencies: ["button","card","input","label"],
+      files: [{
+        path: "registry/new-york/blocks/login-02/page.tsx",
+        type: "registry:page",
+        target: "app/login/page.tsx"
+      },{
+        path: "registry/new-york/blocks/login-02/components/login-form.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["authentication","login"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/login-02/page.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "login-03": {
+      name: "login-03",
+      description: "A login page with a muted background color.",
+      type: "registry:block",
+      registryDependencies: ["button","card","input","label"],
+      files: [{
+        path: "registry/new-york/blocks/login-03/page.tsx",
+        type: "registry:page",
+        target: "app/login/page.tsx"
+      },{
+        path: "registry/new-york/blocks/login-03/components/login-form.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["authentication","login"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/login-03/page.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "login-04": {
+      name: "login-04",
+      description: "A login page with form and image.",
+      type: "registry:block",
+      registryDependencies: ["button","card","input","label"],
+      files: [{
+        path: "registry/new-york/blocks/login-04/page.tsx",
+        type: "registry:page",
+        target: "app/login/page.tsx"
+      },{
+        path: "registry/new-york/blocks/login-04/components/login-form.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["authentication","login"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/login-04/page.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "login-05": {
+      name: "login-05",
+      description: "A simple email-only login page.",
+      type: "registry:block",
+      registryDependencies: ["button","card","input","label"],
+      files: [{
+        path: "registry/new-york/blocks/login-05/page.tsx",
+        type: "registry:page",
+        target: "app/login/page.tsx"
+      },{
+        path: "registry/new-york/blocks/login-05/components/login-form.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["authentication","login"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/login-05/page.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4794,12 +5311,12 @@ export const Index: Record<string, any> = {
       type: "registry:lib",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/lib/utils.ts",
+        path: "registry/new-york/lib/utils.ts",
         type: "registry:lib",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/lib/utils.ts")),
+      component: React.lazy(() => import("@/registry/new-york/lib/utils.ts")),
       source: "",
       meta: undefined,
     },
@@ -4809,12 +5326,12 @@ export const Index: Record<string, any> = {
       type: "registry:hook",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/hooks/use-mobile.tsx",
+        path: "registry/new-york/hooks/use-mobile.tsx",
         type: "registry:hook",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/hooks/use-mobile.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/hooks/use-mobile.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4824,12 +5341,12 @@ export const Index: Record<string, any> = {
       type: "registry:hook",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/hooks/use-toast.ts",
+        path: "registry/new-york/hooks/use-toast.ts",
         type: "registry:hook",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/hooks/use-toast.ts")),
+      component: React.lazy(() => import("@/registry/new-york/hooks/use-toast.ts")),
       source: "",
       meta: undefined,
     },
@@ -4839,272 +5356,272 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: ["accordion","alert","alert-dialog","aspect-ratio","avatar","badge","breadcrumb","button","calendar","card","carousel","chart","checkbox","collapsible","command","context-menu","dialog","drawer","dropdown-menu","hover-card","input","input-otp","label","menubar","navigation-menu","pagination","popover","progress","radio-group","resizable","scroll-area","select","separator","sheet","sidebar","skeleton","slider","sonner","switch","table","tabs","textarea","toast","toggle","toggle-group","tooltip"],
       files: [{
-        path: "registry/default/internal/sink/page.tsx",
+        path: "registry/new-york/internal/sink/page.tsx",
         type: "registry:page",
         target: "app/sink/page.tsx"
       },{
-        path: "registry/default/internal/sink/components/app-sidebar.tsx",
+        path: "registry/new-york/internal/sink/components/app-sidebar.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/component-wrapper.tsx",
+        path: "registry/new-york/internal/sink/components/component-wrapper.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/nav-main.tsx",
+        path: "registry/new-york/internal/sink/components/nav-main.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/nav-projects.tsx",
+        path: "registry/new-york/internal/sink/components/nav-projects.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/nav-user.tsx",
+        path: "registry/new-york/internal/sink/components/nav-user.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/team-switcher.tsx",
+        path: "registry/new-york/internal/sink/components/team-switcher.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/accordion-demo.tsx",
+        path: "registry/new-york/internal/sink/components/accordion-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/alert-demo.tsx",
+        path: "registry/new-york/internal/sink/components/alert-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/alert-dialog-demo.tsx",
+        path: "registry/new-york/internal/sink/components/alert-dialog-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/aspect-ratio-demo.tsx",
+        path: "registry/new-york/internal/sink/components/aspect-ratio-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/avatar-demo.tsx",
+        path: "registry/new-york/internal/sink/components/avatar-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/badge-demo.tsx",
+        path: "registry/new-york/internal/sink/components/badge-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/breadcrumb-demo.tsx",
+        path: "registry/new-york/internal/sink/components/breadcrumb-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/button-demo.tsx",
+        path: "registry/new-york/internal/sink/components/button-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/calendar-demo.tsx",
+        path: "registry/new-york/internal/sink/components/calendar-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/card-demo.tsx",
+        path: "registry/new-york/internal/sink/components/card-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/carousel-demo.tsx",
+        path: "registry/new-york/internal/sink/components/carousel-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/checkbox-demo.tsx",
+        path: "registry/new-york/internal/sink/components/checkbox-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/collapsible-demo.tsx",
+        path: "registry/new-york/internal/sink/components/collapsible-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/combobox-demo.tsx",
+        path: "registry/new-york/internal/sink/components/combobox-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/command-demo.tsx",
+        path: "registry/new-york/internal/sink/components/command-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/context-menu-demo.tsx",
+        path: "registry/new-york/internal/sink/components/context-menu-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/date-picker-demo.tsx",
+        path: "registry/new-york/internal/sink/components/date-picker-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/dialog-demo.tsx",
+        path: "registry/new-york/internal/sink/components/dialog-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/drawer-demo.tsx",
+        path: "registry/new-york/internal/sink/components/drawer-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/dropdown-menu-demo.tsx",
+        path: "registry/new-york/internal/sink/components/dropdown-menu-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/hover-card-demo.tsx",
+        path: "registry/new-york/internal/sink/components/hover-card-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/input-demo.tsx",
+        path: "registry/new-york/internal/sink/components/input-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/input-otp-demo.tsx",
+        path: "registry/new-york/internal/sink/components/input-otp-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/label-demo.tsx",
+        path: "registry/new-york/internal/sink/components/label-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/menubar-demo.tsx",
+        path: "registry/new-york/internal/sink/components/menubar-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/navigation-menu-demo.tsx",
+        path: "registry/new-york/internal/sink/components/navigation-menu-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/pagination-demo.tsx",
+        path: "registry/new-york/internal/sink/components/pagination-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/popover-demo.tsx",
+        path: "registry/new-york/internal/sink/components/popover-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/progress-demo.tsx",
+        path: "registry/new-york/internal/sink/components/progress-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/radio-group-demo.tsx",
+        path: "registry/new-york/internal/sink/components/radio-group-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/resizable-handle.tsx",
+        path: "registry/new-york/internal/sink/components/resizable-handle.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/scroll-area-demo.tsx",
+        path: "registry/new-york/internal/sink/components/scroll-area-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/select-demo.tsx",
+        path: "registry/new-york/internal/sink/components/select-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/separator-demo.tsx",
+        path: "registry/new-york/internal/sink/components/separator-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/sheet-demo.tsx",
+        path: "registry/new-york/internal/sink/components/sheet-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/skeleton-demo.tsx",
+        path: "registry/new-york/internal/sink/components/skeleton-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/slider-demo.tsx",
+        path: "registry/new-york/internal/sink/components/slider-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/sonner-demo.tsx",
+        path: "registry/new-york/internal/sink/components/sonner-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/switch-demo.tsx",
+        path: "registry/new-york/internal/sink/components/switch-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/table-demo.tsx",
+        path: "registry/new-york/internal/sink/components/table-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/tabs-demo.tsx",
+        path: "registry/new-york/internal/sink/components/tabs-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/textarea-demo.tsx",
+        path: "registry/new-york/internal/sink/components/textarea-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/toast-demo.tsx",
+        path: "registry/new-york/internal/sink/components/toast-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/toggle-demo.tsx",
+        path: "registry/new-york/internal/sink/components/toggle-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/toggle-group-demo.tsx",
+        path: "registry/new-york/internal/sink/components/toggle-group-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/tooltip-demo.tsx",
+        path: "registry/new-york/internal/sink/components/tooltip-demo.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/badge-destructive.tsx",
+        path: "registry/new-york/internal/sink/components/badge-destructive.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/badge-outline.tsx",
+        path: "registry/new-york/internal/sink/components/badge-outline.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/badge-secondary.tsx",
+        path: "registry/new-york/internal/sink/components/badge-secondary.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/button-destructive.tsx",
+        path: "registry/new-york/internal/sink/components/button-destructive.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/button-ghost.tsx",
+        path: "registry/new-york/internal/sink/components/button-ghost.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/button-link.tsx",
+        path: "registry/new-york/internal/sink/components/button-link.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/button-loading.tsx",
+        path: "registry/new-york/internal/sink/components/button-loading.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/button-outline.tsx",
+        path: "registry/new-york/internal/sink/components/button-outline.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/button-secondary.tsx",
+        path: "registry/new-york/internal/sink/components/button-secondary.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/button-with-icon.tsx",
+        path: "registry/new-york/internal/sink/components/button-with-icon.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/toggle-disabled.tsx",
+        path: "registry/new-york/internal/sink/components/toggle-disabled.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/toggle-outline.tsx",
+        path: "registry/new-york/internal/sink/components/toggle-outline.tsx",
         type: "registry:component",
         target: ""
       },{
-        path: "registry/default/internal/sink/components/toggle-with-text.tsx",
+        path: "registry/new-york/internal/sink/components/toggle-with-text.tsx",
         type: "registry:component",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sink/page.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sink/page.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5114,12 +5631,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/internal/sidebar-demo.tsx",
+        path: "registry/new-york/internal/sidebar-demo.tsx",
         type: "registry:component",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5129,12 +5646,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/internal/sidebar-header.tsx",
+        path: "registry/new-york/internal/sidebar-header.tsx",
         type: "registry:component",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-header.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-header.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5144,12 +5661,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/internal/sidebar-footer.tsx",
+        path: "registry/new-york/internal/sidebar-footer.tsx",
         type: "registry:component",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-footer.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-footer.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5159,12 +5676,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/internal/sidebar-group.tsx",
+        path: "registry/new-york/internal/sidebar-group.tsx",
         type: "registry:component",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-group.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-group.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5174,12 +5691,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/internal/sidebar-group-collapsible.tsx",
+        path: "registry/new-york/internal/sidebar-group-collapsible.tsx",
         type: "registry:component",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-group-collapsible.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-group-collapsible.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5189,12 +5706,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/internal/sidebar-group-action.tsx",
+        path: "registry/new-york/internal/sidebar-group-action.tsx",
         type: "registry:component",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-group-action.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-group-action.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5204,12 +5721,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/internal/sidebar-menu.tsx",
+        path: "registry/new-york/internal/sidebar-menu.tsx",
         type: "registry:component",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-menu.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-menu.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5219,12 +5736,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/internal/sidebar-menu-action.tsx",
+        path: "registry/new-york/internal/sidebar-menu-action.tsx",
         type: "registry:component",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-menu-action.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-menu-action.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5234,12 +5751,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/internal/sidebar-menu-sub.tsx",
+        path: "registry/new-york/internal/sidebar-menu-sub.tsx",
         type: "registry:component",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-menu-sub.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-menu-sub.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5249,12 +5766,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/internal/sidebar-menu-collapsible.tsx",
+        path: "registry/new-york/internal/sidebar-menu-collapsible.tsx",
         type: "registry:component",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-menu-collapsible.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-menu-collapsible.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5264,12 +5781,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/internal/sidebar-menu-badge.tsx",
+        path: "registry/new-york/internal/sidebar-menu-badge.tsx",
         type: "registry:component",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-menu-badge.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-menu-badge.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5279,12 +5796,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/internal/sidebar-rsc.tsx",
+        path: "registry/new-york/internal/sidebar-rsc.tsx",
         type: "registry:component",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-rsc.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-rsc.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5294,12 +5811,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/internal/sidebar-controlled.tsx",
+        path: "registry/new-york/internal/sidebar-controlled.tsx",
         type: "registry:component",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-controlled.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-controlled.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5309,12 +5826,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: ["sidebar","breadcrumb","separator","label","dropdown-menu"],
       files: [{
-        path: "registry/default/internal/sidebar-01.tsx",
+        path: "registry/new-york/internal/sidebar-01.tsx",
         type: "registry:component",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-01.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-01.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5324,12 +5841,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: ["sidebar","breadcrumb","separator","label","dropdown-menu"],
       files: [{
-        path: "registry/default/internal/sidebar-02.tsx",
+        path: "registry/new-york/internal/sidebar-02.tsx",
         type: "registry:internal",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-02.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-02.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5339,12 +5856,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: ["sidebar","breadcrumb"],
       files: [{
-        path: "registry/default/internal/sidebar-03.tsx",
+        path: "registry/new-york/internal/sidebar-03.tsx",
         type: "registry:internal",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-03.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-03.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5354,12 +5871,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: ["sidebar","breadcrumb","separator"],
       files: [{
-        path: "registry/default/internal/sidebar-04.tsx",
+        path: "registry/new-york/internal/sidebar-04.tsx",
         type: "registry:internal",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-04.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-04.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5369,12 +5886,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: ["sidebar","breadcrumb","separator","label","collapsible"],
       files: [{
-        path: "registry/default/internal/sidebar-05.tsx",
+        path: "registry/new-york/internal/sidebar-05.tsx",
         type: "registry:internal",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-05.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-05.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5384,12 +5901,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: ["sidebar","breadcrumb","separator","card","dropdown-menu"],
       files: [{
-        path: "registry/default/internal/sidebar-06.tsx",
+        path: "registry/new-york/internal/sidebar-06.tsx",
         type: "registry:internal",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-06.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-06.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5399,12 +5916,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: ["sidebar","breadcrumb","separator","collapsible","dropdown-menu","avatar"],
       files: [{
-        path: "registry/default/internal/sidebar-07.tsx",
+        path: "registry/new-york/internal/sidebar-07.tsx",
         type: "registry:internal",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-07.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-07.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5414,12 +5931,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: ["sidebar","breadcrumb","separator","collapsible","dropdown-menu","avatar"],
       files: [{
-        path: "registry/default/internal/sidebar-08.tsx",
+        path: "registry/new-york/internal/sidebar-08.tsx",
         type: "registry:internal",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-08.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-08.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5429,12 +5946,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: ["sidebar","breadcrumb","separator","collapsible","dropdown-menu","avatar","switch"],
       files: [{
-        path: "registry/default/internal/sidebar-09.tsx",
+        path: "registry/new-york/internal/sidebar-09.tsx",
         type: "registry:internal",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-09.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-09.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5444,12 +5961,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: ["sidebar","breadcrumb","separator","popover","collapsible","dropdown-menu"],
       files: [{
-        path: "registry/default/internal/sidebar-10.tsx",
+        path: "registry/new-york/internal/sidebar-10.tsx",
         type: "registry:internal",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-10.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-10.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5459,12 +5976,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: ["sidebar","breadcrumb","separator","collapsible"],
       files: [{
-        path: "registry/default/internal/sidebar-11.tsx",
+        path: "registry/new-york/internal/sidebar-11.tsx",
         type: "registry:internal",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-11.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-11.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5474,12 +5991,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: ["sidebar","breadcrumb","separator","collapsible","calendar","dropdown-menu","avatar"],
       files: [{
-        path: "registry/default/internal/sidebar-12.tsx",
+        path: "registry/new-york/internal/sidebar-12.tsx",
         type: "registry:internal",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-12.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-12.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5489,12 +6006,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: ["sidebar","breadcrumb","button","dialog"],
       files: [{
-        path: "registry/default/internal/sidebar-13.tsx",
+        path: "registry/new-york/internal/sidebar-13.tsx",
         type: "registry:internal",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-13.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-13.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5504,12 +6021,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: ["sidebar","breadcrumb"],
       files: [{
-        path: "registry/default/internal/sidebar-14.tsx",
+        path: "registry/new-york/internal/sidebar-14.tsx",
         type: "registry:internal",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-14.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-14.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5519,12 +6036,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: ["sidebar","breadcrumb","separator","popover","collapsible","dropdown-menu","calendar","avatar"],
       files: [{
-        path: "registry/default/internal/sidebar-15.tsx",
+        path: "registry/new-york/internal/sidebar-15.tsx",
         type: "registry:internal",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/sidebar-15.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/sidebar-15.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5534,12 +6051,12 @@ export const Index: Record<string, any> = {
       type: "registry:internal",
       registryDependencies: ["button","card","input","label"],
       files: [{
-        path: "registry/default/internal/login-01.tsx",
+        path: "registry/new-york/internal/login-01.tsx",
         type: "registry:internal",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/internal/login-01.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/internal/login-01.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5549,12 +6066,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["accordion"],
       files: [{
-        path: "registry/default/examples/accordion-demo.tsx",
+        path: "registry/new-york/examples/accordion-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/accordion-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/accordion-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5564,12 +6081,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["alert"],
       files: [{
-        path: "registry/default/examples/alert-demo.tsx",
+        path: "registry/new-york/examples/alert-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/alert-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/alert-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5579,12 +6096,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["alert"],
       files: [{
-        path: "registry/default/examples/alert-destructive.tsx",
+        path: "registry/new-york/examples/alert-destructive.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/alert-destructive.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/alert-destructive.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5594,12 +6111,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["alert-dialog","button"],
       files: [{
-        path: "registry/default/examples/alert-dialog-demo.tsx",
+        path: "registry/new-york/examples/alert-dialog-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/alert-dialog-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/alert-dialog-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5609,12 +6126,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["aspect-ratio"],
       files: [{
-        path: "registry/default/examples/aspect-ratio-demo.tsx",
+        path: "registry/new-york/examples/aspect-ratio-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/aspect-ratio-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/aspect-ratio-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5624,12 +6141,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["avatar"],
       files: [{
-        path: "registry/default/examples/avatar-demo.tsx",
+        path: "registry/new-york/examples/avatar-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/avatar-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/avatar-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5639,12 +6156,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["badge"],
       files: [{
-        path: "registry/default/examples/badge-demo.tsx",
+        path: "registry/new-york/examples/badge-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/badge-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/badge-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5654,12 +6171,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["badge"],
       files: [{
-        path: "registry/default/examples/badge-destructive.tsx",
+        path: "registry/new-york/examples/badge-destructive.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/badge-destructive.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/badge-destructive.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5669,12 +6186,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["badge"],
       files: [{
-        path: "registry/default/examples/badge-outline.tsx",
+        path: "registry/new-york/examples/badge-outline.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/badge-outline.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/badge-outline.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5684,12 +6201,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["badge"],
       files: [{
-        path: "registry/default/examples/badge-secondary.tsx",
+        path: "registry/new-york/examples/badge-secondary.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/badge-secondary.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/badge-secondary.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5699,12 +6216,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["breadcrumb"],
       files: [{
-        path: "registry/default/examples/breadcrumb-demo.tsx",
+        path: "registry/new-york/examples/breadcrumb-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/breadcrumb-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/breadcrumb-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5714,12 +6231,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["breadcrumb"],
       files: [{
-        path: "registry/default/examples/breadcrumb-separator.tsx",
+        path: "registry/new-york/examples/breadcrumb-separator.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/breadcrumb-separator.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/breadcrumb-separator.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5729,12 +6246,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["breadcrumb"],
       files: [{
-        path: "registry/default/examples/breadcrumb-dropdown.tsx",
+        path: "registry/new-york/examples/breadcrumb-dropdown.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/breadcrumb-dropdown.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/breadcrumb-dropdown.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5744,12 +6261,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["breadcrumb"],
       files: [{
-        path: "registry/default/examples/breadcrumb-ellipsis.tsx",
+        path: "registry/new-york/examples/breadcrumb-ellipsis.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/breadcrumb-ellipsis.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/breadcrumb-ellipsis.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5759,12 +6276,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["breadcrumb"],
       files: [{
-        path: "registry/default/examples/breadcrumb-link.tsx",
+        path: "registry/new-york/examples/breadcrumb-link.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/breadcrumb-link.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/breadcrumb-link.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5774,12 +6291,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["breadcrumb"],
       files: [{
-        path: "registry/default/examples/breadcrumb-responsive.tsx",
+        path: "registry/new-york/examples/breadcrumb-responsive.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/breadcrumb-responsive.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/breadcrumb-responsive.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5789,12 +6306,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["button"],
       files: [{
-        path: "registry/default/examples/button-demo.tsx",
+        path: "registry/new-york/examples/button-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/button-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/button-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5804,12 +6321,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["button"],
       files: [{
-        path: "registry/default/examples/button-secondary.tsx",
+        path: "registry/new-york/examples/button-secondary.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/button-secondary.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/button-secondary.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5819,12 +6336,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["button"],
       files: [{
-        path: "registry/default/examples/button-destructive.tsx",
+        path: "registry/new-york/examples/button-destructive.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/button-destructive.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/button-destructive.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5834,12 +6351,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["button"],
       files: [{
-        path: "registry/default/examples/button-outline.tsx",
+        path: "registry/new-york/examples/button-outline.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/button-outline.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/button-outline.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5849,12 +6366,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["button"],
       files: [{
-        path: "registry/default/examples/button-ghost.tsx",
+        path: "registry/new-york/examples/button-ghost.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/button-ghost.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/button-ghost.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5864,12 +6381,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["button"],
       files: [{
-        path: "registry/default/examples/button-link.tsx",
+        path: "registry/new-york/examples/button-link.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/button-link.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/button-link.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5879,12 +6396,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["button"],
       files: [{
-        path: "registry/default/examples/button-with-icon.tsx",
+        path: "registry/new-york/examples/button-with-icon.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/button-with-icon.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/button-with-icon.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5894,12 +6411,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["button"],
       files: [{
-        path: "registry/default/examples/button-loading.tsx",
+        path: "registry/new-york/examples/button-loading.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/button-loading.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/button-loading.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5909,12 +6426,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["button"],
       files: [{
-        path: "registry/default/examples/button-icon.tsx",
+        path: "registry/new-york/examples/button-icon.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/button-icon.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/button-icon.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5924,12 +6441,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["button"],
       files: [{
-        path: "registry/default/examples/button-as-child.tsx",
+        path: "registry/new-york/examples/button-as-child.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/button-as-child.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/button-as-child.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5939,12 +6456,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["calendar"],
       files: [{
-        path: "registry/default/examples/calendar-demo.tsx",
+        path: "registry/new-york/examples/calendar-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/calendar-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/calendar-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5954,12 +6471,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["calendar","form","popover"],
       files: [{
-        path: "registry/default/examples/calendar-form.tsx",
+        path: "registry/new-york/examples/calendar-form.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/calendar-form.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/calendar-form.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5969,12 +6486,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["card","button","switch"],
       files: [{
-        path: "registry/default/examples/card-demo.tsx",
+        path: "registry/new-york/examples/card-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/card-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/card-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5984,12 +6501,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["button","card","input","label","select"],
       files: [{
-        path: "registry/default/examples/card-with-form.tsx",
+        path: "registry/new-york/examples/card-with-form.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/card-with-form.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/card-with-form.tsx")),
       source: "",
       meta: undefined,
     },
@@ -5999,12 +6516,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["carousel"],
       files: [{
-        path: "registry/default/examples/carousel-demo.tsx",
+        path: "registry/new-york/examples/carousel-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/carousel-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/carousel-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6014,12 +6531,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["carousel"],
       files: [{
-        path: "registry/default/examples/carousel-size.tsx",
+        path: "registry/new-york/examples/carousel-size.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/carousel-size.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/carousel-size.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6029,12 +6546,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["carousel"],
       files: [{
-        path: "registry/default/examples/carousel-spacing.tsx",
+        path: "registry/new-york/examples/carousel-spacing.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/carousel-spacing.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/carousel-spacing.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6044,12 +6561,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["carousel"],
       files: [{
-        path: "registry/default/examples/carousel-orientation.tsx",
+        path: "registry/new-york/examples/carousel-orientation.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/carousel-orientation.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/carousel-orientation.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6059,12 +6576,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["carousel"],
       files: [{
-        path: "registry/default/examples/carousel-api.tsx",
+        path: "registry/new-york/examples/carousel-api.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/carousel-api.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/carousel-api.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6074,12 +6591,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["carousel"],
       files: [{
-        path: "registry/default/examples/carousel-plugin.tsx",
+        path: "registry/new-york/examples/carousel-plugin.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/carousel-plugin.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/carousel-plugin.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6089,12 +6606,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["checkbox"],
       files: [{
-        path: "registry/default/examples/checkbox-demo.tsx",
+        path: "registry/new-york/examples/checkbox-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/checkbox-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/checkbox-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6104,12 +6621,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["checkbox"],
       files: [{
-        path: "registry/default/examples/checkbox-disabled.tsx",
+        path: "registry/new-york/examples/checkbox-disabled.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/checkbox-disabled.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/checkbox-disabled.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6119,12 +6636,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["checkbox","form"],
       files: [{
-        path: "registry/default/examples/checkbox-form-multiple.tsx",
+        path: "registry/new-york/examples/checkbox-form-multiple.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/checkbox-form-multiple.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/checkbox-form-multiple.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6134,12 +6651,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["checkbox","form"],
       files: [{
-        path: "registry/default/examples/checkbox-form-single.tsx",
+        path: "registry/new-york/examples/checkbox-form-single.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/checkbox-form-single.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/checkbox-form-single.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6149,12 +6666,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["checkbox"],
       files: [{
-        path: "registry/default/examples/checkbox-with-text.tsx",
+        path: "registry/new-york/examples/checkbox-with-text.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/checkbox-with-text.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/checkbox-with-text.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6164,12 +6681,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["collapsible"],
       files: [{
-        path: "registry/default/examples/collapsible-demo.tsx",
+        path: "registry/new-york/examples/collapsible-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/collapsible-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/collapsible-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6179,12 +6696,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["command"],
       files: [{
-        path: "registry/default/examples/combobox-demo.tsx",
+        path: "registry/new-york/examples/combobox-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/combobox-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/combobox-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6194,12 +6711,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["command","dropdown-menu","button"],
       files: [{
-        path: "registry/default/examples/combobox-dropdown-menu.tsx",
+        path: "registry/new-york/examples/combobox-dropdown-menu.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/combobox-dropdown-menu.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/combobox-dropdown-menu.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6209,12 +6726,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["command","form"],
       files: [{
-        path: "registry/default/examples/combobox-form.tsx",
+        path: "registry/new-york/examples/combobox-form.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/combobox-form.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/combobox-form.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6224,12 +6741,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["combobox","popover"],
       files: [{
-        path: "registry/default/examples/combobox-popover.tsx",
+        path: "registry/new-york/examples/combobox-popover.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/combobox-popover.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/combobox-popover.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6239,12 +6756,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["combobox","popover","drawer"],
       files: [{
-        path: "registry/default/examples/combobox-responsive.tsx",
+        path: "registry/new-york/examples/combobox-responsive.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/combobox-responsive.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/combobox-responsive.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6254,12 +6771,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["command"],
       files: [{
-        path: "registry/default/examples/command-demo.tsx",
+        path: "registry/new-york/examples/command-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/command-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/command-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6269,12 +6786,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["command","dialog"],
       files: [{
-        path: "registry/default/examples/command-dialog.tsx",
+        path: "registry/new-york/examples/command-dialog.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/command-dialog.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/command-dialog.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6284,12 +6801,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["context-menu"],
       files: [{
-        path: "registry/default/examples/context-menu-demo.tsx",
+        path: "registry/new-york/examples/context-menu-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/context-menu-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/context-menu-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6299,12 +6816,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["data-table"],
       files: [{
-        path: "registry/default/examples/data-table-demo.tsx",
+        path: "registry/new-york/examples/data-table-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/data-table-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/data-table-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6314,12 +6831,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["button","calendar","popover"],
       files: [{
-        path: "registry/default/examples/date-picker-demo.tsx",
+        path: "registry/new-york/examples/date-picker-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/date-picker-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/date-picker-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6329,12 +6846,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["button","calendar","form","popover"],
       files: [{
-        path: "registry/default/examples/date-picker-form.tsx",
+        path: "registry/new-york/examples/date-picker-form.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/date-picker-form.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/date-picker-form.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6344,12 +6861,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["button","calendar","popover","select"],
       files: [{
-        path: "registry/default/examples/date-picker-with-presets.tsx",
+        path: "registry/new-york/examples/date-picker-with-presets.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/date-picker-with-presets.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/date-picker-with-presets.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6359,12 +6876,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["button","calendar","popover"],
       files: [{
-        path: "registry/default/examples/date-picker-with-range.tsx",
+        path: "registry/new-york/examples/date-picker-with-range.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/date-picker-with-range.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/date-picker-with-range.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6374,12 +6891,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["dialog"],
       files: [{
-        path: "registry/default/examples/dialog-demo.tsx",
+        path: "registry/new-york/examples/dialog-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/dialog-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/dialog-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6389,12 +6906,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["dialog","button"],
       files: [{
-        path: "registry/default/examples/dialog-close-button.tsx",
+        path: "registry/new-york/examples/dialog-close-button.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/dialog-close-button.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/dialog-close-button.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6404,12 +6921,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["drawer"],
       files: [{
-        path: "registry/default/examples/drawer-demo.tsx",
+        path: "registry/new-york/examples/drawer-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/drawer-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/drawer-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6419,12 +6936,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["drawer","dialog"],
       files: [{
-        path: "registry/default/examples/drawer-dialog.tsx",
+        path: "registry/new-york/examples/drawer-dialog.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/drawer-dialog.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/drawer-dialog.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6434,12 +6951,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["dropdown-menu"],
       files: [{
-        path: "registry/default/examples/dropdown-menu-demo.tsx",
+        path: "registry/new-york/examples/dropdown-menu-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/dropdown-menu-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/dropdown-menu-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6449,12 +6966,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["dropdown-menu","checkbox"],
       files: [{
-        path: "registry/default/examples/dropdown-menu-checkboxes.tsx",
+        path: "registry/new-york/examples/dropdown-menu-checkboxes.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/dropdown-menu-checkboxes.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/dropdown-menu-checkboxes.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6464,12 +6981,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["dropdown-menu","radio-group"],
       files: [{
-        path: "registry/default/examples/dropdown-menu-radio-group.tsx",
+        path: "registry/new-york/examples/dropdown-menu-radio-group.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/dropdown-menu-radio-group.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/dropdown-menu-radio-group.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6479,12 +6996,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["hover-card"],
       files: [{
-        path: "registry/default/examples/hover-card-demo.tsx",
+        path: "registry/new-york/examples/hover-card-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/hover-card-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/hover-card-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6494,12 +7011,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["input"],
       files: [{
-        path: "registry/default/examples/input-demo.tsx",
+        path: "registry/new-york/examples/input-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/input-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/input-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6509,12 +7026,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["input"],
       files: [{
-        path: "registry/default/examples/input-disabled.tsx",
+        path: "registry/new-york/examples/input-disabled.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/input-disabled.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/input-disabled.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6524,12 +7041,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["input","button","form"],
       files: [{
-        path: "registry/default/examples/input-form.tsx",
+        path: "registry/new-york/examples/input-form.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/input-form.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/input-form.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6539,12 +7056,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["input","button"],
       files: [{
-        path: "registry/default/examples/input-with-button.tsx",
+        path: "registry/new-york/examples/input-with-button.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/input-with-button.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/input-with-button.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6554,12 +7071,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["input","button","label"],
       files: [{
-        path: "registry/default/examples/input-with-label.tsx",
+        path: "registry/new-york/examples/input-with-label.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/input-with-label.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/input-with-label.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6569,12 +7086,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["input","button","label"],
       files: [{
-        path: "registry/default/examples/input-with-text.tsx",
+        path: "registry/new-york/examples/input-with-text.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/input-with-text.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/input-with-text.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6584,12 +7101,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["input-otp"],
       files: [{
-        path: "registry/default/examples/input-otp-demo.tsx",
+        path: "registry/new-york/examples/input-otp-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/input-otp-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/input-otp-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6599,12 +7116,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["input-otp"],
       files: [{
-        path: "registry/default/examples/input-otp-pattern.tsx",
+        path: "registry/new-york/examples/input-otp-pattern.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/input-otp-pattern.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/input-otp-pattern.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6614,12 +7131,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["input-otp"],
       files: [{
-        path: "registry/default/examples/input-otp-separator.tsx",
+        path: "registry/new-york/examples/input-otp-separator.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/input-otp-separator.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/input-otp-separator.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6629,12 +7146,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["input-otp"],
       files: [{
-        path: "registry/default/examples/input-otp-controlled.tsx",
+        path: "registry/new-york/examples/input-otp-controlled.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/input-otp-controlled.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/input-otp-controlled.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6644,12 +7161,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["input-otp","form"],
       files: [{
-        path: "registry/default/examples/input-otp-form.tsx",
+        path: "registry/new-york/examples/input-otp-form.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/input-otp-form.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/input-otp-form.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6659,12 +7176,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["label"],
       files: [{
-        path: "registry/default/examples/label-demo.tsx",
+        path: "registry/new-york/examples/label-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/label-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/label-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6674,12 +7191,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["menubar"],
       files: [{
-        path: "registry/default/examples/menubar-demo.tsx",
+        path: "registry/new-york/examples/menubar-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/menubar-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/menubar-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6689,12 +7206,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["navigation-menu"],
       files: [{
-        path: "registry/default/examples/navigation-menu-demo.tsx",
+        path: "registry/new-york/examples/navigation-menu-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/navigation-menu-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/navigation-menu-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6704,12 +7221,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["pagination"],
       files: [{
-        path: "registry/default/examples/pagination-demo.tsx",
+        path: "registry/new-york/examples/pagination-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/pagination-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/pagination-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6719,12 +7236,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["popover"],
       files: [{
-        path: "registry/default/examples/popover-demo.tsx",
+        path: "registry/new-york/examples/popover-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/popover-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/popover-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6734,12 +7251,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["progress"],
       files: [{
-        path: "registry/default/examples/progress-demo.tsx",
+        path: "registry/new-york/examples/progress-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/progress-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/progress-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6749,12 +7266,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["radio-group"],
       files: [{
-        path: "registry/default/examples/radio-group-demo.tsx",
+        path: "registry/new-york/examples/radio-group-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/radio-group-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/radio-group-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6764,12 +7281,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["radio-group","form"],
       files: [{
-        path: "registry/default/examples/radio-group-form.tsx",
+        path: "registry/new-york/examples/radio-group-form.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/radio-group-form.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/radio-group-form.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6779,12 +7296,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["resizable"],
       files: [{
-        path: "registry/default/examples/resizable-demo.tsx",
+        path: "registry/new-york/examples/resizable-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/resizable-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/resizable-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6794,12 +7311,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["resizable"],
       files: [{
-        path: "registry/default/examples/resizable-demo-with-handle.tsx",
+        path: "registry/new-york/examples/resizable-demo-with-handle.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/resizable-demo-with-handle.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/resizable-demo-with-handle.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6809,12 +7326,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["resizable"],
       files: [{
-        path: "registry/default/examples/resizable-vertical.tsx",
+        path: "registry/new-york/examples/resizable-vertical.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/resizable-vertical.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/resizable-vertical.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6824,12 +7341,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["resizable"],
       files: [{
-        path: "registry/default/examples/resizable-handle.tsx",
+        path: "registry/new-york/examples/resizable-handle.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/resizable-handle.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/resizable-handle.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6839,12 +7356,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["scroll-area"],
       files: [{
-        path: "registry/default/examples/scroll-area-demo.tsx",
+        path: "registry/new-york/examples/scroll-area-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/scroll-area-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/scroll-area-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6854,12 +7371,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["scroll-area"],
       files: [{
-        path: "registry/default/examples/scroll-area-horizontal-demo.tsx",
+        path: "registry/new-york/examples/scroll-area-horizontal-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/scroll-area-horizontal-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/scroll-area-horizontal-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6869,12 +7386,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["select"],
       files: [{
-        path: "registry/default/examples/select-demo.tsx",
+        path: "registry/new-york/examples/select-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/select-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/select-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6884,12 +7401,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["select"],
       files: [{
-        path: "registry/default/examples/select-scrollable.tsx",
+        path: "registry/new-york/examples/select-scrollable.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/select-scrollable.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/select-scrollable.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6899,12 +7416,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["select"],
       files: [{
-        path: "registry/default/examples/select-form.tsx",
+        path: "registry/new-york/examples/select-form.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/select-form.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/select-form.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6914,12 +7431,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["separator"],
       files: [{
-        path: "registry/default/examples/separator-demo.tsx",
+        path: "registry/new-york/examples/separator-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/separator-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/separator-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6929,12 +7446,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["sheet"],
       files: [{
-        path: "registry/default/examples/sheet-demo.tsx",
+        path: "registry/new-york/examples/sheet-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/sheet-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/sheet-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6944,12 +7461,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["sheet"],
       files: [{
-        path: "registry/default/examples/sheet-side.tsx",
+        path: "registry/new-york/examples/sheet-side.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/sheet-side.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/sheet-side.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6959,12 +7476,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["skeleton"],
       files: [{
-        path: "registry/default/examples/skeleton-demo.tsx",
+        path: "registry/new-york/examples/skeleton-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/skeleton-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/skeleton-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6974,12 +7491,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["skeleton"],
       files: [{
-        path: "registry/default/examples/skeleton-card.tsx",
+        path: "registry/new-york/examples/skeleton-card.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/skeleton-card.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/skeleton-card.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6989,12 +7506,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["slider"],
       files: [{
-        path: "registry/default/examples/slider-demo.tsx",
+        path: "registry/new-york/examples/slider-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/slider-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/slider-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7004,12 +7521,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["sonner"],
       files: [{
-        path: "registry/default/examples/sonner-demo.tsx",
+        path: "registry/new-york/examples/sonner-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/sonner-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/sonner-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7019,12 +7536,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["switch"],
       files: [{
-        path: "registry/default/examples/switch-demo.tsx",
+        path: "registry/new-york/examples/switch-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/switch-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/switch-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7034,12 +7551,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["switch","form"],
       files: [{
-        path: "registry/default/examples/switch-form.tsx",
+        path: "registry/new-york/examples/switch-form.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/switch-form.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/switch-form.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7049,12 +7566,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["table"],
       files: [{
-        path: "registry/default/examples/table-demo.tsx",
+        path: "registry/new-york/examples/table-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/table-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/table-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7064,12 +7581,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["tabs"],
       files: [{
-        path: "registry/default/examples/tabs-demo.tsx",
+        path: "registry/new-york/examples/tabs-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/tabs-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/tabs-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7079,12 +7596,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["textarea"],
       files: [{
-        path: "registry/default/examples/textarea-demo.tsx",
+        path: "registry/new-york/examples/textarea-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/textarea-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/textarea-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7094,12 +7611,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["textarea"],
       files: [{
-        path: "registry/default/examples/textarea-disabled.tsx",
+        path: "registry/new-york/examples/textarea-disabled.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/textarea-disabled.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/textarea-disabled.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7109,12 +7626,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["textarea","form"],
       files: [{
-        path: "registry/default/examples/textarea-form.tsx",
+        path: "registry/new-york/examples/textarea-form.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/textarea-form.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/textarea-form.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7124,12 +7641,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["textarea","button"],
       files: [{
-        path: "registry/default/examples/textarea-with-button.tsx",
+        path: "registry/new-york/examples/textarea-with-button.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/textarea-with-button.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/textarea-with-button.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7139,12 +7656,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["textarea","label"],
       files: [{
-        path: "registry/default/examples/textarea-with-label.tsx",
+        path: "registry/new-york/examples/textarea-with-label.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/textarea-with-label.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/textarea-with-label.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7154,12 +7671,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["textarea","label"],
       files: [{
-        path: "registry/default/examples/textarea-with-text.tsx",
+        path: "registry/new-york/examples/textarea-with-text.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/textarea-with-text.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/textarea-with-text.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7169,12 +7686,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["toast"],
       files: [{
-        path: "registry/default/examples/toast-demo.tsx",
+        path: "registry/new-york/examples/toast-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/toast-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/toast-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7184,12 +7701,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["toast"],
       files: [{
-        path: "registry/default/examples/toast-destructive.tsx",
+        path: "registry/new-york/examples/toast-destructive.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/toast-destructive.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/toast-destructive.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7199,12 +7716,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["toast"],
       files: [{
-        path: "registry/default/examples/toast-simple.tsx",
+        path: "registry/new-york/examples/toast-simple.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/toast-simple.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/toast-simple.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7214,12 +7731,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["toast"],
       files: [{
-        path: "registry/default/examples/toast-with-action.tsx",
+        path: "registry/new-york/examples/toast-with-action.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/toast-with-action.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/toast-with-action.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7229,12 +7746,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["toast"],
       files: [{
-        path: "registry/default/examples/toast-with-title.tsx",
+        path: "registry/new-york/examples/toast-with-title.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/toast-with-title.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/toast-with-title.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7244,12 +7761,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["toggle-group"],
       files: [{
-        path: "registry/default/examples/toggle-group-demo.tsx",
+        path: "registry/new-york/examples/toggle-group-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/toggle-group-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/toggle-group-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7259,12 +7776,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["toggle-group"],
       files: [{
-        path: "registry/default/examples/toggle-group-disabled.tsx",
+        path: "registry/new-york/examples/toggle-group-disabled.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/toggle-group-disabled.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/toggle-group-disabled.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7274,12 +7791,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["toggle-group"],
       files: [{
-        path: "registry/default/examples/toggle-group-lg.tsx",
+        path: "registry/new-york/examples/toggle-group-lg.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/toggle-group-lg.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/toggle-group-lg.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7289,12 +7806,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["toggle-group"],
       files: [{
-        path: "registry/default/examples/toggle-group-outline.tsx",
+        path: "registry/new-york/examples/toggle-group-outline.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/toggle-group-outline.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/toggle-group-outline.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7304,12 +7821,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["toggle-group"],
       files: [{
-        path: "registry/default/examples/toggle-group-sm.tsx",
+        path: "registry/new-york/examples/toggle-group-sm.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/toggle-group-sm.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/toggle-group-sm.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7319,12 +7836,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["toggle-group"],
       files: [{
-        path: "registry/default/examples/toggle-group-single.tsx",
+        path: "registry/new-york/examples/toggle-group-single.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/toggle-group-single.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/toggle-group-single.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7334,12 +7851,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["toggle"],
       files: [{
-        path: "registry/default/examples/toggle-demo.tsx",
+        path: "registry/new-york/examples/toggle-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/toggle-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/toggle-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7349,12 +7866,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["toggle"],
       files: [{
-        path: "registry/default/examples/toggle-disabled.tsx",
+        path: "registry/new-york/examples/toggle-disabled.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/toggle-disabled.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/toggle-disabled.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7364,12 +7881,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["toggle"],
       files: [{
-        path: "registry/default/examples/toggle-lg.tsx",
+        path: "registry/new-york/examples/toggle-lg.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/toggle-lg.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/toggle-lg.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7379,12 +7896,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["toggle"],
       files: [{
-        path: "registry/default/examples/toggle-outline.tsx",
+        path: "registry/new-york/examples/toggle-outline.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/toggle-outline.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/toggle-outline.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7394,12 +7911,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["toggle"],
       files: [{
-        path: "registry/default/examples/toggle-sm.tsx",
+        path: "registry/new-york/examples/toggle-sm.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/toggle-sm.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/toggle-sm.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7409,12 +7926,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["toggle"],
       files: [{
-        path: "registry/default/examples/toggle-with-text.tsx",
+        path: "registry/new-york/examples/toggle-with-text.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/toggle-with-text.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/toggle-with-text.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7424,12 +7941,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["tooltip"],
       files: [{
-        path: "registry/default/examples/tooltip-demo.tsx",
+        path: "registry/new-york/examples/tooltip-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/tooltip-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/tooltip-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7439,12 +7956,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/examples/typography-blockquote.tsx",
+        path: "registry/new-york/examples/typography-blockquote.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/typography-blockquote.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/typography-blockquote.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7454,12 +7971,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/examples/typography-demo.tsx",
+        path: "registry/new-york/examples/typography-demo.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/typography-demo.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/typography-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7469,12 +7986,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/examples/typography-h1.tsx",
+        path: "registry/new-york/examples/typography-h1.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/typography-h1.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/typography-h1.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7484,12 +8001,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/examples/typography-h2.tsx",
+        path: "registry/new-york/examples/typography-h2.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/typography-h2.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/typography-h2.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7499,12 +8016,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/examples/typography-h3.tsx",
+        path: "registry/new-york/examples/typography-h3.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/typography-h3.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/typography-h3.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7514,12 +8031,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/examples/typography-h4.tsx",
+        path: "registry/new-york/examples/typography-h4.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/typography-h4.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/typography-h4.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7529,12 +8046,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/examples/typography-inline-code.tsx",
+        path: "registry/new-york/examples/typography-inline-code.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/typography-inline-code.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/typography-inline-code.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7544,12 +8061,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/examples/typography-large.tsx",
+        path: "registry/new-york/examples/typography-large.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/typography-large.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/typography-large.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7559,12 +8076,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/examples/typography-lead.tsx",
+        path: "registry/new-york/examples/typography-lead.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/typography-lead.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/typography-lead.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7574,12 +8091,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/examples/typography-list.tsx",
+        path: "registry/new-york/examples/typography-list.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/typography-list.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/typography-list.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7589,12 +8106,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/examples/typography-muted.tsx",
+        path: "registry/new-york/examples/typography-muted.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/typography-muted.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/typography-muted.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7604,12 +8121,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/examples/typography-p.tsx",
+        path: "registry/new-york/examples/typography-p.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/typography-p.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/typography-p.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7619,12 +8136,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/examples/typography-small.tsx",
+        path: "registry/new-york/examples/typography-small.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/typography-small.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/typography-small.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7634,12 +8151,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/examples/typography-table.tsx",
+        path: "registry/new-york/examples/typography-table.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/typography-table.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/typography-table.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7649,12 +8166,12 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/examples/mode-toggle.tsx",
+        path: "registry/new-york/examples/mode-toggle.tsx",
         type: "registry:example",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/mode-toggle.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/examples/mode-toggle.tsx")),
       source: "",
       meta: undefined,
     },

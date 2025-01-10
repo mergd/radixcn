@@ -45,7 +45,7 @@ const buttonVariants = cva(
       variant: "default",
       size: "default",
     },
-  }
+  },
 );
 
 // Update variantMap to accept any string
@@ -88,7 +88,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       "aria-label": ariaLabel,
       ...props
     },
-    ref
+    ref,
   ) => {
     if (size === "icon") {
       return (
@@ -113,7 +113,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
           className={cn(
             "cursor-pointer",
             variant === "link" && "underline-offset-4 hover:underline",
-            className
+            className,
           )}
           ref={ref}
           {...props}
@@ -140,7 +140,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         </div>
       </RadixButton>
     );
-  }
+  },
 );
 Button.displayName = "Button";
 

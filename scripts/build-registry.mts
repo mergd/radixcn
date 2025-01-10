@@ -55,6 +55,11 @@ export const Index: Record<string, any> = {
 `;
 
   for (const style of styles) {
+    // Skip the default style in the main loop since we'll add it at the end
+    if (style.name === "default") {
+      continue;
+    }
+
     index += `  "${style.name}": {`;
 
     // Build style index.
@@ -194,6 +199,64 @@ export const Index: Record<string, any> = {
   },`;
   }
 
+  // Add default as an alias to new-york, but use new-york paths internally
+  index += `
+  "default": {`;
+
+  // Build style index for default using new-york paths
+  for (const item of registry) {
+    if (!REGISTRY_INDEX_WHITELIST.includes(item.type)) {
+      continue;
+    }
+
+    const resolveFiles = item.files?.map(
+      (file) =>
+        `registry/new-york/${typeof file === "string" ? file : file.path}`
+    );
+    if (!resolveFiles) {
+      continue;
+    }
+
+    let componentPath = `@/registry/new-york/${item.type.split(":")[1]}/${item.name}`;
+
+    if (item.files) {
+      const files = item.files.map((file) =>
+        typeof file === "string" ? { type: "registry:page", path: file } : file
+      );
+      if (files?.length) {
+        componentPath = `@/registry/new-york/${files[0].path}`;
+      }
+    }
+
+    index += `
+    "${item.name}": {
+      name: "${item.name}",
+      description: "${item.description ?? ""}",
+      type: "${item.type}",
+      registryDependencies: ${JSON.stringify(item.registryDependencies)},
+      files: [${item.files?.map((file) => {
+        const filePath = `registry/new-york/${
+          typeof file === "string" ? file : file.path
+        }`;
+        const resolvedFilePath = path.resolve(filePath);
+        return typeof file === "string"
+          ? `"${resolvedFilePath}"`
+          : `{
+        path: "${filePath}",
+        type: "${file.type}",
+        target: "${file.target ?? ""}"
+      }`;
+      })}],
+      categories: ${JSON.stringify(item.categories)},
+      component: React.lazy(() => import("${componentPath}")),
+      source: "",
+      meta: ${JSON.stringify(item.meta)},
+    },`;
+  }
+
+  index += `
+  },`;
+
   index += `
 }
 `;
@@ -254,8 +317,8 @@ async function buildStyles(registry: Registry) {
           const destPath = path.join(targetPath, file);
           await fs.copyFile(sourcePath, destPath);
         }
-        continue; // Skip the rest of the loop for default style
       }
+      continue; // Skip processing default style further
     }
 
     for (const item of registry) {
