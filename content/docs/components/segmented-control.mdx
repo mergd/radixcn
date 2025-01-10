@@ -1,0 +1,65 @@
+---
+title: Segmented Control
+description: A set of interactive segments, where only one segment can be selected at a time.
+component: true
+links:
+  doc: https://www.radix-ui.com/themes/docs/components/segmented-control
+  api: https://www.radix-ui.com/themes/docs/components/segmented-control#api-reference
+---
+
+<ComponentPreview
+  name="segmented-control-demo"
+  description="A segmented control with three options."
+/>
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx radixcn@latest add segmented-control
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @radix-ui/themes
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="segmented-control" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import { SegmentedControl, SegmentedControlItem } from "@/components/ui/segmented-control"
+```
+
+```tsx
+<SegmentedControl defaultValue="preview">
+  <SegmentedControlItem value="preview">Preview</SegmentedControlItem>
+  <SegmentedControlItem value="code">Code</SegmentedControlItem>
+  <SegmentedControlItem value="properties">Properties</SegmentedControlItem>
+</SegmentedControl>
+```

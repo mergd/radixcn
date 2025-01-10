@@ -563,6 +563,28 @@ export const examples: Registry = [
     ],
   },
   {
+    name: "data-list-align-demo",
+    type: "registry:example",
+    registryDependencies: ["data-list"],
+    files: [
+      {
+        path: "examples/data-list-align-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "data-list-demo",
+    type: "registry:example",
+    registryDependencies: ["data-list"],
+    files: [
+      {
+        path: "examples/data-list-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "date-picker-demo",
     type: "registry:example",
     registryDependencies: ["button", "calendar", "popover"],
@@ -886,6 +908,28 @@ export const examples: Registry = [
     ],
   },
   {
+    name: "radio-cards-demo",
+    type: "registry:example",
+    registryDependencies: ["radio-cards"],
+    files: [
+      {
+        path: "examples/radio-cards-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "radio-cards-form",
+    type: "registry:example",
+    registryDependencies: ["radio-cards", "form"],
+    files: [
+      {
+        path: "examples/radio-cards-form.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "radio-group-demo",
     type: "registry:example",
     registryDependencies: ["radio-group"],
@@ -969,6 +1013,17 @@ export const examples: Registry = [
     files: [
       {
         path: "examples/scroll-area-horizontal-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "segmented-control-demo",
+    type: "registry:example",
+    registryDependencies: ["segmented-control"],
+    files: [
+      {
+        path: "examples/segmented-control-demo.tsx",
         type: "registry:example",
       },
     ],

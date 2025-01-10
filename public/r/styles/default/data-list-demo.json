@@ -1,0 +1,15 @@
+{
+  "name": "data-list-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "data-list"
+  ],
+  "files": [
+    {
+      "path": "examples/data-list-demo.tsx",
+      "content": "import { DataList } from \"@/registry/new-york/ui/data-list\";\n\nexport default function DataListDemo() {\n  return (\n    <DataList.Root>\n      <DataList.Item>\n        <DataList.Label minWidth=\"120px\">Status</DataList.Label>\n        <DataList.Value>Active</DataList.Value>\n      </DataList.Item>\n      <DataList.Item>\n        <DataList.Label minWidth=\"120px\">Created</DataList.Label>\n        <DataList.Value>December 12, 2023</DataList.Value>\n      </DataList.Item>\n      <DataList.Item>\n        <DataList.Label minWidth=\"120px\">Updated</DataList.Label>\n        <DataList.Value>January 5, 2024</DataList.Value>\n      </DataList.Item>\n      <DataList.Item>\n        <DataList.Label minWidth=\"120px\">Type</DataList.Label>\n        <DataList.Value>Personal</DataList.Value>\n      </DataList.Item>\n    </DataList.Root>\n  );\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

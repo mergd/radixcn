@@ -46,12 +46,6 @@ export const docsConfig: DocsConfig = {
           href: "/docs/installation",
           items: [],
         },
-
-        {
-          title: "CLI",
-          href: "/docs/cli",
-          items: [],
-        },
         {
           title: "Typography",
           href: "/docs/components/typography",
@@ -60,21 +54,6 @@ export const docsConfig: DocsConfig = {
         {
           title: "Changelog",
           href: "/docs/changelog",
-          items: [],
-        },
-      ],
-    },
-    {
-      title: "Installation",
-      items: [
-        {
-          title: "Next.js",
-          href: "/docs/installation/next",
-          items: [],
-        },
-        {
-          title: "Manual",
-          href: "/docs/installation/manual",
           items: [],
         },
       ],
@@ -168,6 +147,11 @@ export const docsConfig: DocsConfig = {
           items: [],
         },
         {
+          title: "Data List",
+          href: "/docs/components/data-list",
+          items: [],
+        },
+        {
           title: "Data Table",
           href: "/docs/components/data-table",
           items: [],
@@ -248,6 +232,11 @@ export const docsConfig: DocsConfig = {
           items: [],
         },
         {
+          title: "Radio Cards",
+          href: "/docs/components/radio-cards",
+          items: [],
+        },
+        {
           title: "Resizable",
           href: "/docs/components/resizable",
           items: [],
@@ -255,6 +244,11 @@ export const docsConfig: DocsConfig = {
         {
           title: "Scroll Area",
           href: "/docs/components/scroll-area",
+          items: [],
+        },
+        {
+          title: "Segmented Control",
+          href: "/docs/components/segmented-control",
           items: [],
         },
         {

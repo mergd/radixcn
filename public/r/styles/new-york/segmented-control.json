@@ -1,0 +1,15 @@
+{
+  "name": "segmented-control",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/react-segmented-control"
+  ],
+  "files": [
+    {
+      "path": "ui/segmented-control.tsx",
+      "content": "import * as React from \"react\";\nimport { SegmentedControl as RadixSegmentedControl } from \"@radix-ui/themes\";\nimport type { ComponentPropsWithoutRef } from \"react\";\nimport { cn } from \"@/lib/utils\";\nexport interface SegmentedControlProps\n  extends Omit<\n    ComponentPropsWithoutRef<typeof RadixSegmentedControl.Root>,\n    \"defaultValue\" | \"value\" | \"onValueChange\"\n  > {\n  value?: string;\n  className?: string;\n  onValueChange?: (value: string) => void;\n  defaultValue?: string;\n}\n\ninterface SegmentedControlItemProps {\n  className?: string;\n  children?: React.ReactNode;\n  value: string;\n}\n\nconst SegmentedControl = React.forwardRef<\n  React.ElementRef<typeof RadixSegmentedControl.Root>,\n  SegmentedControlProps\n>((props, ref) => {\n  return (\n    <RadixSegmentedControl.Root\n      ref={ref}\n      className={cn(props.className)}\n      {...props}\n    />\n  );\n});\n\nconst SegmentedControlItem = React.forwardRef<\n  React.ElementRef<typeof RadixSegmentedControl.Item>,\n  SegmentedControlItemProps\n>((props, ref) => {\n  return (\n    <RadixSegmentedControl.Item\n      ref={ref}\n      className={cn(props.className)}\n      {...props}\n    />\n  );\n});\n\nSegmentedControl.displayName = \"SegmentedControl\";\n\nexport { SegmentedControl, SegmentedControlItem };\n",
+      "type": "registry:ui",
+      "target": ""
+    }
+  ]
+}

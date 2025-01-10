@@ -1,0 +1,135 @@
+---
+title: Data List
+description: A structured list for displaying key-value data pairs with consistent alignment and spacing.
+component: true
+links:
+  doc: https://www.radix-ui.com/themes/docs/components/data-list
+  api: https://www.radix-ui.com/themes/docs/components/data-list#api-reference
+---
+
+<ComponentPreview name="data-list-demo" />
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx radixcn@latest add data-list
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="data-list" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import { DataList } from "@/components/ui/data-list"
+```
+
+```tsx
+<DataList.Root>
+  <DataList.Item>
+    <DataList.Label>Status</DataList.Label>
+    <DataList.Value>Active</DataList.Value>
+  </DataList.Item>
+</DataList.Root>
+```
+
+## Examples
+
+### Alignment
+
+The `DataList.Item` component accepts an `align` prop to control the vertical alignment of the label and value. This is particularly useful when dealing with multi-line content or components of varying heights.
+
+<ComponentPreview name="data-list-align-demo" />
+
+## Props
+
+### Root
+
+A container for the data list items.
+
+<PropsTable
+  data={[
+    {
+      name: "className",
+      type: "string",
+      description: "Optional class name for the root element.",
+    },
+  ]}
+/>
+
+### Item
+
+A container for a label-value pair.
+
+<PropsTable
+  data={[
+    {
+      name: "align",
+      type: '"start" | "center" | "end" | "baseline" | "stretch"',
+      description: "Controls the vertical alignment of the label and value.",
+      default: '"start"',
+    },
+    {
+      name: "className",
+      type: "string",
+      description: "Optional class name for the item element.",
+    },
+  ]}
+/>
+
+### Label
+
+The label component for the data item.
+
+<PropsTable
+  data={[
+    {
+      name: "minWidth",
+      type: "string",
+      description: "Sets the minimum width of the label.",
+    },
+    {
+      name: "className",
+      type: "string",
+      description: "Optional class name for the label element.",
+    },
+  ]}
+/>
+
+### Value
+
+The value component for the data item.
+
+<PropsTable
+  data={[
+    {
+      name: "className",
+      type: "string",
+      description: "Optional class name for the value element.",
+    },
+  ]}
+/> 

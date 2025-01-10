@@ -1,0 +1,15 @@
+{
+  "name": "data-list-align-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "data-list"
+  ],
+  "files": [
+    {
+      "path": "examples/data-list-align-demo.tsx",
+      "content": "import { DataList } from \"@/registry/new-york/ui/data-list\";\nimport { Badge } from \"@radix-ui/themes\";\n\nexport default function DataListAlignDemo() {\n  return (\n    <div className=\"grid gap-6\">\n      <DataList.Root>\n        <DataList.Item align=\"center\">\n          <DataList.Label minWidth=\"100px\">Status</DataList.Label>\n          <DataList.Value>\n            <Badge color=\"green\" variant=\"soft\">\n              Active\n            </Badge>\n          </DataList.Value>\n        </DataList.Item>\n        <DataList.Item align=\"baseline\">\n          <DataList.Label minWidth=\"100px\">Description</DataList.Label>\n          <DataList.Value>\n            A longer description that might span multiple lines. This shows how\n            baseline alignment keeps the text properly aligned.\n          </DataList.Value>\n        </DataList.Item>\n        <DataList.Item align=\"start\">\n          <DataList.Label minWidth=\"100px\">Tags</DataList.Label>\n          <DataList.Value>\n            <div className=\"flex gap-2\">\n              <Badge>Design</Badge>\n              <Badge>Development</Badge>\n              <Badge>Product</Badge>\n            </div>\n          </DataList.Value>\n        </DataList.Item>\n      </DataList.Root>\n    </div>\n  );\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

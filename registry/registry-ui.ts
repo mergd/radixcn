@@ -191,6 +191,17 @@ export const ui: Registry = [
     ],
   },
   {
+    name: "data-list",
+    type: "registry:ui",
+    dependencies: ["@radix-ui/react-data-list"],
+    files: [
+      {
+        path: "ui/data-list.tsx",
+        type: "registry:ui",
+      },
+    ],
+  },
+  {
     name: "dialog",
     type: "registry:ui",
     dependencies: ["@radix-ui/react-dialog", "@radix-ui/themes"],
@@ -341,6 +352,17 @@ export const ui: Registry = [
     ],
   },
   {
+    name: "radio-cards",
+    type: "registry:ui",
+    dependencies: ["@radix-ui/themes"],
+    files: [
+      {
+        path: "ui/radio-cards.tsx",
+        type: "registry:ui",
+      },
+    ],
+  },
+  {
     name: "radio-group",
     type: "registry:ui",
     dependencies: ["@radix-ui/react-radio-group", "@radix-ui/themes"],
@@ -369,6 +391,17 @@ export const ui: Registry = [
     files: [
       {
         path: "ui/scroll-area.tsx",
+        type: "registry:ui",
+      },
+    ],
+  },
+  {
+    name: "segmented-control",
+    type: "registry:ui",
+    dependencies: ["@radix-ui/react-segmented-control"],
+    files: [
+      {
+        path: "ui/segmented-control.tsx",
         type: "registry:ui",
       },
     ],

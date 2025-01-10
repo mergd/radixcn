@@ -1,3 +1,4 @@
+This repo uses pnpm
 I am refactoring shadcn/ui to Radix theme components (@radix-ui/themes), with an eye on API compatibility.
 - Cut down on the amount of tailwind.
 - Keep variant API compatibility
@@ -6,5 +7,5 @@ I am refactoring shadcn/ui to Radix theme components (@radix-ui/themes), with an
 - Make variants extensible
 - Use `Omit` for clean types
 - Add `@deprecated` comments for any components that are deprecated
-- Prefer Radix Icons over Lucide Icons
+- Prefer Radix Icons over Lucide Icons – but if there's no Radix Icon, use Lucide Icons
 - Try to create thin wrappers around Radix Theme instead of reimplementing components – and usually there's a radix themes version of the component.

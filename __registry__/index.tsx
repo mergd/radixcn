@@ -230,6 +230,21 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "data-list": {
+      name: "data-list",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/ui/data-list.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/ui/data-list.tsx")),
+      source: "",
+      meta: undefined,
+    },
     "dialog": {
       name: "dialog",
       description: "",
@@ -425,6 +440,21 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "radio-cards": {
+      name: "radio-cards",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/ui/radio-cards.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/ui/radio-cards.tsx")),
+      source: "",
+      meta: undefined,
+    },
     "radio-group": {
       name: "radio-group",
       description: "",
@@ -467,6 +497,21 @@ export const Index: Record<string, any> = {
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/new-york/ui/scroll-area.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "segmented-control": {
+      name: "segmented-control",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/ui/segmented-control.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/ui/segmented-control.tsx")),
       source: "",
       meta: undefined,
     },
@@ -2739,6 +2784,36 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "data-list-align-demo": {
+      name: "data-list-align-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["data-list"],
+      files: [{
+        path: "registry/new-york/examples/data-list-align-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/data-list-align-demo.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "data-list-demo": {
+      name: "data-list-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["data-list"],
+      files: [{
+        path: "registry/new-york/examples/data-list-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/data-list-demo.tsx")),
+      source: "",
+      meta: undefined,
+    },
     "date-picker-demo": {
       name: "date-picker-demo",
       description: "",
@@ -3174,6 +3249,36 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "radio-cards-demo": {
+      name: "radio-cards-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["radio-cards"],
+      files: [{
+        path: "registry/new-york/examples/radio-cards-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/radio-cards-demo.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "radio-cards-form": {
+      name: "radio-cards-form",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["radio-cards","form"],
+      files: [{
+        path: "registry/new-york/examples/radio-cards-form.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/radio-cards-form.tsx")),
+      source: "",
+      meta: undefined,
+    },
     "radio-group-demo": {
       name: "radio-group-demo",
       description: "",
@@ -3291,6 +3396,21 @@ export const Index: Record<string, any> = {
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/new-york/examples/scroll-area-horizontal-demo.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "segmented-control-demo": {
+      name: "segmented-control-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["segmented-control"],
+      files: [{
+        path: "registry/new-york/examples/segmented-control-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/segmented-control-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4316,6 +4436,21 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "data-list": {
+      name: "data-list",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/ui/data-list.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/ui/data-list.tsx")),
+      source: "",
+      meta: undefined,
+    },
     "dialog": {
       name: "dialog",
       description: "",
@@ -4511,6 +4646,21 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "radio-cards": {
+      name: "radio-cards",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/ui/radio-cards.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/ui/radio-cards.tsx")),
+      source: "",
+      meta: undefined,
+    },
     "radio-group": {
       name: "radio-group",
       description: "",
@@ -4553,6 +4703,21 @@ export const Index: Record<string, any> = {
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/new-york/ui/scroll-area.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "segmented-control": {
+      name: "segmented-control",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/ui/segmented-control.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/ui/segmented-control.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6825,6 +6990,36 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "data-list-align-demo": {
+      name: "data-list-align-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["data-list"],
+      files: [{
+        path: "registry/new-york/examples/data-list-align-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/data-list-align-demo.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "data-list-demo": {
+      name: "data-list-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["data-list"],
+      files: [{
+        path: "registry/new-york/examples/data-list-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/data-list-demo.tsx")),
+      source: "",
+      meta: undefined,
+    },
     "date-picker-demo": {
       name: "date-picker-demo",
       description: "",
@@ -7260,6 +7455,36 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "radio-cards-demo": {
+      name: "radio-cards-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["radio-cards"],
+      files: [{
+        path: "registry/new-york/examples/radio-cards-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/radio-cards-demo.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "radio-cards-form": {
+      name: "radio-cards-form",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["radio-cards","form"],
+      files: [{
+        path: "registry/new-york/examples/radio-cards-form.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/radio-cards-form.tsx")),
+      source: "",
+      meta: undefined,
+    },
     "radio-group-demo": {
       name: "radio-group-demo",
       description: "",
@@ -7377,6 +7602,21 @@ export const Index: Record<string, any> = {
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/new-york/examples/scroll-area-horizontal-demo.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "segmented-control-demo": {
+      name: "segmented-control-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["segmented-control"],
+      files: [{
+        path: "registry/new-york/examples/segmented-control-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/segmented-control-demo.tsx")),
       source: "",
       meta: undefined,
     },

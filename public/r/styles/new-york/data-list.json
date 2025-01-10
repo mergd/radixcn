@@ -1,0 +1,15 @@
+{
+  "name": "data-list",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/react-data-list"
+  ],
+  "files": [
+    {
+      "path": "ui/data-list.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport { Flex } from \"@radix-ui/themes\";\nimport { cn } from \"@/lib/utils\";\n\ninterface DataListRootProps extends React.ComponentPropsWithoutRef<\"div\"> {\n  children?: React.ReactNode;\n}\n\nconst DataListRoot = React.forwardRef<HTMLDivElement, DataListRootProps>(\n  ({ className, ...props }, ref) => {\n    return (\n      <div\n        ref={ref}\n        className={cn(\"flex flex-col gap-3\", className)}\n        {...props}\n      />\n    );\n  },\n);\nDataListRoot.displayName = \"DataList.Root\";\n\ninterface DataListItemProps {\n  children?: React.ReactNode;\n  className?: string;\n  align?: \"start\" | \"center\" | \"end\" | \"baseline\" | \"stretch\";\n}\n\nconst DataListItem = React.forwardRef<HTMLDivElement, DataListItemProps>(\n  ({ className, align = \"start\", ...props }, ref) => {\n    return (\n      <Flex\n        ref={ref}\n        align={align}\n        className={cn(\"w-full\", className)}\n        {...props}\n      />\n    );\n  },\n);\nDataListItem.displayName = \"DataList.Item\";\n\ninterface DataListLabelProps extends React.ComponentPropsWithoutRef<\"div\"> {\n  children?: React.ReactNode;\n  minWidth?: string;\n}\n\nconst DataListLabel = React.forwardRef<HTMLDivElement, DataListLabelProps>(\n  ({ className, minWidth, style, ...props }, ref) => {\n    return (\n      <div\n        ref={ref}\n        className={cn(\"text-sm text-gray-11 shrink-0\", className)}\n        style={{ minWidth, ...style }}\n        {...props}\n      />\n    );\n  },\n);\nDataListLabel.displayName = \"DataList.Label\";\n\ninterface DataListValueProps extends React.ComponentPropsWithoutRef<\"div\"> {\n  children?: React.ReactNode;\n}\n\nconst DataListValue = React.forwardRef<HTMLDivElement, DataListValueProps>(\n  ({ className, ...props }, ref) => {\n    return (\n      <div\n        ref={ref}\n        className={cn(\"text-sm text-gray-12 flex-1\", className)}\n        {...props}\n      />\n    );\n  },\n);\nDataListValue.displayName = \"DataList.Value\";\n\nexport const DataList = {\n  Root: DataListRoot,\n  Item: DataListItem,\n  Label: DataListLabel,\n  Value: DataListValue,\n};\n",
+      "type": "registry:ui",
+      "target": ""
+    }
+  ]
+}

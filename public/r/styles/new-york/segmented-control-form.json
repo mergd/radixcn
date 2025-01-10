@@ -1,0 +1,16 @@
+{
+  "name": "segmented-control-form",
+  "type": "registry:example",
+  "registryDependencies": [
+    "segmented-control",
+    "form"
+  ],
+  "files": [
+    {
+      "path": "examples/segmented-control-form.tsx",
+      "content": "import { Button } from \"@/registry/new-york/ui/button\";\nimport {\n  Form,\n  FormControl,\n  FormField,\n  FormItem,\n  FormLabel,\n} from \"@/registry/new-york/ui/form\";\nimport {\n  SegmentedControl,\n  SegmentedControlItem,\n} from \"@/registry/new-york/ui/segmented-control\";\nimport { zodResolver } from \"@hookform/resolvers/zod\";\nimport { useForm } from \"react-hook-form\";\nimport * as z from \"zod\";\n\nconst FormSchema = z.object({\n  theme: z.string({\n    required_error: \"Please select a theme.\",\n  }),\n});\n\nexport default function SegmentedControlForm() {\n  const form = useForm<z.infer<typeof FormSchema>>({\n    resolver: zodResolver(FormSchema),\n  });\n\n  function onSubmit(data: z.infer<typeof FormSchema>) {\n    console.log(data);\n  }\n\n  return (\n    <Form {...form}>\n      <form onSubmit={form.handleSubmit(onSubmit)} className=\"w-full space-y-6\">\n        <FormField\n          control={form.control}\n          name=\"theme\"\n          render={({ field }) => (\n            <FormItem>\n              <FormLabel>Theme</FormLabel>\n              <FormControl>\n                <SegmentedControl\n                  defaultValue={field.value}\n                  onValueChange={field.onChange}\n                >\n                  <SegmentedControlItem value=\"light\">\n                    Light\n                  </SegmentedControlItem>\n                  <SegmentedControlItem value=\"dark\">Dark</SegmentedControlItem>\n                  <SegmentedControlItem value=\"system\">\n                    System\n                  </SegmentedControlItem>\n                </SegmentedControl>\n              </FormControl>\n            </FormItem>\n          )}\n        />\n        <Button type=\"submit\">Submit</Button>\n      </form>\n    </Form>\n  );\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

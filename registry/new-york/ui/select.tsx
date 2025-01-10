@@ -31,12 +31,15 @@ const SelectContent = React.forwardRef<
   React.ElementRef<typeof RadixSelect.Content>,
   React.ComponentPropsWithoutRef<typeof RadixSelect.Content> & {
     size?: "1" | "2" | "3";
+    matchTriggerWidth?: boolean;
   }
->(({ className, size = "2", ...props }, ref) => (
+>(({ className, size = "2", matchTriggerWidth = true, ...props }, ref) => (
   <RadixSelect.Content
     ref={ref}
     className={cn("min-w-[8rem]", className)}
     position="popper"
+    sideOffset={4}
+    {...(matchTriggerWidth && { width: "var(--radix-select-trigger-width)" })}
     {...props}
   />
 ));

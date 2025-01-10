@@ -1,0 +1,93 @@
+---
+title: Installation
+description: How to install radixcn.
+---
+
+
+## Getting started
+
+Installation
+Getting up and running is quick and easy.
+
+1. Install Radix Themes
+Install the package from your command line.
+```bash
+pnpm add @radix-ui/themes
+```
+
+2. Install shadcn
+
+```bash
+pnpm dlx shadcn@latest init
+```
+
+3. Import the global CSS file at the root of your application.
+
+Install this before any other imports to ensure the styles are applied correctly.
+
+```tsx
+import "@radix-ui/themes/styles.css";
+```
+
+4. Add Theme to your application, wrapping the root component inside of body.
+
+```tsx
+import { Theme } from "@radix-ui/themes";
+
+export default function () {
+	return (
+		<html>
+			<body>
+				<Theme>
+					<MyApp />
+				</Theme>
+			</body>
+		</html>
+	);
+}
+```
+
+5. Start building!
+
+```bash
+npx shadcn@latest add https://ui.fldr.zip/default/button
+```
+
+
+```tsx
+import { Button } from "@/components/ui/button";
+
+export default function MyApp() {
+	return (
+		<div className="flex flex-col gap-2">
+			<Button>Let's go</Button>
+		</div>
+	);
+}
+```
+
+
+## Add components from CLI
+
+There are two ways to add components to your project using the CLI.
+
+Default and New York will be treated the same.
+
+1. Using the components URL. (Note you will need to specify the style, e.g `https://ui.fldr.zip/new-york/button`)
+
+2. Using the `REGISTRY_URL` environment variable.
+
+### Using the components URL (Recommended)
+
+
+```bash 
+npx shadcn@latest add https://ui.fldr.zip/[[STYLE]]/button
+```
+
+
+### Using the `REGISTRY_URL` environment variable
+
+
+```bash
+REGISTRY_URL=https://ui.fldr.zip/r pnpm dlx shadcn@latest add button
+```

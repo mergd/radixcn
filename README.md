@@ -1,10 +1,5 @@
 # Radixcn
 
-add theme installation instructions
-
-
-
-
 
 Todo:
 - [ ] pagination is broken
@@ -12,12 +7,12 @@ Todo:
 
 Docs:
 
-- [ ] segmented control
-- [ ] data list
-- [ ] radio card
+- [X] segmented control
+- [X] data list
+- [X] radio card
 
 components to refactor:
 
 components to add:
-checkbox group
+
 

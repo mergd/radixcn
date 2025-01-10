@@ -1,0 +1,15 @@
+{
+  "name": "radio-cards-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "radio-cards"
+  ],
+  "files": [
+    {
+      "path": "examples/radio-cards-demo.tsx",
+      "content": "import { RadioCards } from \"@/registry/new-york/ui/radio-cards\";\nimport { MoonIcon, SunIcon, DesktopIcon } from \"@radix-ui/react-icons\";\n\nexport default function RadioCardsDemo() {\n  return (\n    <RadioCards\n      items={[\n        {\n          value: \"light\",\n          children: (\n            <div className=\"flex items-center gap-3\">\n              <SunIcon width={16} height={16} />\n              <div className=\"font-medium\">Light</div>\n            </div>\n          ),\n        },\n        {\n          value: \"dark\",\n          children: (\n            <div className=\"flex items-center gap-3\">\n              <MoonIcon width={16} height={16} />\n              <div className=\"font-medium\">Dark</div>\n            </div>\n          ),\n        },\n        {\n          value: \"system\",\n          children: (\n            <div className=\"flex items-center gap-3\">\n              <DesktopIcon width={16} height={16} />\n              <div className=\"font-medium\">System</div>\n            </div>\n          ),\n        },\n      ]}\n      defaultValue=\"system\"\n    />\n  );\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

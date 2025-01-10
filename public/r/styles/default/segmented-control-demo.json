@@ -1,0 +1,15 @@
+{
+  "name": "segmented-control-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "segmented-control"
+  ],
+  "files": [
+    {
+      "path": "examples/segmented-control-demo.tsx",
+      "content": "import {\n  SegmentedControl,\n  SegmentedControlItem,\n} from \"@/registry/new-york/ui/segmented-control\";\n\nexport default function SegmentedControlDemo() {\n  return (\n    <SegmentedControl defaultValue=\"preview\">\n      <SegmentedControlItem value=\"preview\">Preview</SegmentedControlItem>\n      <SegmentedControlItem value=\"code\">Code</SegmentedControlItem>\n      <SegmentedControlItem value=\"properties\">Properties</SegmentedControlItem>\n    </SegmentedControl>\n  );\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

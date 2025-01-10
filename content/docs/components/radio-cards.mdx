@@ -1,0 +1,99 @@
+---
+title: Radio Cards
+description: A set of radio buttons styled as cards, where only one card can be selected at a time.
+component: true
+links:
+  doc: https://www.radix-ui.com/themes/docs/components/radio-group
+  api: https://www.radix-ui.com/themes/docs/components/radio-group#api-reference
+---
+
+<ComponentPreview
+  name="radio-cards-demo"
+  description="A radio cards group with theme options."
+/>
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx radixcn@latest add radio-cards
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @radix-ui/themes
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="radio-cards" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import { RadioCards } from "@/components/ui/radio-cards"
+```
+
+```tsx
+<RadioCards
+  items={[
+    {
+      value: "light",
+      children: (
+        <div className="flex items-center gap-3">
+          <SunIcon width={16} height={16} />
+          <div className="font-medium">Light</div>
+        </div>
+      ),
+    },
+    {
+      value: "dark",
+      children: (
+        <div className="flex items-center gap-3">
+          <MoonIcon width={16} height={16} />
+          <div className="font-medium">Dark</div>
+        </div>
+      ),
+    },
+  ]}
+  defaultValue="light"
+/>
+```
+
+## Examples
+
+### Form
+
+<ComponentPreview name="radio-cards-form" />
+
+## Props
+
+The component is built on top of Radix Themes' Radio Cards component and accepts all its props except `color` and `variant`. Additionally, it includes the following props:
+
+- `items` - An array of objects containing the value and children for each radio card.
+- `variant` - The visual style of the radio cards. Can be either `"surface"` or `"classic"`. Defaults to `"surface"`.
+- `size` - The size of the radio cards. Can be `"1"`, `"2"`, or `"3"`. Defaults to `"2"`.
+
+For a full list of Radio Cards props, see the [Radix Themes documentation](https://www.radix-ui.com/themes/docs/components/radio-group#api-reference). 
