@@ -238,7 +238,7 @@
     "name": "data-list",
     "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-data-list"
+      "@radix-ui/themes"
     ],
     "files": [
       {

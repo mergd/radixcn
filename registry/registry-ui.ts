@@ -193,7 +193,7 @@ export const ui: Registry = [
   {
     name: "data-list",
     type: "registry:ui",
-    dependencies: ["@radix-ui/react-data-list"],
+    dependencies: ["@radix-ui/themes"],
     files: [
       {
         path: "ui/data-list.tsx",
