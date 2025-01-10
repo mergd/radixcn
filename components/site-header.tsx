@@ -1,12 +1,12 @@
-import Link from "next/link"
+import Link from "next/link";
 
-import { siteConfig } from "@/config/site"
-import { CommandMenu } from "@/components/command-menu"
-import { Icons } from "@/components/icons"
-import { MainNav } from "@/components/main-nav"
-import { MobileNav } from "@/components/mobile-nav"
-import { ModeSwitcher } from "@/components/mode-switcher"
-import { Button } from "@/registry/new-york/ui/button"
+import { siteConfig } from "@/config/site";
+import { CommandMenu } from "@/components/command-menu";
+import { Icons } from "@/components/icons";
+import { MainNav } from "@/components/main-nav";
+import { MobileNav } from "@/components/mobile-nav";
+import { ModeSwitcher } from "@/components/mode-switcher";
+import { Button } from "@/registry/new-york/ui/button";
 
 export function SiteHeader() {
   return (
@@ -19,8 +19,8 @@ export function SiteHeader() {
             <div className="w-full flex-1 md:w-auto md:flex-none">
               <CommandMenu />
             </div>
-            <nav className="flex items-center gap-0.5">
-              <Button variant="ghost" size="icon" className="h-8 w-8 px-0">
+            <nav className="flex items-center gap-2">
+              <Button variant="ghost" size="icon" className="">
                 <Link
                   href={siteConfig.links.github}
                   target="_blank"
@@ -36,5 +36,5 @@ export function SiteHeader() {
         </div>
       </div>
     </header>
-  )
+  );
 }

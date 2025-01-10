@@ -46,45 +46,15 @@ export const docsConfig: DocsConfig = {
           href: "/docs/installation",
           items: [],
         },
-        {
-          title: "components.json",
-          href: "/docs/components-json",
-          items: [],
-        },
-        {
-          title: "Theming",
-          href: "/docs/theming",
-          items: [],
-        },
-        {
-          title: "Dark mode",
-          href: "/docs/dark-mode",
-          items: [],
-        },
+
         {
           title: "CLI",
           href: "/docs/cli",
           items: [],
         },
         {
-          title: "Monorepo",
-          href: "/docs/monorepo",
-          items: [],
-          label: "New",
-        },
-        {
-          title: "Next.js 15 + React 19",
-          href: "/docs/react-19",
-          items: [],
-        },
-        {
           title: "Typography",
           href: "/docs/components/typography",
-          items: [],
-        },
-        {
-          title: "Figma",
-          href: "/docs/figma",
           items: [],
         },
         {
@@ -100,31 +70,6 @@ export const docsConfig: DocsConfig = {
         {
           title: "Next.js",
           href: "/docs/installation/next",
-          items: [],
-        },
-        {
-          title: "Vite",
-          href: "/docs/installation/vite",
-          items: [],
-        },
-        {
-          title: "Remix",
-          href: "/docs/installation/remix",
-          items: [],
-        },
-        {
-          title: "Astro",
-          href: "/docs/installation/astro",
-          items: [],
-        },
-        {
-          title: "Laravel",
-          href: "/docs/installation/laravel",
-          items: [],
-        },
-        {
-          title: "Gatsby",
-          href: "/docs/installation/gatsby",
           items: [],
         },
         {
