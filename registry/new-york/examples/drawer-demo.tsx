@@ -14,7 +14,7 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/registry/new-york/ui/drawer";
+} from "@/components/ui/drawer";
 
 const data = [
   {

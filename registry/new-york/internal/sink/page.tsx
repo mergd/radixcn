@@ -28,11 +28,9 @@ import { ComponentWrapper } from "@/registry/new-york/internal/sink/components/c
 import { ContextMenuDemo } from "@/registry/new-york/internal/sink/components/context-menu-demo";
 import { DatePickerDemo } from "@/registry/new-york/internal/sink/components/date-picker-demo";
 import { DialogDemo } from "@/registry/new-york/internal/sink/components/dialog-demo";
-import { DrawerDemo } from "@/registry/new-york/internal/sink/components/drawer-demo";
 import { DropdownMenuDemo } from "@/registry/new-york/internal/sink/components/dropdown-menu-demo";
 import { HoverCardDemo } from "@/registry/new-york/internal/sink/components/hover-card-demo";
 import { InputDemo } from "@/registry/new-york/internal/sink/components/input-demo";
-import { InputOTPDemo } from "@/registry/new-york/internal/sink/components/input-otp-demo";
 import { LabelDemo } from "@/registry/new-york/internal/sink/components/label-demo";
 import { NavigationMenuDemo } from "@/registry/new-york/internal/sink/components/navigation-menu-demo";
 import { PaginationDemo } from "@/registry/new-york/internal/sink/components/pagination-demo";
@@ -43,7 +41,6 @@ import { ResizableHandleDemo } from "@/registry/new-york/internal/sink/component
 import { ScrollAreaDemo } from "@/registry/new-york/internal/sink/components/scroll-area-demo";
 import { SelectDemo } from "@/registry/new-york/internal/sink/components/select-demo";
 import { SeparatorDemo } from "@/registry/new-york/internal/sink/components/separator-demo";
-import { SheetDemo } from "@/registry/new-york/internal/sink/components/sheet-demo";
 import { SkeletonDemo } from "@/registry/new-york/internal/sink/components/skeleton-demo";
 import { SliderDemo } from "@/registry/new-york/internal/sink/components/slider-demo";
 import { SonnerDemo } from "@/registry/new-york/internal/sink/components/sonner-demo";
@@ -51,12 +48,6 @@ import { SwitchDemo } from "@/registry/new-york/internal/sink/components/switch-
 import { TableDemo } from "@/registry/new-york/internal/sink/components/table-demo";
 import { TabsDemo } from "@/registry/new-york/internal/sink/components/tabs-demo";
 import { TextareaDemo } from "@/registry/new-york/internal/sink/components/textarea-demo";
-import { ToastDemo } from "@/registry/new-york/internal/sink/components/toast-demo";
-import { ToggleDemo } from "@/registry/new-york/internal/sink/components/toggle-demo";
-import { ToggleDisabled } from "@/registry/new-york/internal/sink/components/toggle-disabled";
-import { ToggleGroupDemo } from "@/registry/new-york/internal/sink/components/toggle-group-demo";
-import { ToggleOutline } from "@/registry/new-york/internal/sink/components/toggle-outline";
-import { ToggleWithText } from "@/registry/new-york/internal/sink/components/toggle-with-text";
 import { TooltipDemo } from "@/registry/new-york/internal/sink/components/tooltip-demo";
 import {
   Breadcrumb,
@@ -175,9 +166,6 @@ export default function SinkPage() {
             <ComponentWrapper name="Dialog">
               <DialogDemo />
             </ComponentWrapper>
-            <ComponentWrapper name="Drawer">
-              <DrawerDemo />
-            </ComponentWrapper>
             <ComponentWrapper name="DropdownMenu">
               <DropdownMenuDemo />
             </ComponentWrapper>
@@ -186,9 +174,6 @@ export default function SinkPage() {
             </ComponentWrapper>
             <ComponentWrapper name="Input">
               <InputDemo />
-            </ComponentWrapper>
-            <ComponentWrapper name="InputOTP">
-              <InputOTPDemo />
             </ComponentWrapper>
             <ComponentWrapper name="Label">
               <LabelDemo />
@@ -220,9 +205,6 @@ export default function SinkPage() {
             <ComponentWrapper name="Separator">
               <SeparatorDemo />
             </ComponentWrapper>
-            <ComponentWrapper name="Sheet">
-              <SheetDemo />
-            </ComponentWrapper>
             <ComponentWrapper name="Skeleton">
               <SkeletonDemo />
             </ComponentWrapper>
@@ -243,20 +225,6 @@ export default function SinkPage() {
             </ComponentWrapper>
             <ComponentWrapper name="Textarea">
               <TextareaDemo />
-            </ComponentWrapper>
-            <ComponentWrapper name="Toast">
-              <ToastDemo />
-            </ComponentWrapper>
-            <ComponentWrapper name="Toggle">
-              <div className="flex items-center gap-2">
-                <ToggleDemo />
-                <ToggleDisabled />
-                <ToggleOutline />
-                <ToggleWithText />
-              </div>
-            </ComponentWrapper>
-            <ComponentWrapper name="ToggleGroup">
-              <ToggleGroupDemo />
             </ComponentWrapper>
             <ComponentWrapper name="Tooltip">
               <TooltipDemo />

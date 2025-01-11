@@ -10,7 +10,6 @@ import { ThemeProvider } from "@/components/providers";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { ThemeSwitcher } from "@/components/theme-switcher";
 import { Toaster as NewYorkSonner } from "@/registry/new-york/ui/sonner";
-import { Toaster as NewYorkToaster } from "@/registry/new-york/ui/toaster";
 import { Theme as RadixTheme } from "@radix-ui/themes";
 
 export const metadata: Metadata = {
@@ -113,7 +112,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <TailwindIndicator />
               <ThemeSwitcher />
               <Analytics />
-              <NewYorkToaster />
               <NewYorkSonner />
             </ThemeProvider>
           </RadixTheme>

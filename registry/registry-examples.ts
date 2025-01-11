@@ -655,28 +655,6 @@ export const examples: Registry = [
     ],
   },
   {
-    name: "drawer-demo",
-    type: "registry:example",
-    registryDependencies: ["drawer"],
-    files: [
-      {
-        path: "examples/drawer-demo.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "drawer-dialog",
-    type: "registry:example",
-    registryDependencies: ["drawer", "dialog"],
-    files: [
-      {
-        path: "examples/drawer-dialog.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
     name: "dropdown-menu-demo",
     type: "registry:example",
     registryDependencies: ["dropdown-menu"],
@@ -782,61 +760,6 @@ export const examples: Registry = [
     files: [
       {
         path: "examples/input-with-text.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "input-otp-demo",
-    type: "registry:example",
-    registryDependencies: ["input-otp"],
-    files: [
-      {
-        path: "examples/input-otp-demo.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "input-otp-pattern",
-    type: "registry:example",
-    registryDependencies: ["input-otp"],
-    files: [
-      {
-        path: "examples/input-otp-pattern.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "input-otp-separator",
-    type: "registry:example",
-    registryDependencies: ["input-otp"],
-    files: [
-      {
-        path: "examples/input-otp-separator.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "input-otp-controlled",
-    type: "registry:example",
-    registryDependencies: ["input-otp"],
-    files: [
-      {
-        path: "examples/input-otp-controlled.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "input-otp-form",
-    type: "registry:example",
-    registryDependencies: ["input-otp", "form"],
-    files: [
-      {
-        path: "examples/input-otp-form.tsx",
         type: "registry:example",
       },
     ],
@@ -1062,28 +985,6 @@ export const examples: Registry = [
     ],
   },
   {
-    name: "sheet-demo",
-    type: "registry:example",
-    registryDependencies: ["sheet"],
-    files: [
-      {
-        path: "examples/sheet-demo.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "sheet-side",
-    type: "registry:example",
-    registryDependencies: ["sheet"],
-    files: [
-      {
-        path: "examples/sheet-side.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
     name: "skeleton-demo",
     type: "registry:example",
     registryDependencies: ["skeleton"],
@@ -1238,193 +1139,6 @@ export const examples: Registry = [
     ],
   },
   {
-    name: "toast-demo",
-    type: "registry:example",
-    registryDependencies: ["toast"],
-    files: [
-      {
-        path: "examples/toast-demo.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "toast-destructive",
-    type: "registry:example",
-    registryDependencies: ["toast"],
-    files: [
-      {
-        path: "examples/toast-destructive.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "toast-simple",
-    type: "registry:example",
-    registryDependencies: ["toast"],
-    files: [
-      {
-        path: "examples/toast-simple.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "toast-with-action",
-    type: "registry:example",
-    registryDependencies: ["toast"],
-    files: [
-      {
-        path: "examples/toast-with-action.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "toast-with-title",
-    type: "registry:example",
-    registryDependencies: ["toast"],
-    files: [
-      {
-        path: "examples/toast-with-title.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "toggle-group-demo",
-    type: "registry:example",
-    registryDependencies: ["toggle-group"],
-    files: [
-      {
-        path: "examples/toggle-group-demo.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "toggle-group-disabled",
-    type: "registry:example",
-    registryDependencies: ["toggle-group"],
-    files: [
-      {
-        path: "examples/toggle-group-disabled.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "toggle-group-lg",
-    type: "registry:example",
-    registryDependencies: ["toggle-group"],
-    files: [
-      {
-        path: "examples/toggle-group-lg.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "toggle-group-outline",
-    type: "registry:example",
-    registryDependencies: ["toggle-group"],
-    files: [
-      {
-        path: "examples/toggle-group-outline.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "toggle-group-sm",
-    type: "registry:example",
-    registryDependencies: ["toggle-group"],
-    files: [
-      {
-        path: "examples/toggle-group-sm.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "toggle-group-single",
-    type: "registry:example",
-    registryDependencies: ["toggle-group"],
-    files: [
-      {
-        path: "examples/toggle-group-single.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "toggle-demo",
-    type: "registry:example",
-    registryDependencies: ["toggle"],
-    files: [
-      {
-        path: "examples/toggle-demo.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "toggle-disabled",
-    type: "registry:example",
-    registryDependencies: ["toggle"],
-    files: [
-      {
-        path: "examples/toggle-disabled.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "toggle-lg",
-    type: "registry:example",
-    registryDependencies: ["toggle"],
-    files: [
-      {
-        path: "examples/toggle-lg.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "toggle-outline",
-    type: "registry:example",
-    registryDependencies: ["toggle"],
-    files: [
-      {
-        path: "examples/toggle-outline.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "toggle-sm",
-    type: "registry:example",
-    registryDependencies: ["toggle"],
-    files: [
-      {
-        path: "examples/toggle-sm.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "toggle-with-text",
-    type: "registry:example",
-    registryDependencies: ["toggle"],
-    files: [
-      {
-        path: "examples/toggle-with-text.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
     name: "tooltip-demo",
     type: "registry:example",
     registryDependencies: ["tooltip"],
@@ -1571,16 +1285,6 @@ export const examples: Registry = [
     files: [
       {
         path: "examples/typography-table.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "mode-toggle",
-    type: "registry:example",
-    files: [
-      {
-        path: "examples/mode-toggle.tsx",
         type: "registry:example",
       },
     ],

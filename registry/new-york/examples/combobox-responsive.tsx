@@ -12,11 +12,7 @@ import {
   CommandItem,
   CommandList,
 } from "@/registry/new-york/ui/command";
-import {
-  Drawer,
-  DrawerContent,
-  DrawerTrigger,
-} from "@/registry/new-york/ui/drawer";
+import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 import {
   Popover,
   PopoverContent,

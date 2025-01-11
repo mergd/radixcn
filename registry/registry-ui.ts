@@ -212,17 +212,7 @@ export const ui: Registry = [
       },
     ],
   },
-  {
-    name: "drawer",
-    type: "registry:ui",
-    dependencies: ["vaul", "@radix-ui/react-dialog"],
-    files: [
-      {
-        path: "ui/drawer.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
+
   {
     name: "dropdown-menu",
     type: "registry:ui",
@@ -270,17 +260,6 @@ export const ui: Registry = [
     files: [
       {
         path: "ui/input.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
-    name: "input-otp",
-    type: "registry:ui",
-    dependencies: ["input-otp"],
-    files: [
-      {
-        path: "ui/input-otp.tsx",
         type: "registry:ui",
       },
     ],
@@ -417,17 +396,7 @@ export const ui: Registry = [
       },
     ],
   },
-  {
-    name: "sheet",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-dialog"],
-    files: [
-      {
-        path: "ui/sheet.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
+
   {
     name: "sidebar",
     type: "registry:ui",
@@ -439,7 +408,6 @@ export const ui: Registry = [
     registryDependencies: [
       "button",
       "separator",
-      "sheet",
       "tooltip",
       "input",
       "use-mobile",
@@ -565,48 +533,6 @@ export const ui: Registry = [
     files: [
       {
         path: "ui/textarea.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
-    name: "toast",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-toast"],
-    files: [
-      {
-        path: "ui/toast.tsx",
-        type: "registry:ui",
-      },
-      {
-        path: "hooks/use-toast.ts",
-        type: "registry:hook",
-      },
-      {
-        path: "ui/toaster.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
-    name: "toggle",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-toggle", "@radix-ui/themes"],
-    files: [
-      {
-        path: "ui/toggle.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
-    name: "toggle-group",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-toggle-group", "@radix-ui/themes"],
-    registryDependencies: ["toggle"],
-    files: [
-      {
-        path: "ui/toggle-group.tsx",
         type: "registry:ui",
       },
     ],

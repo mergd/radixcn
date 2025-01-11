@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useForm } from "react-hook-form"
-import { z } from "zod"
+import Link from "next/link";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
 
-import { toast } from "@/registry/new-york/hooks/use-toast"
-import { Button } from "@/registry/new-york/ui/button"
-import { Checkbox } from "@/registry/new-york/ui/checkbox"
+import { toast } from "sonner";
+import { Button } from "@/registry/new-york/ui/button";
+import { Checkbox } from "@/registry/new-york/ui/checkbox";
 import {
   Form,
   FormControl,
@@ -16,9 +16,9 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/registry/new-york/ui/form"
-import { RadioGroup, RadioGroupItem } from "@/registry/new-york/ui/radio-group"
-import { Switch } from "@/registry/new-york/ui/switch"
+} from "@/registry/new-york/ui/form";
+import { RadioGroup, RadioGroupItem } from "@/registry/new-york/ui/radio-group";
+import { Switch } from "@/registry/new-york/ui/switch";
 
 const notificationsFormSchema = z.object({
   type: z.enum(["all", "mentions", "none"], {
@@ -29,9 +29,9 @@ const notificationsFormSchema = z.object({
   social_emails: z.boolean().default(false).optional(),
   marketing_emails: z.boolean().default(false).optional(),
   security_emails: z.boolean(),
-})
+});
 
-type NotificationsFormValues = z.infer<typeof notificationsFormSchema>
+type NotificationsFormValues = z.infer<typeof notificationsFormSchema>;
 
 // This can come from your database or API.
 const defaultValues: Partial<NotificationsFormValues> = {
@@ -39,23 +39,22 @@ const defaultValues: Partial<NotificationsFormValues> = {
   marketing_emails: false,
   social_emails: true,
   security_emails: true,
-}
+};
 
 export function NotificationsForm() {
   const form = useForm<NotificationsFormValues>({
     resolver: zodResolver(notificationsFormSchema),
     defaultValues,
-  })
+  });
 
   function onSubmit(data: NotificationsFormValues) {
-    toast({
-      title: "You submitted the following values:",
+    toast.success("You submitted the following values:", {
       description: (
         <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
           <code className="text-white">{JSON.stringify(data, null, 2)}</code>
         </pre>
       ),
-    })
+    });
   }
 
   return (
@@ -218,5 +217,5 @@ export function NotificationsForm() {
         <Button type="submit">Update notifications</Button>
       </form>
     </Form>
-  )
+  );
 }

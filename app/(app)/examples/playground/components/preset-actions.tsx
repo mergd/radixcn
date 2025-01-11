@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import { Dialog } from "@radix-ui/react-dialog"
-import { MoreHorizontal } from "lucide-react"
+import * as React from "react";
+import { Dialog } from "@radix-ui/react-dialog";
+import { MoreHorizontal } from "lucide-react";
 
-import { toast } from "@/registry/new-york/hooks/use-toast"
+import { toast } from "sonner";
 import {
   AlertDialog,
   AlertDialogCancel,
@@ -13,28 +13,28 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-} from "@/registry/new-york/ui/alert-dialog"
-import { Button } from "@/registry/new-york/ui/button"
+} from "@/registry/new-york/ui/alert-dialog";
+import { Button } from "@/registry/new-york/ui/button";
 import {
   DialogContent,
   DialogDescription,
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "@/registry/new-york/ui/dialog"
+} from "@/registry/new-york/ui/dialog";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/registry/new-york/ui/dropdown-menu"
-import { Label } from "@/registry/new-york/ui/label"
-import { Switch } from "@/registry/new-york/ui/switch"
+} from "@/registry/new-york/ui/dropdown-menu";
+import { Label } from "@/registry/new-york/ui/label";
+import { Switch } from "@/registry/new-york/ui/switch";
 
 export function PresetActions() {
-  const [open, setIsOpen] = React.useState(false)
-  const [showDeleteDialog, setShowDeleteDialog] = React.useState(false)
+  const [open, setIsOpen] = React.useState(false);
+  const [showDeleteDialog, setShowDeleteDialog] = React.useState(false);
 
   return (
     <>
@@ -106,10 +106,8 @@ export function PresetActions() {
             <Button
               variant="destructive"
               onClick={() => {
-                setShowDeleteDialog(false)
-                toast({
-                  description: "This preset has been deleted.",
-                })
+                setShowDeleteDialog(false);
+                toast.success("This preset has been deleted.");
               }}
             >
               Delete
@@ -118,5 +116,5 @@ export function PresetActions() {
         </AlertDialogContent>
       </AlertDialog>
     </>
-  )
+  );
 }

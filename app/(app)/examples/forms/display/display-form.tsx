@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useForm } from "react-hook-form"
-import { z } from "zod"
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
 
-import { toast } from "@/registry/new-york/hooks/use-toast"
-import { Button } from "@/registry/new-york/ui/button"
-import { Checkbox } from "@/registry/new-york/ui/checkbox"
+import { toast } from "sonner";
+import { Button } from "@/registry/new-york/ui/button";
+import { Checkbox } from "@/registry/new-york/ui/checkbox";
 import {
   Form,
   FormControl,
@@ -15,7 +15,7 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/registry/new-york/ui/form"
+} from "@/registry/new-york/ui/form";
 
 const items = [
   {
@@ -42,36 +42,35 @@ const items = [
     id: "documents",
     label: "Documents",
   },
-] as const
+] as const;
 
 const displayFormSchema = z.object({
   items: z.array(z.string()).refine((value) => value.some((item) => item), {
     message: "You have to select at least one item.",
   }),
-})
+});
 
-type DisplayFormValues = z.infer<typeof displayFormSchema>
+type DisplayFormValues = z.infer<typeof displayFormSchema>;
 
 // This can come from your database or API.
 const defaultValues: Partial<DisplayFormValues> = {
   items: ["recents", "home"],
-}
+};
 
 export function DisplayForm() {
   const form = useForm<DisplayFormValues>({
     resolver: zodResolver(displayFormSchema),
     defaultValues,
-  })
+  });
 
   function onSubmit(data: DisplayFormValues) {
-    toast({
-      title: "You submitted the following values:",
+    toast.success("You submitted the following values:", {
       description: (
         <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
           <code className="text-white">{JSON.stringify(data, null, 2)}</code>
         </pre>
       ),
-    })
+    });
   }
 
   return (
@@ -109,7 +108,7 @@ export function DisplayForm() {
                                     field.value?.filter(
                                       (value) => value !== item.id
                                     )
-                                  )
+                                  );
                             }}
                           />
                         </FormControl>
@@ -117,7 +116,7 @@ export function DisplayForm() {
                           {item.label}
                         </FormLabel>
                       </FormItem>
-                    )
+                    );
                   }}
                 />
               ))}
@@ -128,5 +127,5 @@ export function DisplayForm() {
         <Button type="submit">Update display</Button>
       </form>
     </Form>
-  )
+  );
 }

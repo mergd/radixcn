@@ -140,12 +140,6 @@
     "type": "components:ui"
   },
   {
-    "name": "input-otp",
-    "dependencies": ["input-otp"],
-    "files": ["ui/input-otp.tsx"],
-    "type": "components:ui"
-  },
-  {
     "name": "label",
     "dependencies": ["@radix-ui/react-label"],
     "files": ["ui/label.tsx"],
@@ -248,25 +242,6 @@
   {
     "name": "textarea",
     "files": ["ui/textarea.tsx"],
-    "type": "components:ui"
-  },
-  {
-    "name": "toast",
-    "dependencies": ["@radix-ui/react-toast"],
-    "files": ["ui/toast.tsx", "ui/use-toast.ts", "ui/toaster.tsx"],
-    "type": "components:ui"
-  },
-  {
-    "name": "toggle",
-    "dependencies": ["@radix-ui/react-toggle"],
-    "files": ["ui/toggle.tsx"],
-    "type": "components:ui"
-  },
-  {
-    "name": "toggle-group",
-    "dependencies": ["@radix-ui/react-toggle-group"],
-    "registryDependencies": ["toggle"],
-    "files": ["ui/toggle-group.tsx"],
     "type": "components:ui"
   },
   {

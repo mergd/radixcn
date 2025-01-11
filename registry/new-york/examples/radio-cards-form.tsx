@@ -13,7 +13,7 @@ import {
   FormMessage,
 } from "@/registry/new-york/ui/form";
 import { RadioCards } from "@/registry/new-york/ui/radio-cards";
-import { toast } from "@/registry/new-york/hooks/use-toast";
+import { toast } from "sonner";
 import { RocketIcon, GearIcon, ReaderIcon } from "@radix-ui/react-icons";
 
 const FormSchema = z.object({
@@ -28,13 +28,8 @@ export default function RadioCardsForm() {
   });
 
   function onSubmit(data: z.infer<typeof FormSchema>) {
-    toast({
-      title: "You submitted the following values:",
-      description: (
-        <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-          <code className="text-white">{JSON.stringify(data, null, 2)}</code>
-        </pre>
-      ),
+    toast.success("You submitted the following values:", {
+      description: JSON.stringify(data, null, 2),
     });
   }
 

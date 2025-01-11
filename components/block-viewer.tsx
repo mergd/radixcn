@@ -44,15 +44,11 @@ import {
   SidebarMenuSub,
   SidebarProvider,
 } from "@/registry/new-york/ui/sidebar";
-import { Tabs, TabsList, TabsTrigger } from "@/registry/new-york/ui/tabs";
+import { ToggleGroup, ToggleGroupItem } from "./ui/toggle-group";
 import {
   SegmentedControl,
   SegmentedControlItem,
 } from "@/registry/new-york/ui/segmented-control";
-import {
-  ToggleGroup,
-  ToggleGroupItem,
-} from "@/registry/new-york/ui/toggle-group";
 import { Style } from "@/registry/registry-styles";
 import { registryItemFileSchema, registryItemSchema } from "@/registry/schema";
 

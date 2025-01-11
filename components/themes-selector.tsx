@@ -8,10 +8,7 @@ import { useThemesConfig } from "@/hooks/use-themes-config";
 import { THEMES, Theme } from "@/lib/themes";
 import { cn } from "@/lib/utils";
 import { Skeleton } from "@/registry/new-york/ui/skeleton";
-import {
-  ToggleGroup,
-  ToggleGroupItem,
-} from "@/registry/new-york/ui/toggle-group";
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Tooltip } from "@/registry/new-york/ui/tooltip";
 
 export function ThemesSwitcher({

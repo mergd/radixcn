@@ -6,7 +6,6 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 
 import { cn } from "@/lib/utils";
-import { toast } from "@/registry/new-york/hooks/use-toast";
 import { Button, buttonVariants } from "@/registry/new-york/ui/button";
 import {
   Form,
@@ -42,16 +41,7 @@ export function AppearanceForm() {
     defaultValues,
   });
 
-  function onSubmit(data: AppearanceFormValues) {
-    toast({
-      title: "You submitted the following values:",
-      description: (
-        <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-          <code className="text-white">{JSON.stringify(data, null, 2)}</code>
-        </pre>
-      ),
-    });
-  }
+  function onSubmit(data: AppearanceFormValues) {}
 
   return (
     <Form {...form}>
