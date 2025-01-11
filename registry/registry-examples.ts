@@ -853,17 +853,6 @@ export const examples: Registry = [
     ],
   },
   {
-    name: "menubar-demo",
-    type: "registry:example",
-    registryDependencies: ["menubar"],
-    files: [
-      {
-        path: "examples/menubar-demo.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
     name: "navigation-menu-demo",
     type: "registry:example",
     registryDependencies: ["navigation-menu"],

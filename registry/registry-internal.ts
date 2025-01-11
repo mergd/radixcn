@@ -30,7 +30,6 @@ export const internal: Registry = [
       "input",
       "input-otp",
       "label",
-      "menubar",
       "navigation-menu",
       "pagination",
       "popover",
@@ -178,10 +177,6 @@ export const internal: Registry = [
       },
       {
         path: "internal/sink/components/label-demo.tsx",
-        type: "registry:component",
-      },
-      {
-        path: "internal/sink/components/menubar-demo.tsx",
         type: "registry:component",
       },
       {

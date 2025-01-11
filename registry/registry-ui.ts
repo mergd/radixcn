@@ -297,17 +297,6 @@ export const ui: Registry = [
     ],
   },
   {
-    name: "menubar",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-menubar"],
-    files: [
-      {
-        path: "ui/menubar.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
     name: "navigation-menu",
     type: "registry:ui",
     dependencies: ["@radix-ui/react-navigation-menu"],

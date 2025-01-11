@@ -1,9 +1,9 @@
+import { PlusCircle } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
-import { PlusCircle } from "lucide-react";
 
 import { Button } from "@/registry/new-york/ui/button";
-import { ScrollArea, ScrollBar } from "@/registry/new-york/ui/scroll-area";
+import { ScrollArea } from "@/registry/new-york/ui/scroll-area";
 import { Separator } from "@/registry/new-york/ui/separator";
 import {
   Tabs,
@@ -13,7 +13,6 @@ import {
 } from "@/registry/new-york/ui/tabs";
 
 import { AlbumArtwork } from "./components/album-artwork";
-import { Menu } from "./components/menu";
 import { PodcastEmptyPlaceholder } from "./components/podcast-empty-placeholder";
 import { Sidebar } from "./components/sidebar";
 import { listenNowAlbums, madeForYouAlbums } from "./data/albums";
@@ -44,7 +43,6 @@ export default function MusicPage() {
         />
       </div>
       <div className="hidden md:block">
-        <Menu />
         <div className="border-t">
           <div className="bg-background">
             <div className="grid lg:grid-cols-5">

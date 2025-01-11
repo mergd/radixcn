@@ -72,6 +72,7 @@ interface ButtonProps
   variant?: ButtonVariant;
   size?: ButtonSize;
   isSpinning?: boolean;
+  override?: boolean;
   "aria-label"?: string;
 }
 
@@ -86,6 +87,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       loading,
       children,
       "aria-label": ariaLabel,
+      override,
       ...props
     },
     ref,
@@ -106,8 +108,18 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         </IconButton>
       );
     }
-
-    if (variant === "link") {
+    // Default button styling if radix button is too restrictive.
+    if (override) {
+      return (
+        <button
+          className={cn("cursor-pointer", className)}
+          ref={ref}
+          {...props}
+        >
+          {children}
+        </button>
+      );
+    } else if (variant === "link") {
       return (
         <button
           className={cn(

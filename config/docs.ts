@@ -202,11 +202,6 @@ export const docsConfig: DocsConfig = {
           items: [],
         },
         {
-          title: "Menubar",
-          href: "/docs/components/menubar",
-          items: [],
-        },
-        {
           title: "Navigation Menu",
           href: "/docs/components/navigation-menu",
           items: [],

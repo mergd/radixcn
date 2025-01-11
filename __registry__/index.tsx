@@ -365,21 +365,6 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
-    "menubar": {
-      name: "menubar",
-      description: "",
-      type: "registry:ui",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/ui/menubar.tsx",
-        type: "registry:ui",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/ui/menubar.tsx")),
-      source: "",
-      meta: undefined,
-    },
     "navigation-menu": {
       name: "navigation-menu",
       description: "",
@@ -1313,7 +1298,7 @@ export const Index: Record<string, any> = {
       name: "sink",
       description: "",
       type: "registry:internal",
-      registryDependencies: ["accordion","alert","alert-dialog","aspect-ratio","avatar","badge","breadcrumb","button","calendar","card","carousel","chart","checkbox","collapsible","command","context-menu","dialog","drawer","dropdown-menu","hover-card","input","input-otp","label","menubar","navigation-menu","pagination","popover","progress","radio-group","resizable","scroll-area","select","separator","sheet","sidebar","skeleton","slider","sonner","switch","table","tabs","textarea","toast","toggle","toggle-group","tooltip"],
+      registryDependencies: ["accordion","alert","alert-dialog","aspect-ratio","avatar","badge","breadcrumb","button","calendar","card","carousel","chart","checkbox","collapsible","command","context-menu","dialog","drawer","dropdown-menu","hover-card","input","input-otp","label","navigation-menu","pagination","popover","progress","radio-group","resizable","scroll-area","select","separator","sheet","sidebar","skeleton","slider","sonner","switch","table","tabs","textarea","toast","toggle","toggle-group","tooltip"],
       files: [{
         path: "registry/new-york/internal/sink/page.tsx",
         type: "registry:page",
@@ -1436,10 +1421,6 @@ export const Index: Record<string, any> = {
         target: ""
       },{
         path: "registry/new-york/internal/sink/components/label-demo.tsx",
-        type: "registry:component",
-        target: ""
-      },{
-        path: "registry/new-york/internal/sink/components/menubar-demo.tsx",
         type: "registry:component",
         target: ""
       },{
@@ -3171,21 +3152,6 @@ export const Index: Record<string, any> = {
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/new-york/examples/label-demo.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "menubar-demo": {
-      name: "menubar-demo",
-      description: "",
-      type: "registry:example",
-      registryDependencies: ["menubar"],
-      files: [{
-        path: "registry/new-york/examples/menubar-demo.tsx",
-        type: "registry:example",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/examples/menubar-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -4571,21 +4537,6 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
-    "menubar": {
-      name: "menubar",
-      description: "",
-      type: "registry:ui",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/ui/menubar.tsx",
-        type: "registry:ui",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/ui/menubar.tsx")),
-      source: "",
-      meta: undefined,
-    },
     "navigation-menu": {
       name: "navigation-menu",
       description: "",
@@ -5519,7 +5470,7 @@ export const Index: Record<string, any> = {
       name: "sink",
       description: "",
       type: "registry:internal",
-      registryDependencies: ["accordion","alert","alert-dialog","aspect-ratio","avatar","badge","breadcrumb","button","calendar","card","carousel","chart","checkbox","collapsible","command","context-menu","dialog","drawer","dropdown-menu","hover-card","input","input-otp","label","menubar","navigation-menu","pagination","popover","progress","radio-group","resizable","scroll-area","select","separator","sheet","sidebar","skeleton","slider","sonner","switch","table","tabs","textarea","toast","toggle","toggle-group","tooltip"],
+      registryDependencies: ["accordion","alert","alert-dialog","aspect-ratio","avatar","badge","breadcrumb","button","calendar","card","carousel","chart","checkbox","collapsible","command","context-menu","dialog","drawer","dropdown-menu","hover-card","input","input-otp","label","navigation-menu","pagination","popover","progress","radio-group","resizable","scroll-area","select","separator","sheet","sidebar","skeleton","slider","sonner","switch","table","tabs","textarea","toast","toggle","toggle-group","tooltip"],
       files: [{
         path: "registry/new-york/internal/sink/page.tsx",
         type: "registry:page",
@@ -5642,10 +5593,6 @@ export const Index: Record<string, any> = {
         target: ""
       },{
         path: "registry/new-york/internal/sink/components/label-demo.tsx",
-        type: "registry:component",
-        target: ""
-      },{
-        path: "registry/new-york/internal/sink/components/menubar-demo.tsx",
         type: "registry:component",
         target: ""
       },{
@@ -7377,21 +7324,6 @@ export const Index: Record<string, any> = {
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/new-york/examples/label-demo.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "menubar-demo": {
-      name: "menubar-demo",
-      description: "",
-      type: "registry:example",
-      registryDependencies: ["menubar"],
-      files: [{
-        path: "registry/new-york/examples/menubar-demo.tsx",
-        type: "registry:example",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/examples/menubar-demo.tsx")),
       source: "",
       meta: undefined,
     },

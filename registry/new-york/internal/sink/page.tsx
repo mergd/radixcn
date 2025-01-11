@@ -34,7 +34,6 @@ import { HoverCardDemo } from "@/registry/new-york/internal/sink/components/hove
 import { InputDemo } from "@/registry/new-york/internal/sink/components/input-demo";
 import { InputOTPDemo } from "@/registry/new-york/internal/sink/components/input-otp-demo";
 import { LabelDemo } from "@/registry/new-york/internal/sink/components/label-demo";
-import { MenubarDemo } from "@/registry/new-york/internal/sink/components/menubar-demo";
 import { NavigationMenuDemo } from "@/registry/new-york/internal/sink/components/navigation-menu-demo";
 import { PaginationDemo } from "@/registry/new-york/internal/sink/components/pagination-demo";
 import { PopoverDemo } from "@/registry/new-york/internal/sink/components/popover-demo";
@@ -193,9 +192,6 @@ export default function SinkPage() {
             </ComponentWrapper>
             <ComponentWrapper name="Label">
               <LabelDemo />
-            </ComponentWrapper>
-            <ComponentWrapper name="Menubar">
-              <MenubarDemo />
             </ComponentWrapper>
             <ComponentWrapper name="NavigationMenu" className="col-span-2">
               <NavigationMenuDemo />
