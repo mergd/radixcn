@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronRight, type LucideIcon } from "lucide-react";
+import { ChevronRightIcon, type LucideIcon } from "lucide-react";
 
 import {
   Collapsible,
@@ -50,7 +50,7 @@ export function NavMain({
                 <>
                   <CollapsibleTrigger asChild>
                     <SidebarMenuAction className="data-[state=open]:rotate-90">
-                      <ChevronRight />
+                      <ChevronRightIcon />
                       <span className="sr-only">Toggle</span>
                     </SidebarMenuAction>
                   </CollapsibleTrigger>

@@ -1,7 +1,8 @@
 "use client";
 
 import * as React from "react";
-import { Check, ChevronsUpDown, GalleryVerticalEnd } from "lucide-react";
+import { Check, GalleryVerticalEnd } from "lucide-react";
+import { CaretSortIcon } from "@radix-ui/react-icons";
 
 import {
   DropdownMenu,
@@ -40,7 +41,7 @@ export function VersionSwitcher({
                 <span className="font-semibold">Documentation</span>
                 <span className="">v{selectedVersion}</span>
               </div>
-              <ChevronsUpDown className="ml-auto" />
+              <CaretSortIcon className="ml-auto" />
             </SidebarMenuButton>
           </DropdownMenuTrigger>
           <DropdownMenuContent

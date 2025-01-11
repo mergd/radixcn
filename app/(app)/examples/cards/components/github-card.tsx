@@ -1,4 +1,4 @@
-import { ChevronDown, Circle, Plus, Star } from "lucide-react";
+import { ChevronDownIcon, Circle, Plus, Star } from "lucide-react";
 
 import { Button } from "@/registry/new-york/ui/button";
 import {
@@ -39,7 +39,7 @@ export function DemoGithub() {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="secondary" className="px-2 shadow-none">
-                <ChevronDown className="text-secondary-foreground" />
+                <ChevronDownIcon className="text-secondary-foreground" />
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent

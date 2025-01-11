@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { ChevronDown, Plus } from "lucide-react";
+import { ChevronDownIcon, Plus } from "lucide-react";
 
 import {
   DropdownMenu,
@@ -39,7 +39,7 @@ export function TeamSwitcher({
                 <activeTeam.logo className="size-3" />
               </div>
               <span className="truncate font-semibold">{activeTeam.name}</span>
-              <ChevronDown className="opacity-50" />
+              <ChevronDownIcon className="opacity-50" />
             </SidebarMenuButton>
           </DropdownMenuTrigger>
           <DropdownMenuContent

@@ -1,7 +1,8 @@
 "use client";
 
 import * as React from "react";
-import { ChevronsUpDown, Plus } from "lucide-react";
+import { Plus } from "lucide-react";
+import { CaretSortIcon } from "@radix-ui/react-icons";
 
 import {
   DropdownMenu,
@@ -49,7 +50,7 @@ export function TeamSwitcher({
                 </span>
                 <span className="truncate text-xs">{activeTeam.plan}</span>
               </div>
-              <ChevronsUpDown className="ml-auto" />
+              <CaretSortIcon className="ml-auto" />
             </SidebarMenuButton>
           </DropdownMenuTrigger>
           <DropdownMenuContent

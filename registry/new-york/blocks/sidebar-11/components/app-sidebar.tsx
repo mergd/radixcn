@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ChevronRight, File, Folder } from "lucide-react";
+import { ChevronRightIcon, File, Folder } from "lucide-react";
 
 import {
   Collapsible,
@@ -123,7 +123,7 @@ function Tree({ item }: { item: string | any[] }) {
       >
         <CollapsibleTrigger asChild>
           <SidebarMenuButton>
-            <ChevronRight className="transition-transform" />
+            <ChevronRightIcon className="transition-transform" />
             <Folder />
             {name}
           </SidebarMenuButton>

@@ -52,23 +52,23 @@ export const icons: Record<
     radix: "CheckIcon",
   },
   ChevronDown: {
-    lucide: "ChevronDown",
+    lucide: "ChevronDownIcon",
     radix: "ChevronDownIcon",
   },
   ChevronLeft: {
-    lucide: "ChevronLeft",
+    lucide: "ChevronLeftIcon",
     radix: "ChevronLeftIcon",
   },
   ChevronRight: {
-    lucide: "ChevronRight",
+    lucide: "ChevronRightIcon",
     radix: "ChevronRightIcon",
   },
   ChevronUp: {
-    lucide: "ChevronUp",
+    lucide: "ChevronUpIcon",
     radix: "ChevronUpIcon",
   },
   ChevronsUpDown: {
-    lucide: "ChevronsUpDown",
+    lucide: "CaretSortIcon",
     radix: "CaretSortIcon",
   },
   Circle: {

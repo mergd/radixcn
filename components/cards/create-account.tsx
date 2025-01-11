@@ -1,7 +1,8 @@
-"use client"
+"use client";
 
-import { Icons } from "@/components/icons"
-import { Button } from "@/registry/new-york/ui/button"
+import { Icons } from "@/components/icons";
+import { Button } from "@/registry/new-york/ui/button";
+import { Apple, Github } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -9,9 +10,9 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/registry/new-york/ui/card"
-import { Input } from "@/registry/new-york/ui/input"
-import { Label } from "@/registry/new-york/ui/label"
+} from "@/registry/new-york/ui/card";
+import { Input } from "@/registry/new-york/ui/input";
+import { Label } from "@/registry/new-york/ui/label";
 
 export function CardsCreateAccount() {
   return (
@@ -25,12 +26,12 @@ export function CardsCreateAccount() {
       <CardContent className="grid gap-4">
         <div className="grid grid-cols-2 gap-6">
           <Button variant="outline">
-            <Icons.gitHub />
+            <Github />
             GitHub
           </Button>
           <Button variant="outline">
-            <Icons.google />
-            Google
+            <Apple />
+            Apple
           </Button>
         </div>
         <div className="relative">
@@ -56,5 +57,5 @@ export function CardsCreateAccount() {
         <Button className="w-full">Create account</Button>
       </CardFooter>
     </Card>
-  )
+  );
 }

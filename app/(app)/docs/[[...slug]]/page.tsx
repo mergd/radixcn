@@ -4,7 +4,7 @@ import { allDocs } from "contentlayer/generated";
 import "@/styles/mdx.css";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ChevronRight, ExternalLink } from "lucide-react";
+import { ChevronRightIcon, ExternalLink } from "lucide-react";
 import Balancer from "react-wrap-balancer";
 
 import { siteConfig } from "@/config/site";
@@ -90,7 +90,7 @@ export default async function DocPage({ params }: DocPageProps) {
       <div className="mx-auto w-full min-w-0 max-w-2xl">
         <div className="mb-4 flex items-center space-x-1 text-sm leading-none text-muted-foreground">
           <div className="truncate">Docs</div>
-          <ChevronRight className="h-3.5 w-3.5" />
+          <ChevronRightIcon className="h-3.5 w-3.5" />
           <div className="text-foreground">{doc.title}</div>
         </div>
         <div className="space-y-2">

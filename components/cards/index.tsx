@@ -30,10 +30,7 @@ export function CardsDemo() {
           </div>
         </div>
       </div>
-      <div className="space-y-4 lg:col-span-6 xl:col-span-5 xl:space-y-4">
-        <div className="hidden gap-1 sm:grid-cols-[260px_1fr] md:grid">
-          <CardsCalendar />
-        </div>
+      <div className="space-y-4 mt-4 lg:col-span-6 xl:col-span-5 xl:space-y-4">
         <div className="hidden md:block">
           <CardsDataTable />
         </div>

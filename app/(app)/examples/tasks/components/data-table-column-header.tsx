@@ -1,20 +1,21 @@
-import { Column } from "@tanstack/react-table"
-import { ArrowDown, ArrowUp, ChevronsUpDown, EyeOff } from "lucide-react"
+import { Column } from "@tanstack/react-table";
+import { ArrowDown, ArrowUp, EyeOff } from "lucide-react";
+import { CaretSortIcon } from "@radix-ui/react-icons";
 
-import { cn } from "@/lib/utils"
-import { Button } from "@/registry/new-york/ui/button"
+import { cn } from "@/lib/utils";
+import { Button } from "@/registry/new-york/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/registry/new-york/ui/dropdown-menu"
+} from "@/registry/new-york/ui/dropdown-menu";
 
 interface DataTableColumnHeaderProps<TData, TValue>
   extends React.HTMLAttributes<HTMLDivElement> {
-  column: Column<TData, TValue>
-  title: string
+  column: Column<TData, TValue>;
+  title: string;
 }
 
 export function DataTableColumnHeader<TData, TValue>({
@@ -23,7 +24,7 @@ export function DataTableColumnHeader<TData, TValue>({
   className,
 }: DataTableColumnHeaderProps<TData, TValue>) {
   if (!column.getCanSort()) {
-    return <div className={cn(className)}>{title}</div>
+    return <div className={cn(className)}>{title}</div>;
   }
 
   return (
@@ -41,7 +42,7 @@ export function DataTableColumnHeader<TData, TValue>({
             ) : column.getIsSorted() === "asc" ? (
               <ArrowUp />
             ) : (
-              <ChevronsUpDown />
+              <CaretSortIcon />
             )}
           </Button>
         </DropdownMenuTrigger>
@@ -62,5 +63,5 @@ export function DataTableColumnHeader<TData, TValue>({
         </DropdownMenuContent>
       </DropdownMenu>
     </div>
-  )
+  );
 }

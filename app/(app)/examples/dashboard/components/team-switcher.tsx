@@ -1,7 +1,8 @@
 "use client";
 
 import * as React from "react";
-import { Check, ChevronsUpDown, PlusCircle } from "lucide-react";
+import { Check, PlusCircle } from "lucide-react";
+import { CaretSortIcon } from "@radix-ui/react-icons";
 
 import { cn } from "@/lib/utils";
 import {
@@ -103,7 +104,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
               <AvatarFallback>SC</AvatarFallback>
             </Avatar>
             {selectedTeam.label}
-            <ChevronsUpDown className="ml-auto opacity-50" />
+            <CaretSortIcon className="ml-auto opacity-50" />
           </Button>
         </PopoverTrigger>
         <PopoverContent className="w-[200px] p-0">

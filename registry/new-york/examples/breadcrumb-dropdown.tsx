@@ -1,4 +1,4 @@
-import { ChevronDown, Slash } from "lucide-react";
+import { ChevronDownIcon, Slash } from "lucide-react";
 
 import {
   Breadcrumb,
@@ -29,7 +29,7 @@ export default function BreadcrumbWithDropdown() {
           <DropdownMenu>
             <DropdownMenuTrigger className="flex items-center gap-1">
               Components
-              <ChevronDown />
+              <ChevronDownIcon />
             </DropdownMenuTrigger>
             <DropdownMenuContent align="start">
               <DropdownMenuItem>Documentation</DropdownMenuItem>

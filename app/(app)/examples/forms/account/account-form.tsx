@@ -2,7 +2,8 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { format } from "date-fns";
-import { CalendarIcon, Check, ChevronsUpDown } from "lucide-react";
+import { CalendarIcon, Check } from "lucide-react";
+import { CaretSortIcon } from "@radix-ui/react-icons";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
@@ -164,7 +165,7 @@ export function AccountForm() {
                             (language) => language.value === field.value
                           )?.label
                         : "Select language"}
-                      <ChevronsUpDown className="opacity-50" />
+                      <CaretSortIcon className="opacity-50" />
                     </Button>
                   </FormControl>
                 </PopoverTrigger>
