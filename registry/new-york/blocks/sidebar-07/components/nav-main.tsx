@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronRightIcon, type LucideIcon } from "lucide-react";
+import { ChevronRightIcon } from "@radix-ui/react-icons";
 
 import {
   Collapsible,
@@ -24,7 +24,7 @@ export function NavMain({
   items: {
     title: string;
     url: string;
-    icon?: LucideIcon;
+    icon?: any;
     isActive?: boolean;
     items?: {
       title: string;

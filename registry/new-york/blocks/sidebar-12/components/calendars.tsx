@@ -1,5 +1,7 @@
 import * as React from "react";
-import { Check, ChevronRight } from "lucide-react";
+import { Check } from "lucide-react";
+import { CheckIcon } from "@radix-ui/react-icons";
+import { ChevronRightIcon } from "@radix-ui/react-icons";
 
 import {
   Collapsible,
@@ -39,7 +41,7 @@ export function Calendars({
               >
                 <CollapsibleTrigger>
                   {calendar.name}{" "}
-                  <ChevronRight className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-90" />
+                  <ChevronRightIcon className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-90" />
                 </CollapsibleTrigger>
               </SidebarGroupLabel>
               <CollapsibleContent>

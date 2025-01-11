@@ -52,19 +52,19 @@ export const icons: Record<
     radix: "CheckIcon",
   },
   ChevronDown: {
-    lucide: "ChevronDownIcon",
+    lucide: "ChevronDown",
     radix: "ChevronDownIcon",
   },
   ChevronLeft: {
-    lucide: "ChevronLeftIcon",
+    lucide: "ChevronLeft",
     radix: "ChevronLeftIcon",
   },
   ChevronRight: {
-    lucide: "ChevronRightIcon",
+    lucide: "ChevronRight",
     radix: "ChevronRightIcon",
   },
   ChevronUp: {
-    lucide: "ChevronUpIcon",
+    lucide: "ChevronUp",
     radix: "ChevronUpIcon",
   },
   ChevronsUpDown: {

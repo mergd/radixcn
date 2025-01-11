@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Doc } from "contentlayer/generated";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 import { NavItem, NavItemWithChildren } from "types/nav";
 
 import { docsConfig } from "@/config/docs";
@@ -25,7 +25,7 @@ export function DocsPager({ doc }: DocsPagerProps) {
             className="flex flex-row items-center gap-2"
             href={pager.prev.href}
           >
-            <ChevronLeft />
+            <ChevronLeftIcon />
             {pager.prev.title}
           </Link>
         </Button>
@@ -37,7 +37,7 @@ export function DocsPager({ doc }: DocsPagerProps) {
             href={pager.next.href}
           >
             {pager.next.title}
-            <ChevronRight />
+            <ChevronRightIcon />
           </Link>
         </Button>
       )}

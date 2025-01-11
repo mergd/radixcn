@@ -1,5 +1,6 @@
 import * as React from "react";
-import { ChevronRightIcon, File, Folder } from "lucide-react";
+import { File, Folder } from "lucide-react";
+import { ChevronRightIcon } from "@radix-ui/react-icons";
 
 import {
   Collapsible,

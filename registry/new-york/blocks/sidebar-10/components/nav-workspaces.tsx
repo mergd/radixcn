@@ -1,4 +1,5 @@
-import { ChevronRightIcon, MoreHorizontal, Plus } from "lucide-react";
+import { MoreHorizontal, Plus } from "lucide-react";
+import { ChevronRightIcon } from "@radix-ui/react-icons";
 
 import {
   Collapsible,

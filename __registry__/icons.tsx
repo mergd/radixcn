@@ -113,6 +113,11 @@ export const Icons = {
     ),
   },
   ChevronDown: {
+    lucide: React.lazy(() =>
+      import("lucide-react").then((mod) => ({
+        default: mod.ChevronDown,
+      }))
+    ),
     radix: React.lazy(() =>
       import("@radix-ui/react-icons").then((mod) => ({
         default: mod.ChevronDownIcon,
@@ -120,6 +125,11 @@ export const Icons = {
     ),
   },
   ChevronLeft: {
+    lucide: React.lazy(() =>
+      import("lucide-react").then((mod) => ({
+        default: mod.ChevronLeft,
+      }))
+    ),
     radix: React.lazy(() =>
       import("@radix-ui/react-icons").then((mod) => ({
         default: mod.ChevronLeftIcon,
@@ -127,6 +137,11 @@ export const Icons = {
     ),
   },
   ChevronRight: {
+    lucide: React.lazy(() =>
+      import("lucide-react").then((mod) => ({
+        default: mod.ChevronRight,
+      }))
+    ),
     radix: React.lazy(() =>
       import("@radix-ui/react-icons").then((mod) => ({
         default: mod.ChevronRightIcon,
@@ -134,6 +149,11 @@ export const Icons = {
     ),
   },
   ChevronUp: {
+    lucide: React.lazy(() =>
+      import("lucide-react").then((mod) => ({
+        default: mod.ChevronUp,
+      }))
+    ),
     radix: React.lazy(() =>
       import("@radix-ui/react-icons").then((mod) => ({
         default: mod.ChevronUpIcon,

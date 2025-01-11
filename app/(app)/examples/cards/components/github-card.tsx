@@ -1,4 +1,6 @@
-import { ChevronDownIcon, Circle, Plus, Star } from "lucide-react";
+import { ChevronDownIcon, StarIcon } from "@radix-ui/react-icons";
+import { DotFilledIcon } from "@radix-ui/react-icons";
+import { PlusIcon } from "@radix-ui/react-icons";
 
 import { Button } from "@/registry/new-york/ui/button";
 import {
@@ -32,7 +34,7 @@ export function DemoGithub() {
         </div>
         <div className="flex items-center space-x-1 rounded-md bg-secondary text-secondary-foreground">
           <Button variant="secondary" className="px-3 shadow-none">
-            <Star />
+            <StarIcon />
             Star
           </Button>
           <Separator orientation="vertical" className="h-[20px]" />
@@ -57,7 +59,7 @@ export function DemoGithub() {
               <DropdownMenuCheckboxItem>Inspiration</DropdownMenuCheckboxItem>
               <DropdownMenuSeparator />
               <DropdownMenuItem>
-                <Plus /> Create List
+                <PlusIcon /> Create List
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
@@ -66,11 +68,11 @@ export function DemoGithub() {
       <CardContent>
         <div className="flex space-x-4 text-sm text-muted-foreground">
           <div className="flex items-center">
-            <Circle className="mr-1 h-3 w-3 fill-sky-400 text-sky-400" />
+            <DotFilledIcon className="mr-1 h-3 w-3 fill-sky-400 text-sky-400" />
             TypeScript
           </div>
           <div className="flex items-center">
-            <Star className="mr-1 h-3 w-3" />
+            <StarIcon className="mr-1 h-3 w-3" />
             20k
           </div>
           <div>Updated April 2023</div>

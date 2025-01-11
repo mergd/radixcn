@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ChevronRight } from "lucide-react";
+import { ChevronRightIcon } from "@radix-ui/react-icons";
 
 import { SearchForm } from "@/registry/new-york/blocks/sidebar-02/components/search-form";
 import { VersionSwitcher } from "@/registry/new-york/blocks/sidebar-02/components/version-switcher";

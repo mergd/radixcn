@@ -4,7 +4,8 @@ import { allDocs } from "contentlayer/generated";
 import "@/styles/mdx.css";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ChevronRightIcon, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import { ChevronRightIcon } from "@radix-ui/react-icons";
 import Balancer from "react-wrap-balancer";
 
 import { siteConfig } from "@/config/site";

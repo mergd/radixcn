@@ -2,7 +2,6 @@
 
 import {
   Check,
-  ChevronRight,
   Clipboard,
   File,
   Folder,
@@ -12,6 +11,7 @@ import {
   Tablet,
   Terminal,
 } from "lucide-react";
+import { ChevronRightIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import Link from "next/link";
 import * as React from "react";
@@ -347,7 +347,7 @@ function Tree({ item, index }: { item: FileTree; index: number }) {
             } as React.CSSProperties
           }
         >
-          <ChevronRight className="invisible" />
+          <ChevronRightIcon className="invisible" />
           <File className="h-4 w-4" />
           {item.name}
         </SidebarMenuButton>
@@ -370,7 +370,7 @@ function Tree({ item, index }: { item: FileTree; index: number }) {
               } as React.CSSProperties
             }
           >
-            <ChevronRight className="h-4 w-4 transition-transform" />
+            <ChevronRightIcon className="h-4 w-4 transition-transform" />
             <Folder className="h-4 w-4" />
             {item.name}
           </SidebarMenuButton>
