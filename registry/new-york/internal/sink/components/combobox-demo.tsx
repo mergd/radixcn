@@ -1,9 +1,7 @@
 "use client";
 
+import { CaretSortIcon, CheckIcon } from "@radix-ui/react-icons";
 import * as React from "react";
-import { Check, ChevronsUpDown } from "lucide-react";
-import { CaretSortIcon } from "@radix-ui/react-icons";
-import { CheckIcon } from "@radix-ui/react-icons";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/registry/new-york/ui/button";

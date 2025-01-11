@@ -1,7 +1,8 @@
 "use client";
 
 import * as React from "react";
-import { Check, ChevronsUpDown } from "lucide-react";
+import { Check } from "lucide-react";
+import { CaretSortIcon } from "@radix-ui/react-icons";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/registry/new-york/ui/button";
@@ -58,7 +59,7 @@ export default function ComboboxDemo() {
           {value
             ? frameworks.find((framework) => framework.value === value)?.label
             : "Select framework..."}
-          <ChevronsUpDown className="opacity-50" />
+          <CaretSortIcon className="opacity-50" />
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-[200px] p-0">

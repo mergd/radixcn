@@ -92,11 +92,6 @@ export const docsConfig: DocsConfig = {
           items: [],
         },
         {
-          title: "Breadcrumb",
-          href: "/docs/components/breadcrumb",
-          items: [],
-        },
-        {
           title: "Button",
           href: "/docs/components/button",
           items: [],
@@ -109,16 +104,6 @@ export const docsConfig: DocsConfig = {
         {
           title: "Card",
           href: "/docs/components/card",
-          items: [],
-        },
-        {
-          title: "Carousel",
-          href: "/docs/components/carousel",
-          items: [],
-        },
-        {
-          title: "Chart",
-          href: "/docs/components/chart",
           items: [],
         },
         {
@@ -152,11 +137,6 @@ export const docsConfig: DocsConfig = {
           items: [],
         },
         {
-          title: "Data Table",
-          href: "/docs/components/data-table",
-          items: [],
-        },
-        {
           title: "Date Picker",
           href: "/docs/components/date-picker",
           items: [],
@@ -172,11 +152,6 @@ export const docsConfig: DocsConfig = {
           items: [],
         },
         {
-          title: "Form",
-          href: "/docs/components/form",
-          items: [],
-        },
-        {
           title: "Hover Card",
           href: "/docs/components/hover-card",
           items: [],
@@ -184,11 +159,6 @@ export const docsConfig: DocsConfig = {
         {
           title: "Input",
           href: "/docs/components/input",
-          items: [],
-        },
-        {
-          title: "Input OTP",
-          href: "/docs/components/input-otp",
           items: [],
         },
         {
@@ -227,11 +197,6 @@ export const docsConfig: DocsConfig = {
           items: [],
         },
         {
-          title: "Resizable",
-          href: "/docs/components/resizable",
-          items: [],
-        },
-        {
           title: "Scroll Area",
           href: "/docs/components/scroll-area",
           items: [],
@@ -252,16 +217,6 @@ export const docsConfig: DocsConfig = {
           items: [],
         },
         {
-          title: "Sheet",
-          href: "/docs/components/sheet",
-          items: [],
-        },
-        {
-          title: "Sidebar",
-          href: "/docs/components/sidebar",
-          items: [],
-        },
-        {
           title: "Skeleton",
           href: "/docs/components/skeleton",
           items: [],
@@ -269,11 +224,6 @@ export const docsConfig: DocsConfig = {
         {
           title: "Slider",
           href: "/docs/components/slider",
-          items: [],
-        },
-        {
-          title: "Sonner",
-          href: "/docs/components/sonner",
           items: [],
         },
         {
@@ -294,21 +244,6 @@ export const docsConfig: DocsConfig = {
         {
           title: "Textarea",
           href: "/docs/components/textarea",
-          items: [],
-        },
-        {
-          title: "Toast",
-          href: "/docs/components/toast",
-          items: [],
-        },
-        {
-          title: "Toggle",
-          href: "/docs/components/toggle",
-          items: [],
-        },
-        {
-          title: "Toggle Group",
-          href: "/docs/components/toggle-group",
           items: [],
         },
         {

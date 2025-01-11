@@ -137,7 +137,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 
     return (
       <RadixButton
-        className={cn("cursor-pointer", className)}
+        className={cn("cursor-pointer flex items-center gap-2", className)}
         ref={ref}
         disabled={isSpinning}
         variant={variantMap[variant] ?? "solid"}
@@ -146,10 +146,10 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         loading={loading}
         {...props}
       >
-        <div className="flex items-center gap-2">
+        <>
           {isSpinning && <Spinner />}
           {children}
-        </div>
+        </>
       </RadixButton>
     );
   },

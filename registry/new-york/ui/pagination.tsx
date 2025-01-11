@@ -2,8 +2,7 @@ import * as React from "react";
 import { ChevronLeft, ChevronRight, MoreHorizontal } from "lucide-react";
 
 import { cn } from "@/lib/utils";
-import { Button } from "@/registry/new-york/ui/button";
-import type { ButtonProps, ButtonSize } from "@/registry/new-york/ui/button";
+import { ButtonProps, buttonVariants } from "@/registry/new-york/ui/button";
 
 const Pagination = ({ className, ...props }: React.ComponentProps<"nav">) => (
   <nav
@@ -35,24 +34,28 @@ const PaginationItem = React.forwardRef<
 ));
 PaginationItem.displayName = "PaginationItem";
 
-type PaginationLinkProps = ButtonProps & {
+type PaginationLinkProps = {
   isActive?: boolean;
-  href?: string;
-};
+} & Pick<ButtonProps, "size"> &
+  React.ComponentProps<"a">;
 
-const PaginationLink = React.forwardRef<HTMLButtonElement, PaginationLinkProps>(
-  ({ isActive, size = "2", variant = "ghost", href, ...props }, ref) => (
-    <Button
-      ref={ref}
-      aria-current={isActive ? "page" : undefined}
-      variant={isActive ? "soft" : variant}
-      size={size as ButtonSize}
-      {...(href ? { asChild: true } : {})}
-      {...props}
-    >
-      {href ? <a href={href}>{props.children}</a> : props.children}
-    </Button>
-  ),
+const PaginationLink = ({
+  className,
+  isActive,
+  size = "icon",
+  ...props
+}: PaginationLinkProps) => (
+  <a
+    aria-current={isActive ? "page" : undefined}
+    className={cn(
+      buttonVariants({
+        variant: isActive ? "outline" : "ghost",
+        size,
+      }),
+      className,
+    )}
+    {...props}
+  />
 );
 PaginationLink.displayName = "PaginationLink";
 
@@ -63,13 +66,11 @@ const PaginationPrevious = ({
   <PaginationLink
     aria-label="Go to previous page"
     size="default"
-    className={cn("pl-2.5", className)}
+    className={cn("gap-1 pl-2.5", className)}
     {...props}
   >
-    <div className="flex flex-row items-center gap-1">
-      <ChevronLeft className="h-4 w-4" />
-      <span>Previous</span>
-    </div>
+    <ChevronLeft className="h-4 w-4" />
+    <span>Previous</span>
   </PaginationLink>
 );
 PaginationPrevious.displayName = "PaginationPrevious";

@@ -21,7 +21,10 @@ export function DocsPager({ doc }: DocsPagerProps) {
     <div className="flex flex-row items-center justify-between">
       {pager?.prev?.href && (
         <Button variant="ghost" asChild>
-          <Link href={pager.prev.href}>
+          <Link
+            className="flex flex-row items-center gap-2"
+            href={pager.prev.href}
+          >
             <ChevronLeft />
             {pager.prev.title}
           </Link>
@@ -29,7 +32,10 @@ export function DocsPager({ doc }: DocsPagerProps) {
       )}
       {pager?.next?.href && (
         <Button variant="ghost" className="ml-auto" asChild>
-          <Link href={pager.next.href}>
+          <Link
+            className="flex flex-row items-center gap-2"
+            href={pager.next.href}
+          >
             {pager.next.title}
             <ChevronRight />
           </Link>

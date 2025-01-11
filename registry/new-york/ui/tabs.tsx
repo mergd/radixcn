@@ -22,7 +22,11 @@ const TabsTrigger = React.forwardRef<
   React.ElementRef<typeof RadixTabs.Trigger>,
   React.ComponentPropsWithoutRef<typeof RadixTabs.Trigger>
 >(({ className, ...props }, ref) => (
-  <RadixTabs.Trigger ref={ref} className={cn(className)} {...props} />
+  <RadixTabs.Trigger
+    ref={ref}
+    className={cn("cursor-pointer", className)}
+    {...props}
+  />
 ));
 TabsTrigger.displayName = "TabsTrigger";
 
