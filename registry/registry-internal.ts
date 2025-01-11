@@ -170,10 +170,10 @@ export const internal: Registry = [
         path: "internal/sink/components/navigation-menu-demo.tsx",
         type: "registry:component",
       },
-      {
-        path: "internal/sink/components/pagination-demo.tsx",
-        type: "registry:component",
-      },
+      // {
+      //   path: "internal/sink/components/pagination-demo.tsx",
+      //   type: "registry:component",
+      // },
       {
         path: "internal/sink/components/popover-demo.tsx",
         type: "registry:component",

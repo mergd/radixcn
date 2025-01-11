@@ -1,18 +1,17 @@
-import { ChevronDown } from "lucide-react"
-
 import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/registry/new-york/ui/avatar"
-import { Button } from "@/registry/new-york/ui/button"
+} from "@/registry/new-york/ui/avatar";
+import { Button } from "@/registry/new-york/ui/button";
+import { ChevronDownIcon } from "@radix-ui/react-icons";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/registry/new-york/ui/card"
+} from "@/registry/new-york/ui/card";
 import {
   Command,
   CommandEmpty,
@@ -20,12 +19,12 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-} from "@/registry/new-york/ui/command"
+} from "@/registry/new-york/ui/command";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/registry/new-york/ui/popover"
+} from "@/registry/new-york/ui/popover";
 
 export function DemoTeamMembers() {
   return (
@@ -145,5 +144,5 @@ export function DemoTeamMembers() {
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }

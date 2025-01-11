@@ -68,7 +68,7 @@ export const icons: Record<
     radix: "ChevronUpIcon",
   },
   ChevronsUpDown: {
-    lucide: "CaretSortIcon",
+    lucide: "ChevronsUpDown",
     radix: "CaretSortIcon",
   },
   Circle: {

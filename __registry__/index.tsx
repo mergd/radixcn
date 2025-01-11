@@ -791,10 +791,6 @@ export const Index: Record<string, any> = {
         type: "registry:component",
         target: ""
       },{
-        path: "registry/new-york/internal/sink/components/pagination-demo.tsx",
-        type: "registry:component",
-        target: ""
-      },{
         path: "registry/new-york/internal/sink/components/popover-demo.tsx",
         type: "registry:component",
         target: ""
@@ -3455,10 +3451,6 @@ export const Index: Record<string, any> = {
         target: ""
       },{
         path: "registry/new-york/internal/sink/components/navigation-menu-demo.tsx",
-        type: "registry:component",
-        target: ""
-      },{
-        path: "registry/new-york/internal/sink/components/pagination-demo.tsx",
         type: "registry:component",
         target: ""
       },{

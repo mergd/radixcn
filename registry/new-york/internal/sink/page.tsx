@@ -33,7 +33,7 @@ import { HoverCardDemo } from "@/registry/new-york/internal/sink/components/hove
 import { InputDemo } from "@/registry/new-york/internal/sink/components/input-demo";
 import { LabelDemo } from "@/registry/new-york/internal/sink/components/label-demo";
 import { NavigationMenuDemo } from "@/registry/new-york/internal/sink/components/navigation-menu-demo";
-import { PaginationDemo } from "@/registry/new-york/internal/sink/components/pagination-demo";
+// import { PaginationDemo } from "@/registry/new-york/internal/sink/components/pagination-demo";
 import { PopoverDemo } from "@/registry/new-york/internal/sink/components/popover-demo";
 import { ProgressDemo } from "@/registry/new-york/internal/sink/components/progress-demo";
 import { RadioGroupDemo } from "@/registry/new-york/internal/sink/components/radio-group-demo";
@@ -181,9 +181,9 @@ export default function SinkPage() {
             <ComponentWrapper name="NavigationMenu" className="col-span-2">
               <NavigationMenuDemo />
             </ComponentWrapper>
-            <ComponentWrapper name="Pagination">
+            {/* <ComponentWrapper name="Pagination">
               <PaginationDemo />
-            </ComponentWrapper>
+            </ComponentWrapper> */}
             <ComponentWrapper name="Popover">
               <PopoverDemo />
             </ComponentWrapper>
