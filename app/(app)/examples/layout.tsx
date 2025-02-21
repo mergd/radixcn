@@ -32,9 +32,6 @@ export default function ExamplesLayout({
           <Button size="sm">
             <Link href="/docs">Get Started</Link>
           </Button>
-          <Button size="sm" variant="ghost">
-            <Link href="/blocks">Browse Blocks</Link>
-          </Button>
         </PageActions>
       </PageHeader>
       <div className="border-grid border-b">

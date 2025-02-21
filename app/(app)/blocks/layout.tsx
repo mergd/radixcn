@@ -31,9 +31,6 @@ export default function BlocksLayout({
           with all React frameworks. Open Source. Free forever.
         </PageHeaderDescription>
         <PageActions>
-          <Button size="sm">
-            <a href="#blocks">Browse Blocks</a>
-          </Button>
           <Button variant="ghost" size="sm">
             <a
               href="https://github.com/mergd/radixcn/discussions/new?category=blocks-request"
