@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { Icons } from "@/components/icons"
-import { Button } from "@/registry/new-york/ui/button"
+import { Icons } from "@/components/icons";
+import { Button } from "@/registry/new-york/ui/button";
 import {
   Card,
   CardContent,
@@ -9,9 +9,9 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/registry/new-york/ui/card"
-import { Input } from "@/registry/new-york/ui/input"
-import { Label } from "@/registry/new-york/ui/label"
+} from "@/registry/new-york/ui/card";
+import { Input } from "@/registry/new-york/ui/input";
+import { Label } from "@/registry/new-york/ui/label";
 
 export function DemoCreateAccount() {
   return (
@@ -25,11 +25,11 @@ export function DemoCreateAccount() {
       <CardContent className="grid gap-4">
         <div className="grid grid-cols-2 gap-6">
           <Button variant="outline">
-            <Icons.gitHub className="mr-2 h-4 w-4" />
+            <Icons.gitHub className="mr-2 size-3" />
             Github
           </Button>
           <Button variant="outline">
-            <Icons.google className="mr-2 h-4 w-4" />
+            <Icons.google className="mr-2 size-3" />
             Google
           </Button>
         </div>
@@ -56,5 +56,5 @@ export function DemoCreateAccount() {
         <Button className="w-full">Create account</Button>
       </CardFooter>
     </Card>
-  )
+  );
 }

@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 
-import { Announcement } from "@/components/announcement";
 import { BlocksNav } from "@/components/blocks-nav";
 import {
   PageActions,
@@ -26,17 +25,16 @@ export default function BlocksLayout({
   return (
     <>
       <PageHeader>
-        <Announcement />
         <PageHeaderHeading>Building Blocks for the Web</PageHeaderHeading>
         <PageHeaderDescription>
           Clean, modern building blocks. Copy and paste into your apps. Works
           with all React frameworks. Open Source. Free forever.
         </PageHeaderDescription>
         <PageActions>
-          <Button asChild size="sm">
+          <Button size="sm">
             <a href="#blocks">Browse Blocks</a>
           </Button>
-          <Button asChild variant="ghost" size="sm">
+          <Button variant="ghost" size="sm">
             <a
               href="https://github.com/mergd/radixcn/discussions/new?category=blocks-request"
               target="_blank"

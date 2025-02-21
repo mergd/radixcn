@@ -1,13 +1,13 @@
-import { Copy } from "lucide-react"
+import { Copy } from "lucide-react";
 
-import { Button } from "@/registry/new-york/ui/button"
-import { Input } from "@/registry/new-york/ui/input"
-import { Label } from "@/registry/new-york/ui/label"
+import { Button } from "@/registry/new-york/ui/button";
+import { Input } from "@/registry/new-york/ui/input";
+import { Label } from "@/registry/new-york/ui/label";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/registry/new-york/ui/popover"
+} from "@/registry/new-york/ui/popover";
 
 export function PresetShare() {
   return (
@@ -32,15 +32,15 @@ export function PresetShare() {
               id="link"
               defaultValue="https://platform.openai.com/playground/p/7bbKYQvsVkNmVb8NGcdUOLae?model=text-davinci-003"
               readOnly
-              className="h-9"
+              className="h-9 rounded-sm"
             />
           </div>
-          <Button type="submit" size="sm" className="px-3">
+          <Button type="submit" size="sm" className="px-2">
             <span className="sr-only">Copy</span>
-            <Copy />
+            <Copy className="size-4" />
           </Button>
         </div>
       </PopoverContent>
     </Popover>
-  )
+  );
 }

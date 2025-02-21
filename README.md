@@ -6,6 +6,11 @@ A UI component library that combines [shadcn/ui](https://ui.shadcn.com)'s API wi
 
 This library is currently under active development and should be used in conjunction with shadcn components. Not all components have been ported yet.
 
+
+Todo:
+- work on the command component
+- flush out the button API
+
 ## Overview
 
 radixcn (Radix + shadcn) provides a set of components that:

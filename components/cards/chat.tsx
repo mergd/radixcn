@@ -158,7 +158,7 @@ export function CardsChat() {
               onChange={(event) => setInput(event.target.value)}
             />
             <Button type="submit" size="icon" disabled={inputLength === 0}>
-              <Send />
+              <Send className="size-4" />
               <span className="sr-only">Send</span>
             </Button>
           </form>

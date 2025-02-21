@@ -26,11 +26,11 @@ export function CardsCreateAccount() {
       <CardContent className="grid gap-4">
         <div className="grid grid-cols-2 gap-6">
           <Button variant="outline">
-            <Github />
+            <Github className="size-4 " />
             GitHub
           </Button>
           <Button variant="outline">
-            <Apple />
+            <Apple className="size-4 " />
             Apple
           </Button>
         </div>

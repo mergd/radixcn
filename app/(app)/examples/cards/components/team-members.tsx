@@ -50,7 +50,8 @@ export function DemoTeamMembers() {
           <Popover>
             <PopoverTrigger asChild>
               <Button variant="outline" className="ml-auto">
-                Owner <ChevronDownIcon className="text-muted-foreground" />
+                Owner{" "}
+                <ChevronDownIcon className="size-4 text-muted-foreground" />
               </Button>
             </PopoverTrigger>
             <PopoverContent className="p-0" align="end">

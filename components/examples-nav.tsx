@@ -38,12 +38,6 @@ const examples = [
     hidden: false,
   },
   {
-    name: "Music",
-    href: "/examples/music",
-    code: "https://github.com/radixcn/ui/tree/main/apps/www/app/(app)/examples/music",
-    hidden: false,
-  },
-  {
     name: "Authentication",
     href: "/examples/authentication",
     code: "https://github.com/radixcn/ui/tree/main/apps/www/app/(app)/examples/authentication",
